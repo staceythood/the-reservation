@@ -1,5 +1,5 @@
 //CODE FOR MAP IN RESERVATION!!!!!!
-let locationURL = "";
+let locationURL = "Users\mmsqu\OneDrive\Documents\GitHub\the-reservation\app\static\data\addresses.json";
 
 //Calling function to render map:
 
