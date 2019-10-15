@@ -10,6 +10,7 @@ from sqlalchemy import create_engine
 
 from flask import Flask, jsonify, render_template
 from flask_sqlalchemy import SQLAlchemy
+from geocoder import Geocoder
 
 app = Flask(__name__)
 
@@ -17,7 +18,7 @@ app = Flask(__name__)
 #################################################
 # Database Setup
 #################################################
-app.config["SQLALCHEMY_DATABASE_URI"] = "postgres:///reservation.postgres"
+engine = create_engine(f"postgresql+psycopg2://postgres:olive314@localhost/Reservation")
 db = SQLAlchemy(app)
 
 # reflect an existing database into a new model
@@ -42,119 +43,114 @@ def index():
     return render_template("index.html")
 
 
-@app.route("/locations")
+@app.route("/api/locations")
 def locations():
-    """Return a list of locations."""
+    """Return location data to be used in interactive leaflet map"""
 
     # Use Pandas to perform the sql query
-    stmt = db.session.query(locations).statement
-    df = pd.read_sql_query(stmt, db.session.bind)
+    locations = db.session.query(locations).statement
 
-    # Return a list of the column names (sample names)
-    return jsonify()
+    # Create the locations dataframe with all data, including both statuses
+    loc_df = pd.read_sql_query(locations, db.session.bind)
+
+    # Create a locations dataframe with only status of c(calculated) aka those without lat/long
+    calc_loc_df = loc_df.loc[loc_df["status"] == "C"]
+
+    # Call the geocoder class
+    geo = Geocoder(calc_loc_df)
+    # # Retrieve data from DB
+    # select_st = 'select a."StreetAddress", a."Latitude", a."Longitude", a."AddressId", a."Status" \
+    #             from "Address_Data" a'
+    # address_data = pd.read_sql_query(select_st, con=engine)
+    # # Retrieve rows without lat long
+    # req_loc = address_data[address_data.Latitude == 0]
+
+    # Calculate lat/long using reference data
+    calc_loc_df["lat_lon"] = calc_loc_df[["StreetAddress"]].applymap(geo.find_closest)
+    # Update lat/long with the calculated values
+    calc_loc_df["Latitude"] = calc_loc_df["lat_lon"].apply(lambda x: x[0])
+    calc_loc_df["Longitude"] = calc_loc_df["lat_lon"].apply(lambda x: x[1])
+    # Drop the additional column
+    calc_loc_df = calc_loc_df.drop(columns=["lat_lon"])
+    # Include indices for the "merge"
+    loc_df = loc_df.reset_index()
+    calc_loc_df = calc_loc_df.reset_index()
+    loc_df = pd.concat([loc_df, calc_loc_df], sort=False).drop_duplicates(
+        ["index"], keep="last"
+    )
+    # clean the final df
+    loc_df = loc_df.drop(columns=["index"]).reset_index(drop=True)
+
+    # Return a JSON list of all locations including those with both statuses
+    return jsonify(loc_df)
 
 
-@app.route("/metadata/<sample>")
-def sample_metadata(sample):
-    """Return the MetaData for a given sample."""
-    sel = [
-        Samples_Metadata.sample,
-        Samples_Metadata.ETHNICITY,
-        Samples_Metadata.GENDER,
-        Samples_Metadata.AGE,
-        Samples_Metadata.LOCATION,
-        Samples_Metadata.BBTYPE,
-        Samples_Metadata.WFREQ,
-    ]
+# @app.route("/savelocation", methods=["GET", "POST"])
+# def send_to_db():
+#     if method == "POST":
+#         addressid = request.form["addressid"]
+#         lat = request.form["latitude"]
+#         lng = request.form["longitude"]
 
-    results = db.session.query(*sel).filter(Samples_Metadata.sample == sample).all()
+#         address = address(addressid=addressid, lat=latitude, lng=longitude)
+#         db.session.add(address)
+#         db.session.commit()
 
-    # Create a dictionary entry for each row of metadata information
-    sample_metadata = {}
-    for result in results:
-        sample_metadata["sample"] = result[0]
-        sample_metadata["ETHNICITY"] = result[1]
-        sample_metadata["GENDER"] = result[2]
-        sample_metadata["AGE"] = result[3]
-        sample_metadata["LOCATION"] = result[4]
-        sample_metadata["BBTYPE"] = result[5]
-        sample_metadata["WFREQ"] = result[6]
-
-    print(sample_metadata)
-    return jsonify(sample_metadata)
+#     return render_template("form.html")
 
 
-@app.route("/samples/<sample>")
-def samples(sample):
-    """Return `otu_ids`, `otu_labels`,and `sample_values`."""
-    stmt = db.session.query(Samples).statement
-    df = pd.read_sql_query(stmt, db.session.bind)
+# @app.route("/api/census_data")
+# def census_data():
 
-    # Filter the data based on the sample number and
-    # only keep rows with values above 1
-    sample_data = df.loc[df[sample] > 1, ["otu_id", "otu_label", sample]]
+#     census_data = db.session.query(census_data).statement
+#     cen_df = pd.read_sql_query(census_data, db.session.bind)
+#     combined_df = loc_df.set_index("addressid").join(cen_df.set_index("addressid"))
 
-    # Sort by sample
-    sample_data.sort_values(by=sample, ascending=False, inplace=True)
+#     return jsonify(combined_df)
 
-    # Format the data to send as json
-    data = {
-        "otu_ids": sample_data.otu_id.values.tolist(),
-        "sample_values": sample_data[sample].values.tolist(),
-        "otu_labels": sample_data.otu_label.tolist(),
-    }
-    return jsonify(data)
+
+# def filter(filter_array):
+#     """Return the data for the selected filters."""
+#     filters = ""
+#     for i in len(filter_array):
+#        filters = filters" and " + filter_array[i].column + "= " + filter_array[i].value
+#     selection =
+#         combined_df.addressid,
+#         combined_df.streetAddress,
+#         combined_df.latitude,
+#         combined_df.longitude,
+#         combined_df.status,
+#         combined_df.year,
+#         combined_df.lastname,
+#         combined_df.givenname,
+#         combined_df.relation,
+#         combined_df.race,
+#         combined_df.gender,
+#         combined_df.age,
+#         combined_df.occupation,
+#         combined_df.ownrent,
+#         combined_df.propstat,
+#         combined_df.housetype,
+#         combined_df.notes,
+#         combined_df.srcilename,
+#         combined_df.lineitem,
+
+
+#     census_data = pd.read_sql_query(select_st, con=engine)
+#     return(census_data.jsonify())
+# #    for i in len(filter_array):
+# #        filter_st = filter_st" and " + filter_array[i].column + "= " + filter_array[i].value
+# # # Retrieve data from DB
+# # select_st = 'select c."Year",c."LastName", c."GivenName", c."Relation", c."Race", c."Gender", \
+# #                    c."Occupation", a."StreetAddress", a."Latitude", a."Longitude", a."AddressId" \
+# #               from "Census_Data" c, "Address_Data" a \
+# #            where c."AddressId" = a."AddressId"' + filter_st
+# #
+
+
+#     results = db.session.query(*sel).filter(combined_df.addressid == addressid).all()
 
 
 if __name__ == "__main__":
     app.run()
 
-
-@app.route("/api/v1.0/locations")
-def locations():
-    # Create our session (link) from Python to the DB
-    session = Session(engine)
-
-    """Return a list of all address locations"""
-    # Query all passengers
-    results = session.query(
-        locations.addressID,
-        locations.streetAddress,
-        locations.lat,
-        locations.long,
-        locations.status,
-    ).all()
-
-    session.close()
-
-    # Convert list of tuples into normal list
-    all_locations = list(np.ravel(results))
-
-    return jsonify(all_locations)
-
-
-@app.route("/api/v1.0/census_data")
-def passengers():
-    # Create our session (link) from Python to the DB
-    session = Session(engine)
-
-    """Return a list of passenger data including the name, age, and sex of each passenger"""
-    # Query all passengers
-    results = session.query(Passenger.name, Passenger.age, Passenger.sex).all()
-
-    session.close()
-
-    # Create a dictionary from the row data and append to a list of all_passengers
-    all_passengers = []
-    for name, age, sex in results:
-        passenger_dict = {}
-        passenger_dict["name"] = name
-        passenger_dict["age"] = age
-        passenger_dict["sex"] = sex
-        all_passengers.append(passenger_dict)
-
-    return jsonify(all_passengers)
-
-
-if __name__ == "__main__":
-    app.run(debug=True)
