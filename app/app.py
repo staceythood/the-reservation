@@ -12,13 +12,21 @@ from flask import Flask, jsonify, render_template
 from flask_sqlalchemy import SQLAlchemy
 from geocoder import Geocoder
 
+
+#################################################
+# Flask Setup
+#################################################
 app = Flask(__name__)
 
 
 #################################################
 # Database Setup
 #################################################
-engine = create_engine(f"postgresql+psycopg2://postgres:olive314@localhost/Reservation")
+engine = create_engine(
+    f"postgresql+psycopg2://postgres:Welcome1@18.222.106.38/Reservation"
+)
+
+# engine = create_engine(f"postgresql+psycopg2://postgres:olive314@localhost/Reservation")
 db = SQLAlchemy(app)
 
 # reflect an existing database into a new model
@@ -40,7 +48,7 @@ census_data = Base.classes.Census_Data
 @app.route("/")
 def index():
     """Return the homepage."""
-    return render_template("index.html")
+    return render_template("indexm.html")
 
 
 @app.route("/api/locations")
