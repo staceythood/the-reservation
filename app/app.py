@@ -26,16 +26,19 @@ engine = create_engine(
     f"postgresql+psycopg2://postgres:Welcome1@18.222.106.38/Reservation"
 )
 
+# app.config[
+#     "SQLALCHEMY_DATABASE_URI"
+# ] = "postgresql+psycopg2://postgres:Welcome1@18.222.106.38/Reservation"
 # engine = create_engine(f"postgresql+psycopg2://postgres:olive314@localhost/Reservation")
-db = SQLAlchemy(app)
+# db = SQLAlchemy(app)
 
 # reflect an existing database into a new model
 Base = automap_base()
 # reflect the tables
-Base.prepare(db.engine, reflect=True)
+Base.prepare(engine, reflect=True)
 
 # Save references to each table
-locations = Base.classes.Address_Data
+address_data = Base.classes.Address_Data
 census_data = Base.classes.Census_Data
 
 # import models
@@ -55,14 +58,18 @@ def index():
 def locations():
     """Return location data to be used in interactive leaflet map"""
 
+    # Create our session (link) from Python to the DB
+    session = Session(engine)
+
     # Use Pandas to perform the sql query
-    locations = db.session.query(locations).statement
+    locations = session.query(address_data).all()
 
     # Create the locations dataframe with all data, including both statuses
-    loc_df = pd.read_sql_query(locations, db.session.bind)
-
+    loc_df = pd.read_sql_table("Address_Data", con=engine)
+    print(loc_df.head())
     # Create a locations dataframe with only status of c(calculated) aka those without lat/long
-    calc_loc_df = loc_df.loc[loc_df["status"] == "C"]
+    calc_loc_df = loc_df[loc_df.Latitude == 0]
+    # calc_loc_df.to_json(orient="index")
 
     # Call the geocoder class
     geo = Geocoder(calc_loc_df)
