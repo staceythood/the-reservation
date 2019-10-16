@@ -68,11 +68,12 @@ def locations():
     loc_df = pd.read_sql_table("Address_Data", con=engine)
     print(loc_df.head())
     # Create a locations dataframe with only status of c(calculated) aka those without lat/long
-    calc_loc_df = loc_df[loc_df.Latitude == 0]
+    calc_loc_df = loc_df[loc_df.Status == "C"]
+    ref_loc_df = loc_df[loc_df.Status == "S"]
     # calc_loc_df.to_json(orient="index")
 
     # Call the geocoder class
-    geo = Geocoder(calc_loc_df)
+    geo = Geocoder(ref_loc_df)
     # # Retrieve data from DB
     # select_st = 'select a."StreetAddress", a."Latitude", a."Longitude", a."AddressId", a."Status" \
     #             from "Address_Data" a'
