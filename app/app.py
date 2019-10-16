@@ -62,7 +62,7 @@ def locations():
     session = Session(engine)
 
     # Use Pandas to perform the sql query
-    locations = session.query(address_data).all()
+    # locations = session.query(address_data).all()
 
     # Create the locations dataframe with all data, including both statuses
     loc_df = pd.read_sql_table("Address_Data", con=engine)
@@ -96,8 +96,10 @@ def locations():
     # clean the final df
     loc_df = loc_df.drop(columns=["index"]).reset_index(drop=True)
 
+    final_df = loc_df.to_dict(orient="records")
+
     # Return a JSON list of all locations including those with both statuses
-    return jsonify(loc_df)
+    return jsonify(final_df)
 
 
 # @app.route("/savelocation", methods=["GET", "POST"])
