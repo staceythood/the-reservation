@@ -17,17 +17,17 @@ app = Flask(__name__)
 #################################################
 # Database Setup
 #################################################
-app.config["SQLALCHEMY_DATABASE_URI"] = "postgres:///reservation.postgres"
-db = SQLAlchemy(app)
+# app.config["SQLALCHEMY_DATABASE_URI"] = "postgres:///reservation.postgres"
+# db = SQLAlchemy(app)
 
 # reflect an existing database into a new model
-Base = automap_base()
+# Base = automap_base()
 # reflect the tables
-Base.prepare(db.engine, reflect=True)
+# Base.prepare(db.engine, reflect=True)
 
 # Save references to each table
-locations = Base.classes.Address_Data
-census_data = Base.classes.Census_Data
+# locations = Base.classes.Address_Data
+# census_data = Base.classes.Census_Data
 
 # import models
 
@@ -39,7 +39,7 @@ census_data = Base.classes.Census_Data
 @app.route("/")
 def index():
     """Return the homepage."""
-    return render_template("index.html")
+    return render_template("indexm.html")
 
 
 @app.route("/locations")
@@ -67,7 +67,8 @@ def sample_metadata(sample):
         Samples_Metadata.WFREQ,
     ]
 
-    results = db.session.query(*sel).filter(Samples_Metadata.sample == sample).all()
+    results = db.session.query(
+        *sel).filter(Samples_Metadata.sample == sample).all()
 
     # Create a dictionary entry for each row of metadata information
     sample_metadata = {}
