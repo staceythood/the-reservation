@@ -11,8 +11,8 @@
 10,316,Rusk Avenue,Nelson,Arthur H.,Head,Rent,,House,M,M,26,Cook At Train,,1920 1A 33SQ-GRXV-JTC
 11,316,Rusk Avenue,Nelson,Edith,Wife,,,,M,F,23,None,,1920 1A 33SQ-GRXV-JTC
 12,316,Rusk Avenue,Williams,Roy,Lodger,,,,M,M,28,Tailor At Shop,,1920 1A 33SQ-GRXV-JTC
-13,314?,Rusk Avenue,Hudspeth,Joseph,Head,Rent,,House,M,M,43,Stockman At Farm,house no scratched out,1920 1A 33SQ-GRXV-JTC
-14,314?,Rusk Avenue,Hudspeth,Blanche,Wife,,,,M,F,30,Dress Maker At Home,,1920 1A 33SQ-GRXV-JTC
+13,314,Rusk Avenue,Hudspeth,Joseph,Head,Rent,,House,M,M,43,Stockman At Farm,house no scratched out,1920 1A 33SQ-GRXV-JTC
+14,314,Rusk Avenue,Hudspeth,Blanche,Wife,,,,M,F,30,Dress Maker At Home,,1920 1A 33SQ-GRXV-JTC
 15,312,Rusk Avenue,Brooks,Will C.,Head,Rent,,House,M,M,31,Laborer At Railway Freight,,1920 1A 33SQ-GRXV-JTC
 16,310,Rusk Avenue,Brooks,Marie,Wife,Rent,,House,M/W,F,27,None,race written over,1920 1A 33SQ-GRXV-JTC
 17,306,Rusk Avenue,Hill,James,Head,Rent,,House,M,M,40,Driver At Automobile,,1920 1A 33SQ-GRXV-JTC
@@ -41,19 +41,19 @@
 40,292,Rusk Avenue,Deaks,Viola,Adopted Daughter,,,,B,F,13,None,,1920 1A 33SQ-GRXV-JTC
 41,292,Rusk Avenue,Davis,Milton,Lodger,,,,B,M,42,Laborer At Rice Mill,,1920 1A 33SQ-GRXV-JTC
 42,292,Rusk Avenue,Gibson,John,Lodger,,,,B,M,39,Laborer At Oil Mill,,1920 1A 33SQ-GRXV-JTC
-43,288.5,Rusk Avenue,Vega,Natividad,Head,Rent,,House,W,M,34,Laborer At Cotton Compress,,1920 1A 33SQ-GRXV-JTC
-44,288.5,Rusk Avenue,Vega,Juana,Wife,,,,W,F,25,None,,1920 1A 33SQ-GRXV-JTC
-45,288.5,Rusk Avenue,Cordello,Aristeo,Head,Rent,,House,W,M,38,Help At Hotel,,1920 1A 33SQ-GRXV-JTC
-46,288.5,Rusk Avenue,Cordello,Maria,Wife,,,,W,F,33,None,,1920 1A 33SQ-GRXV-JTC
-47,288.5,Rusk Avenue,Cordello,Juan,Son,,,,W,M,19,Help At Hotel,,1920 1A 33SQ-GRXV-JTC
-48,288.5,Rusk Avenue,Cordello,Elvida,Daughter,,,,W,F,15,None,,1920 1A 33SQ-GRXV-JTC
-49,288.5,Rusk Avenue,Cordello,Marie Angeles,Daughter,,,,W,F,3 and 11 months,None,,1920 1A 33SQ-GRXV-JTC
-50,288.5,Rusk Avenue,Cordello,Francisco,Son,,,,W,M,9 months,None,,1920 1A 33SQ-GRXV-JTC
-51,288.5,Rusk Avenue,Juarez,Petra,Head,Rent,,,W,F,50,Owner At Rooming House,,1920 1B 33S7-9RXV-V7J
-52,288.5,Rusk Avenue,Vasquez,Severiano,Head,Rent,,,W,M,25,Laborer At Packing House,,1920 1B 33S7-9RXV-V7J
-53,288.5,Rusk Avenue,Vasquez,Antonia,Wife,,,,W,F,21,Helper At Laundry,,1920 1B 33S7-9RXV-V7J
-54,288.5,Rusk Avenue,Besques,Albino,Lodger,,,,W,M,45,Cook At Hotel,,1920 1B 33S7-9RXV-V7J
-55,288.5,Rusk Avenue,Salina,Salome,Lodger,,,,W,M,50,Dishwasher At Hotel,,1920 1B 33S7-9RXV-V7J
+43,288,Rusk Avenue,Vega,Natividad,Head,Rent,,House,W,M,34,Laborer At Cotton Compress,288.5,1920 1A 33SQ-GRXV-JTC
+44,288,Rusk Avenue,Vega,Juana,Wife,,,,W,F,25,None,288.5,1920 1A 33SQ-GRXV-JTC
+45,288,Rusk Avenue,Cordello,Aristeo,Head,Rent,,House,W,M,38,Help At Hotel,288.5,1920 1A 33SQ-GRXV-JTC
+46,288,Rusk Avenue,Cordello,Maria,Wife,,,,W,F,33,None,288.5,1920 1A 33SQ-GRXV-JTC
+47,288,Rusk Avenue,Cordello,Juan,Son,,,,W,M,19,Help At Hotel,288.5,1920 1A 33SQ-GRXV-JTC
+48,288,Rusk Avenue,Cordello,Elvida,Daughter,,,,W,F,15,None,288.5,1920 1A 33SQ-GRXV-JTC
+49,288,Rusk Avenue,Cordello,Marie Angeles,Daughter,,,,W,F,3 and 11 months,None,288.5,1920 1A 33SQ-GRXV-JTC
+50,288,Rusk Avenue,Cordello,Francisco,Son,,,,W,M,9 months,None,288.5,1920 1A 33SQ-GRXV-JTC
+51,288,Rusk Avenue,Juarez,Petra,Head,Rent,,,W,F,50,Owner At Rooming House,288.5,1920 1B 33S7-9RXV-V7J
+52,288,Rusk Avenue,Vasquez,Severiano,Head,Rent,,,W,M,25,Laborer At Packing House,288.5,1920 1B 33S7-9RXV-V7J
+53,288,Rusk Avenue,Vasquez,Antonia,Wife,,,,W,F,21,Helper At Laundry,288.5,1920 1B 33S7-9RXV-V7J
+54,288,Rusk Avenue,Besques,Albino,Lodger,,,,W,M,45,Cook At Hotel,288.5,1920 1B 33S7-9RXV-V7J
+55,288,Rusk Avenue,Salina,Salome,Lodger,,,,W,M,50,Dishwasher At Hotel,288.5,1920 1B 33S7-9RXV-V7J
 56,288,Rusk Avenue,Barbosa,Conudo,Head,Rent,,,W,M,60,"Tomeles Maker, ? And Peddler At Homer Street",occupation,1920 1B 33S7-9RXV-V7J
 57,288,Rusk Avenue,Barbosa,Listedia,Wife,,,,W,F,65,None,,1920 1B 33S7-9RXV-V7J
 58,288,Rusk Avenue,Barbosa,Jose,Adopted Son,,,,W,M,2 and 11 months,None,,1920 1B 33S7-9RXV-V7J
@@ -112,19 +112,19 @@
 11,299,Rusk Avenue,Morales,Antonio,Son,,,,W,M,6,None,,1920 2A 33SQ-GRXV-J2T
 12,299,Rusk Avenue,Morales,Delfino,Son,,,,W,M,10,None,,1920 2A 33SQ-GRXV-J2T
 13,299,Rusk Avenue,Morales,Leonio,Son,,,,W,M,2,None,,1920 2A 33SQ-GRXV-J2T
-14,299.5,Rusk Avenue,Mendosa,Luz,Head,Rent,,,W,M,37,Laborer At Oil Fields,,1920 2A 33SQ-GRXV-J2T
-15,299.5,Rusk Avenue,Mendosa,Francisca,Wife,,,,W,F,23,None,,1920 2A 33SQ-GRXV-J2T
-16,299.5,Rusk Avenue,Mendosa,Aparo,Son,,,,W,M,2,None,,1920 2A 33SQ-GRXV-J2T
-17,299.5,Rusk Avenue,Maldenau,Limon,Head,Rent,,,W,M,35,Laborer At Farm,,1920 2A 33SQ-GRXV-J2T
-18,299.5,Rusk Avenue,Maldenau,Paula,Wife,,,,W,F,28,None,,1920 2A 33SQ-GRXV-J2T
-19,299.5,Rusk Avenue,Maldenau,Jox,Son,,,,W,M,11,None,,1920 2A 33SQ-GRXV-J2T
-20,299.5,Rusk Avenue,Rosendes,Francisco,Head,Rent,,,W,M,38,Laborer At Street Car Co.,,1920 2A 33SQ-GRXV-J2T
-21,299.5,Rusk Avenue,Alvarado,Simone,Head,Rent,,,W,M,45,Laborer At Rr Shop,,1920 2A 33SQ-GRXV-J2T
-22,299.5,Rusk Avenue,Alvarado,Heliberta,Wife,,,,W,F,35,None,,1920 2A 33SQ-GRXV-J2T
-23,299.5,Rusk Avenue,Jamez,Melecio,Head,,,,W,M,33,Laborer At Rr Shop,,1920 2A 33SQ-GRXV-J2T
-24,299.5,Rusk Avenue,Jamez,Tomesa,Wife,,,,W,F,23,None,,1920 2A 33SQ-GRXV-J2T
-25,299.5,Rusk Avenue,Cortez,Francisca,Boarder,,,,W,M,18,Helper At Hotel,,1920 2A 33SQ-GRXV-J2T
-26,299.5,Rusk Avenue,Inagosa,Florencio,Boarder,,,,W,M,20,Help At Hotel,,1920 2A 33SQ-GRXV-J2T
+14,299,Rusk Avenue,Mendosa,Luz,Head,Rent,,,W,M,37,Laborer At Oil Fields,299.5,1920 2A 33SQ-GRXV-J2T
+15,299,Rusk Avenue,Mendosa,Francisca,Wife,,,,W,F,23,None,299.5,1920 2A 33SQ-GRXV-J2T
+16,299,Rusk Avenue,Mendosa,Aparo,Son,,,,W,M,2,None,299.5,1920 2A 33SQ-GRXV-J2T
+17,299,Rusk Avenue,Maldenau,Limon,Head,Rent,,,W,M,35,Laborer At Farm,299.5,1920 2A 33SQ-GRXV-J2T
+18,299,Rusk Avenue,Maldenau,Paula,Wife,,,,W,F,28,None,299.5,1920 2A 33SQ-GRXV-J2T
+19,299,Rusk Avenue,Maldenau,Jox,Son,,,,W,M,11,None,299.5,1920 2A 33SQ-GRXV-J2T
+20,299,Rusk Avenue,Rosendes,Francisco,Head,Rent,,,W,M,38,Laborer At Street Car Co.,299.5,1920 2A 33SQ-GRXV-J2T
+21,299,Rusk Avenue,Alvarado,Simone,Head,Rent,,,W,M,45,Laborer At Rr Shop,299.5,1920 2A 33SQ-GRXV-J2T
+22,299,Rusk Avenue,Alvarado,Heliberta,Wife,,,,W,F,35,None,299.5,1920 2A 33SQ-GRXV-J2T
+23,299,Rusk Avenue,Jamez,Melecio,Head,,,,W,M,33,Laborer At Rr Shop,299.5,1920 2A 33SQ-GRXV-J2T
+24,299,Rusk Avenue,Jamez,Tomesa,Wife,,,,W,F,23,None,299.5,1920 2A 33SQ-GRXV-J2T
+25,299,Rusk Avenue,Cortez,Francisca,Boarder,,,,W,M,18,Helper At Hotel,299.5,1920 2A 33SQ-GRXV-J2T
+26,299,Rusk Avenue,Inagosa,Florencio,Boarder,,,,W,M,20,Help At Hotel,299.5,1920 2A 33SQ-GRXV-J2T
 27,810,Bagby Street,Gutieres,Maria,Head,Rent,,,W,F,38,Washwoman At Laundry,,1920 2A 33SQ-GRXV-J2T
 28,810,Bagby Street,Gutieres,Alexandra,Son,,,,W,M,8,None,,1920 2A 33SQ-GRXV-J2T
 29,810,Bagby Street,Gutieres,Crusito,Son,,,,W,M,9 months,None,,1920 2A 33SQ-GRXV-J2T
@@ -205,19 +205,19 @@
 4,302,Walker Street,Garcia,Rosendo,Lodger,,,,W,M,25,Laborer At Oil Fields,,1920 3A 33SQ-GRXV-JV1
 5,302,Walker Street,Gonzales,Carmen,Lodger,,,,W,M,25,Bus Boy At Restaurant,,1920 3A 33SQ-GRXV-JV1
 6,302,Walker Street,Ochoa,Anulfo,Son ,,,,W,M,12,None,,1920 3A 33SQ-GRXV-JV1
-7,302.5,Walker Street,Salasar,John,Head,Rent,,,W,M,57,Laborer At Concrete Buildings,,1920 3A 33SQ-GRXV-JV1
-8,302.5,Walker Street,Salasar,Augustine,Daughter,,,,W,F,13,None,,1920 3A 33SQ-GRXV-JV1
-9,302.5,Walker Street,Salasar,Mariana,Daughter,,,,W,F,10,None,,1920 3A 33SQ-GRXV-JV1
-10,302.5,Walker Street,Bonce,Josef,Head,Rent,,,W,M,51,Baker At Bakery,,1920 3A 33SQ-GRXV-JV1
-11,302.5,Walker Street,Bonce,Petra,Wife,,,,W,F,23,None,,1920 3A 33SQ-GRXV-JV1
-12,302.5,Walker Street,Bonce,Dolores,Daughter,,,,W,F,2 and 5 months,None,,1920 3A 33SQ-GRXV-JV1
-13,302.5,Walker Street,Bonce,Aloisie,Daughter,,,,W,F,1 month,None,,1920 3A 33SQ-GRXV-JV1
-14,302.5,Walker Street,Sanchez,Pedro,Boarder,,,,W,M,24,Laborer At Concrete Buildings,,1920 3A 33SQ-GRXV-JV1
-15,302.5,Walker Street,Gonzales,Lillie,Lodger,,,,W,F,18,Wrapper At Department Store,,1920 3A 33SQ-GRXV-JV1
-16,303.5,McKinney Street,Young,William,Head,Rent,,,Mu,M,38,Cleaner At Pressing Shop,,1920 3A 33SQ-GRXV-JV1
-17,303.5,McKinney Street,Young,Lottie,Wife,,,,Mu,F,36,Laundress At Home,,1920 3A 33SQ-GRXV-JV1
-18,303.5,McKinney Street,Barnes,Ella,Lodger,,,,Mu,F,20,Cook At Private Family,,1920 3A 33SQ-GRXV-JV1
-19,303.5,McKinney Street,Chapman,Theola,Lodger'S Daughter,,,,Mu,F,8,None,,1920 3A 33SQ-GRXV-JV1
+7,302,Walker Street,Salasar,John,Head,Rent,,,W,M,57,Laborer At Concrete Buildings,302.5,1920 3A 33SQ-GRXV-JV1
+8,302,Walker Street,Salasar,Augustine,Daughter,,,,W,F,13,None,302.5,1920 3A 33SQ-GRXV-JV1
+9,302,Walker Street,Salasar,Mariana,Daughter,,,,W,F,10,None,302.5,1920 3A 33SQ-GRXV-JV1
+10,302,Walker Street,Bonce,Josef,Head,Rent,,,W,M,51,Baker At Bakery,302.5,1920 3A 33SQ-GRXV-JV1
+11,302,Walker Street,Bonce,Petra,Wife,,,,W,F,23,None,302.5,1920 3A 33SQ-GRXV-JV1
+12,302,Walker Street,Bonce,Dolores,Daughter,,,,W,F,2 and 5 months,None,302.5,1920 3A 33SQ-GRXV-JV1
+13,302,Walker Street,Bonce,Aloisie,Daughter,,,,W,F,1 month,None,302.5,1920 3A 33SQ-GRXV-JV1
+14,302,Walker Street,Sanchez,Pedro,Boarder,,,,W,M,24,Laborer At Concrete Buildings,302.5,1920 3A 33SQ-GRXV-JV1
+15,302,Walker Street,Gonzales,Lillie,Lodger,,,,W,F,18,Wrapper At Department Store,302.5,1920 3A 33SQ-GRXV-JV1
+16,303,McKinney Street,Young,William,Head,Rent,,,Mu,M,38,Cleaner At Pressing Shop,303.5,1920 3A 33SQ-GRXV-JV1
+17,303,McKinney Street,Young,Lottie,Wife,,,,Mu,F,36,Laundress At Home,303.5,1920 3A 33SQ-GRXV-JV1
+18,303,McKinney Street,Barnes,Ella,Lodger,,,,Mu,F,20,Cook At Private Family,303.5,1920 3A 33SQ-GRXV-JV1
+19,303,McKinney Street,Chapman,Theola,Lodger'S Daughter,,,,Mu,F,8,None,303.5,1920 3A 33SQ-GRXV-JV1
 20,303,McKinney Street,Stamps,Lena,Head,Rent,,,W,F,35,Seamstress At Home,,1920 3A 33SQ-GRXV-JV1
 21,303,McKinney Street,Prestidge,Helen,Daughter,,,,W,F,14,None,,1920 3A 33SQ-GRXV-JV1
 22,303,McKinney Street,Reinhart,Buck,Brother,,,,W,M,33,Worker At Oil Fields,,1920 3A 33SQ-GRXV-JV1
@@ -256,11 +256,11 @@
 55,310,Walker Street,Mitchel,Isom,Grandson,,,,Mu,M,15,Oiler At Garage,,1920 3B 33SQ-GRXV-JX5
 56,310,Walker Street,Henderson,Isom,Nephew,,,,Mu,M,24,Driller At Wells,,1920 3B 33SQ-GRXV-JX5
 57,310,Walker Street,Mccrea,Mack,Lodger,,,,B,M,32,Laborer At Country Roads,,1920 3B 33SQ-GRXV-JX5
-58,310.5,Walker Street,Clark,Zack,Head,Rent,,,Mu,M,48,Laborer At Moving Houses,,1920 3B 33SQ-GRXV-JX5
-59,310.5,Walker Street,Clark,Mariane,Wife,,,,Mu,F,33,Laundress At Private Families,,1920 3B 33SQ-GRXV-JX5
-60,310.5,Walker Street,Clark,Willie,Son,,,,Mu,M,13,Helper At Garage,,1920 3B 33SQ-GRXV-JX5
-61,310.5,Walker Street,Clark,James,Son,,,,Mu,M,11,Helper At Garage,,1920 3B 33SQ-GRXV-JX5
-62,310.5,Walker Street,Clark,Elgerida,Daughter,,,,Mu,F,2,None,,1920 3B 33SQ-GRXV-JX5
+58,310,Walker Street,Clark,Zack,Head,Rent,,,Mu,M,48,Laborer At Moving Houses,310.5,1920 3B 33SQ-GRXV-JX5
+59,310,Walker Street,Clark,Mariane,Wife,,,,Mu,F,33,Laundress At Private Families,310.5,1920 3B 33SQ-GRXV-JX5
+60,310,Walker Street,Clark,Willie,Son,,,,Mu,M,13,Helper At Garage,310.5,1920 3B 33SQ-GRXV-JX5
+61,310,Walker Street,Clark,James,Son,,,,Mu,M,11,Helper At Garage,310.5,1920 3B 33SQ-GRXV-JX5
+62,310,Walker Street,Clark,Elgerida,Daughter,,,,Mu,F,2,None,310.5,1920 3B 33SQ-GRXV-JX5
 63,312,Walker Street,White,Gusie,Head,Rent,,,Mu,F,49,Housemaid At Private Family,,1920 3B 33SQ-GRXV-JX5
 64,312,Walker Street,Jams,Edgar Lee,Grandson,,,,Mu,M,9,None,,1920 3B 33SQ-GRXV-JX5
 65,314,Walker Street,Johnson,Lucy,Head,Rent,,,Mu,F,37,Dishwasher At Restaurant,,1920 3B 33SQ-GRXV-JX5
@@ -366,28 +366,28 @@
 65,308,McKinney Avenue,Jackson,Alfa Omega,Head,Rent,,,W,M,48,Farmer Renter At Farm,,1920 4B 33SQ-GRXV-J66
 66,308,McKinney Avenue,Jackson,Ollie B.,Wife,,,,W,F,44,None,,1920 4B 33SQ-GRXV-J66
 67,308,McKinney Avenue,Jackson,Gordon,Son,,,,W,M,8,None,,1920 4B 33SQ-GRXV-J66
-68,308.5,McKinney Avenue,Rios,Francisco,Head,Rent,,,W,M,40,Barber At Shop,,1920 4B 33SQ-GRXV-J66
-69,308.5,McKinney Avenue,Rios,Santos,Wife,,,,W,F,43,None,,1920 4B 33SQ-GRXV-J66
-70,308.5,McKinney Avenue,Gonzales,Epifanio,Stepson,,,,W,M,22,Presser At Tailor Shops,,1920 4B 33SQ-GRXV-J66
-71,308.5,McKinney Avenue,Gonzales,Rudolfo,Stepson,,,,W,M,20,Presser At Tailor Shops,,1920 4B 33SQ-GRXV-J66
-72,308.5,McKinney Avenue,Gonzales,Janie,Stepdaughter,,,,W,F,10,None,,1920 4B 33SQ-GRXV-J66
-73,308.5,McKinney Avenue,Rios,Louis,Son,,,,W,M,7,None,,1920 4B 33SQ-GRXV-J66
+68,308,McKinney Avenue,Rios,Francisco,Head,Rent,,,W,M,40,Barber At Shop,308.5,1920 4B 33SQ-GRXV-J66
+69,308,McKinney Avenue,Rios,Santos,Wife,,,,W,F,43,None,308.5,1920 4B 33SQ-GRXV-J66
+70,308,McKinney Avenue,Gonzales,Epifanio,Stepson,,,,W,M,22,Presser At Tailor Shops,308.5,1920 4B 33SQ-GRXV-J66
+71,308,McKinney Avenue,Gonzales,Rudolfo,Stepson,,,,W,M,20,Presser At Tailor Shops,308.5,1920 4B 33SQ-GRXV-J66
+72,308,McKinney Avenue,Gonzales,Janie,Stepdaughter,,,,W,F,10,None,308.5,1920 4B 33SQ-GRXV-J66
+73,308,McKinney Avenue,Rios,Louis,Son,,,,W,M,7,None,308.5,1920 4B 33SQ-GRXV-J66
 74,310,McKinney Avenue,Daniell,Louis,Head,Rent,,,W,M,65,Retired Book Publisher At Book Company,,1920 4B 33SQ-GRXV-J66
 75,310,McKinney Avenue,Daniell,Marc,Son,,,,W,M,29,Dealer At Poultry,,1920 4B 33SQ-GRXV-J66
 76,310,McKinney Avenue,Mclaughlin,Frank J.,Head,Rent,,,W,M,24,Part-Owner At Auto Line,,1920 4B 33SQ-GRXV-J66
 77,310,McKinney Avenue,Mclaughlin,Gladys,Wife,,,,W,F,20,None,,1920 4B 33SQ-GRXV-J66
 78,310,McKinney Avenue,Mclaughlin,Francis J.,Son,,,,W,M,1 and 9 months,None,,1920 4B 33SQ-GRXV-J66
-79,310.5,McKinney Avenue,Springer,Ed,Head,Rent,,,W,M,42,Clerk At Store Room,,1920 4B 33SQ-GRXV-J66
-80,310.5,McKinney Avenue,Springer,Annie,Wife,,,,W,F,40,None,,1920 4B 33SQ-GRXV-J66
-81,310.5,McKinney Avenue,Springer,Leslie,Son,,,,W,M,18,Operator At Elevator,,1920 4B 33SQ-GRXV-J66
-82,310.5,McKinney Avenue,Springer,Edgar,Son,,,,W,M,13,Newsboy At M Paper Company,,1920 4B 33SQ-GRXV-J66
-83,310.5,McKinney Avenue,Springer,Anna Bell,Daughter,,,,W,F,8,None,,1920 4B 33SQ-GRXV-J66
-84,310.5,McKinney Avenue,Springer,Charles,Son,,,,W,M,3 and 6 months,None,,1920 4B 33SQ-GRXV-J66
-85,310.5,McKinney Avenue,Albrecht,Paul,Head,Rent,,,W,M,31,Harness Maker For Harness Company,,1920 4B 33SQ-GRXV-J66
-86,310.5,McKinney Avenue,Albrecht,Hattie,Wife,,,,W,F,30,None,,1920 4B 33SQ-GRXV-J66
-87,310.5,McKinney Avenue,Albrecht,Anna Bell,Daughter,,,,W,F,7 and 10 month,None,,1920 4B 33SQ-GRXV-J66
-88,310.5,McKinney Avenue,Albrecht,Howell P. ,Son,,,,W,M,3 and 8 months,None,,1920 4B 33SQ-GRXV-J66
-89,310.5,McKinney Avenue,Albrecht,Frank,Brother,,,,W,M,20,Bookkeeper At Harness Company,,1920 4B 33SQ-GRXV-J66
+79,310,McKinney Avenue,Springer,Ed,Head,Rent,,,W,M,42,Clerk At Store Room,310.5,1920 4B 33SQ-GRXV-J66
+80,310,McKinney Avenue,Springer,Annie,Wife,,,,W,F,40,None,310.5,1920 4B 33SQ-GRXV-J66
+81,310,McKinney Avenue,Springer,Leslie,Son,,,,W,M,18,Operator At Elevator,310.5,1920 4B 33SQ-GRXV-J66
+82,310,McKinney Avenue,Springer,Edgar,Son,,,,W,M,13,Newsboy At M Paper Company,310.5,1920 4B 33SQ-GRXV-J66
+83,310,McKinney Avenue,Springer,Anna Bell,Daughter,,,,W,F,8,None,310.5,1920 4B 33SQ-GRXV-J66
+84,310,McKinney Avenue,Springer,Charles,Son,,,,W,M,3 and 6 months,None,310.5,1920 4B 33SQ-GRXV-J66
+85,310,McKinney Avenue,Albrecht,Paul,Head,Rent,,,W,M,31,Harness Maker For Harness Company,310.5,1920 4B 33SQ-GRXV-J66
+86,310,McKinney Avenue,Albrecht,Hattie,Wife,,,,W,F,30,None,310.5,1920 4B 33SQ-GRXV-J66
+87,310,McKinney Avenue,Albrecht,Anna Bell,Daughter,,,,W,F,7 and 10 month,None,310.5,1920 4B 33SQ-GRXV-J66
+88,310,McKinney Avenue,Albrecht,Howell P. ,Son,,,,W,M,3 and 8 months,None,310.5,1920 4B 33SQ-GRXV-J66
+89,310,McKinney Avenue,Albrecht,Frank,Brother,,,,W,M,20,Bookkeeper At Harness Company,310.5,1920 4B 33SQ-GRXV-J66
 90,912,McKinney Avenue,Ornduff,Guy,Head,Rent,,,W,M,35,Veterinary Doctor,,1920 4B 33SQ-GRXV-J66
 91,912,McKinney Avenue,Ornduff,Sylvia,Wife,,,,W,F,21,None,,1920 4B 33SQ-GRXV-J66
 92,912,McKinney Avenue,Furry,Mattie,Mother In Law,,,,W,F,55,Owner At Rooming Home,,1920 4B 33SQ-GRXV-J66
@@ -397,10 +397,10 @@
 96,912,McKinney Avenue,Cook,Frank B.,Son,,,,W,M,25,Laborer At Steel Works,,1920 4B 33SQ-GRXV-J66
 97,912,McKinney Avenue,Cook,Ethel,Daughter,,,,W,F,14,None,,1920 4B 33SQ-GRXV-J66
 98,912,McKinney Avenue,Cook,Pearl,Daughter,,,,W,F,11,None,,1920 4B 33SQ-GRXV-J66
-99,312.5,McKinney Avenue,West,Jesse L.,Head,Rent,,,W,M,32,Driver At Laundry,,1920 4B 33SQ-GRXV-J66
-100,312.5,McKinney Avenue,West,Alvin,Son,,,,W,M,11,None,,1920 4B 33SQ-GRXV-J66
-1,312.5,McKinney Avenue,West,Pearl M.,Wife,,,,W,F,32,None,,1920 4B 33SQ-GRXV-J66
-2,312.5,McKinney Avenue,West,B. Jay,Son,,,,W,M,3 and 7 months,None,,1920 5A 33SQ-GRXV-JNG
+99,312,McKinney Avenue,West,Jesse L.,Head,Rent,,,W,M,32,Driver At Laundry,312.5,1920 4B 33SQ-GRXV-J66
+100,312,McKinney Avenue,West,Alvin,Son,,,,W,M,11,None,312.5,1920 4B 33SQ-GRXV-J66
+1,312,McKinney Avenue,West,Pearl M.,Wife,,,,W,F,32,None,312.5,1920 4B 33SQ-GRXV-J66
+2,312,McKinney Avenue,West,B. Jay,Son,,,,W,M,3 and 7 months,None,312.5,1920 5A 33SQ-GRXV-JNG
 3,314,McKinney Avenue,Daniell,Norman L.,Head,Rent,,,W,M,35,Salesman At Ice Cream Company,,1920 5A 33SQ-GRXV-JNG
 4,314,McKinney Avenue,Daniell,Carrie,Wife,,,,W,F,39,None,,1920 5A 33SQ-GRXV-JNG
 5,314,McKinney Avenue,Sehade,George ,Stepson,,,,W,M,15,None,,1920 5A 33SQ-GRXV-JNG
@@ -473,12 +473,12 @@
 72,1008,Bagby Street,Jack,Edward,Head,Rent,,,W,M,49,Carpenter At Buildings,,1920 5B 33SQ-GRXV-JJC
 73,1008,Bagby Street,Jack,Janie,Wife,,,,W,F,48,Nurse At Private Families,,1920 5B 33SQ-GRXV-JJC
 74,1008,Bagby Street,Jack,Lillie,Daughter,,,,W,F,19,None,,1920 5B 33SQ-GRXV-JJC
-75,1006.5,Bagby Street,Jones,Francine B.,Head,Rent,,,Mu,F,36,Seamstress At Home,,1920 5B 33SQ-GRXV-JJC
-76,1006.5,Bagby Street,Jones,Arthur,Son,,,,Mu,M,15,Delivery Boy At Drug Store,,1920 5B 33SQ-GRXV-JJC
-77,1006.5,Bagby Street,Jones,James H.,Son,,,,Mu,M,12,None,,1920 5B 33SQ-GRXV-JJC
-78,1008.5,Bagby Street,Jones,Annie,Head,Rent,,,W,F,43,Assistant Cook At Hotel,,1920 5B 33SQ-GRXV-JJC
-79,1008.5,Bagby Street,Guenin,Frieda,Lodger,,,,W,F,32,Vegetable Cook At Hotel,,1920 5B 33SQ-GRXV-JJC
-80,1008.5,Bagby Street,Guenin,Orel,Lodger,,,,W,M,43,Painter At Buildings,,1920 5B 33SQ-GRXV-JJC
+75,1006,Bagby Street,Jones,Francine B.,Head,Rent,,,Mu,F,36,Seamstress At Home,1006.5,1920 5B 33SQ-GRXV-JJC
+76,1006,Bagby Street,Jones,Arthur,Son,,,,Mu,M,15,Delivery Boy At Drug Store,1006.5,1920 5B 33SQ-GRXV-JJC
+77,1006,Bagby Street,Jones,James H.,Son,,,,Mu,M,12,None,1006.5,1920 5B 33SQ-GRXV-JJC
+78,1008,Bagby Street,Jones,Annie,Head,Rent,,,W,F,43,Assistant Cook At Hotel,1008.5,1920 5B 33SQ-GRXV-JJC
+79,1008,Bagby Street,Guenin,Frieda,Lodger,,,,W,F,32,Vegetable Cook At Hotel,1008.5,1920 5B 33SQ-GRXV-JJC
+80,1008,Bagby Street,Guenin,Orel,Lodger,,,,W,M,43,Painter At Buildings,1008.5,1920 5B 33SQ-GRXV-JJC
 81,1010,Bagby Street,Smith,William O.W.,Head,Owned,Mortgaged,,W,M,38,Owner At Grocery Store,,1920 5B 33SQ-GRXV-JJC
 82,1010,Bagby Street,Smith,Lula M.,Wife,,,,W,F,32,Clerk At Grocery Store,,1920 5B 33SQ-GRXV-JJC
 83,1010,Bagby Street,Smith,William O.W. Jr.,Son,,,,W,M,5 and 9 months,None,,1920 5B 33SQ-GRXV-JJC
@@ -574,22 +574,22 @@
 73,316,Dallas Avenue ,Walker,Florence,Daughter,,,,W,F,27,Vocal Teacher At Music Company,,1920 6B 33SQ-GRXV-J2C
 74,316,Dallas Avenue ,Walker,Thomas G.,Son,,,,W,M,24,Truck Contractor At Government,,1920 6B 33SQ-GRXV-J2C
 75,316,Dallas Avenue ,Walker,Carrie Bell,Daughter,,,,W,F,20,Teacher At Dance,,1920 6B 33SQ-GRXV-J2C
-76,314.5,Dallas Avenue ,Washington,Will,Head,Rent,,,B,M,45,Mail Truck Driver At Post Office,,1920 6B 33SQ-GRXV-J2C
-77,314.5,Dallas Avenue ,Washinton,Annie M.,Daughter,,,,Mu,F,16,None,,1920 6B 33SQ-GRXV-J2C
-78,314.5,Dallas Avenue ,Smith,Lulee,Lodger,,,,B,F,40,Washerwoman At Home,,1920 6B 33SQ-GRXV-J2C
+76,314,Dallas Avenue ,Washington,Will,Head,Rent,,,B,M,45,Mail Truck Driver At Post Office,314.5,1920 6B 33SQ-GRXV-J2C
+77,314,Dallas Avenue ,Washinton,Annie M.,Daughter,,,,Mu,F,16,None,314.5,1920 6B 33SQ-GRXV-J2C
+78,314,Dallas Avenue ,Smith,Lulee,Lodger,,,,B,F,40,Washerwoman At Home,314.5,1920 6B 33SQ-GRXV-J2C
 79,314,Dallas Avenue ,Braun,Hugo,Head,Rent,,,W,M,41,Mechanic At Dairy Products Company,,1920 6B 33SQ-GRXV-J2C
 80,314,Dallas Avenue ,Braun,Marie,Wife,,,,W,F,43,Owner At Refreshment Store,,1920 6B 33SQ-GRXV-J2C
 81,314,Dallas Avenue ,Braun,Marie,Daughter,,,,W,F,18,Operator At Telephone Company,,1920 6B 33SQ-GRXV-J2C
 82,314,Dallas Avenue ,Braun,Pauline,Daughter,,,,W,F,16,Operator At Telephone Company,,1920 6B 33SQ-GRXV-J2C
 83,314,Dallas Avenue ,Braun,Henry,Son,,,,W,M,14,None,,1920 6B 33SQ-GRXV-J2C
-84,314.5,Dallas Avenue ,Starr,Alfred P.,Head,Rent,,,W,M,56,Park Keeper At City,,1920 6B 33SQ-GRXV-J2C
-85,314.5,Dallas Avenue ,Starr,Minie,Wife,,,,W,F,46,Garment Worker At Overall Factory,,1920 6B 33SQ-GRXV-J2C
-86,314.5,Dallas Avenue ,Starr,Adela,Daughter,,,,W,F,15,None,,1920 6B 33SQ-GRXV-J2C
-87,311.5,Dallas Avenue ,Sossaman ,John C. ,Head,Rent,,,W,M,24,Presser At Tailor Shop,,1920 6B 33SQ-GRXV-J2C
-88,311.5,Dallas Avenue ,Sossaman,Celine,Wife,,,,W,F,19,None,,1920 6B 33SQ-GRXV-J2C
-89,311.5,Dallas Avenue ,Sossaman,John C. Jr. ,Son,,,,W,M,5 months,None,,1920 6B 33SQ-GRXV-J2C
-90,311.5,Dallas Avenue ,Tonahill,James D.,Head,Rent,,,W,M,19,Electrician At Light And Power Company,,1920 6B 33SQ-GRXV-J2C
-91,311.5,Dallas Avenue ,Tonahill,Lura Lea,Wife,,,,W,F,19,Waitress At Coffee,,1920 6B 33SQ-GRXV-J2C
+84,314,Dallas Avenue ,Starr,Alfred P.,Head,Rent,,,W,M,56,Park Keeper At City,314.5,1920 6B 33SQ-GRXV-J2C
+85,314,Dallas Avenue ,Starr,Minie,Wife,,,,W,F,46,Garment Worker At Overall Factory,314.5,1920 6B 33SQ-GRXV-J2C
+86,314,Dallas Avenue ,Starr,Adela,Daughter,,,,W,F,15,None,314.5,1920 6B 33SQ-GRXV-J2C
+87,311,Dallas Avenue ,Sossaman ,John C. ,Head,Rent,,,W,M,24,Presser At Tailor Shop,311.5,1920 6B 33SQ-GRXV-J2C
+88,311,Dallas Avenue ,Sossaman,Celine,Wife,,,,W,F,19,None,311.5,1920 6B 33SQ-GRXV-J2C
+89,311,Dallas Avenue ,Sossaman,John C. Jr. ,Son,,,,W,M,5 months,None,311.5,1920 6B 33SQ-GRXV-J2C
+90,311,Dallas Avenue ,Tonahill,James D.,Head,Rent,,,W,M,19,Electrician At Light And Power Company,311.5,1920 6B 33SQ-GRXV-J2C
+91,311,Dallas Avenue ,Tonahill,Lura Lea,Wife,,,,W,F,19,Waitress At Coffee,311.5,1920 6B 33SQ-GRXV-J2C
 92,1204,Bagby Street,Williams,Samuel G. T.,Head,Rent,,,W,M,43,City Evangelist At Baptist Church,,1920 6B 33SQ-GRXV-J2C
 93,1204,Bagby Street,Williams,Emma,Wife,,,,W,F,33,Social Service Worker At Baptist Church,,1920 6B 33SQ-GRXV-J2C
 94,1204,Bagby Street,Williams,Madelon R.,Daughter,,,,W,F,9,None,,1920 6B 33SQ-GRXV-J2C
@@ -1134,23 +1134,23 @@
 33,910,San Felipe Street,Sims,May B.,Niece,,,,Mu,F,17,Nurse At Private Families,,1920 12A 33SQ-GRXV-JXG
 34,910,San Felipe Street,Taylor,Edwin,Nephew,,,,Mu,M,8,None,,1920 12A 33SQ-GRXV-JXG
 35,912,San Felipe Street,Reliford,Sidney H.,Head,Rent,,,Mu,M,47,Barber At Shop,,1920 12A 33SQ-GRXV-JXG
-36,912.5,San Felipe Street,Kelley,Samuel,Head,Rent,,,Mu,M,28,Tailor At Own Shop,,1920 12A 33SQ-GRXV-JXG
-37,912.5,San Felipe Street,Kelley,Daniel,Cousin,,,,Mu,M,20,Laborer At General,,1920 12A 33SQ-GRXV-JXG
+36,912,San Felipe Street,Kelley,Samuel,Head,Rent,,,Mu,M,28,Tailor At Own Shop,912.5,1920 12A 33SQ-GRXV-JXG
+37,912,San Felipe Street,Kelley,Daniel,Cousin,,,,Mu,M,20,Laborer At General,912.5,1920 12A 33SQ-GRXV-JXG
 38,916,San Felipe Street,Travis,Columbus,Head,Rent,,,Mu,M,54,Merchant At Produce,,1920 12A 33SQ-GRXV-JXG
 39,918,San Felipe Street,Jones,Ed,Head,Rent,,,Mu,M,38,Laborer At Common,,1920 12A 33SQ-GRXV-JXG
 40,918,San Felipe Street,Jones,Maggie,Wife,,,,Mu,F,25,Washwoman At Home,,1920 12A 33SQ-GRXV-JXG
 41,918,San Felipe Street,Sidney,John,Stepson,,,,Mu,M,10,None,,1920 12A 33SQ-GRXV-JXG
-42,918,San Felipe Street,Monroe,Hattie,Head,Rent,,,Mu,F,22,Waiter At Café,,1920 12A 33SQ-GRXV-JXG
+42,918,San Felipe Street,Monroe,Hattie,Head,Rent,,,Mu,F,22,Waiter At CafÃ©,,1920 12A 33SQ-GRXV-JXG
 43,918,San Felipe Street,Monroe,James,Son,,,,Mu,M,8,None,,1920 12A 33SQ-GRXV-JXG
 44,918,San Felipe Street,Johnson,Julia,Lodger,,,,Mu,F,22,Washwoman At Private Families,,1920 12A 33SQ-GRXV-JXG
 45,918,San Felipe Street,Jones,Willie,Lodger,,,,Mu,M,32,Laborer At Aviation Company,,1920 12A 33SQ-GRXV-JXG
 46,918,San Felipe Street,Wade,Dudley L.,Head,Rent,,,Mu,M,50,Owner At Pool Hall,,1920 12A 33SQ-GRXV-JXG
 47,918,San Felipe Street,Matthew,Neil,Lodger,,,,Mu,M,29,Manager At Pool Hall,,1920 12A 33SQ-GRXV-JXG
-48,920A,San Felipe Street,Williams,Ella,Head,Rent,,,Mu,F,34,Laborer At Seed House,,1920 12A 33SQ-GRXV-JXG
-49,920A,San Felipe Street,Brown,Frank,Lodger,,,,Mu,M,35,Repairer At Automobile Company,,1920 12A 33SQ-GRXV-JXG
-50,920B,San Felipe Street,Diggs,Alberta,Head,Rent,,,Mu,F,22,Washwoman At Private Families,,1920 12A 33SQ-GRXV-JXG
-51,920B,San Felipe Street,Lacey,Jessie M.,Lodger,,,,Mu,F,18,Cook At Café,,1920 12B 33S7-9RXV-JG5
-52,920B,San Felipe Street,Montgomery,William,Lodger,,,,Mu,M,27,Mechanic At Railroad Company,,1920 12B 33S7-9RXV-JG5
+48,920,San Felipe Street,Williams,Ella,Head,Rent,,,Mu,F,34,Laborer At Seed House,920A,1920 12A 33SQ-GRXV-JXG
+49,920,San Felipe Street,Brown,Frank,Lodger,,,,Mu,M,35,Repairer At Automobile Company,920A,1920 12A 33SQ-GRXV-JXG
+50,920,San Felipe Street,Diggs,Alberta,Head,Rent,,,Mu,F,22,Washwoman At Private Families,920B,1920 12A 33SQ-GRXV-JXG
+51,920,San Felipe Street,Lacey,Jessie M.,Lodger,,,,Mu,F,18,Cook At CafÃ©,920B,1920 12B 33S7-9RXV-JG5
+52,920,San Felipe Street,Montgomery,William,Lodger,,,,Mu,M,27,Mechanic At Railroad Company,920B,1920 12B 33S7-9RXV-JG5
 53,1000,San Felipe Street,Barber,Bell,Head,Rent,,,Mu,F,28,Washwoman At Home,,1920 12B 33S7-9RXV-JG5
 54,1000,San Felipe Street,Hayden,George,Lodger,,,,Mu,M,39,Laborer At Common,,1920 12B 33S7-9RXV-JG5
 55,1000,San Felipe Street,Black,Rogers,Head,Rent,,,B,M,22,Laborer At Common,,1920 12B 33S7-9RXV-JG5
@@ -1165,11 +1165,11 @@
 64,913,Valentine Street,Rankin,David H.,Head,Owned,Free,,Mu,M,50,Pastor At Colored Baptist Church,,1920 12B 33S7-9RXV-JG5
 65,913,Valentine Street,Rankin,Maggie,Wife,,,,Mu,F,49,None,,1920 12B 33S7-9RXV-JG5
 66,913,Valentine Street,Harrell,Adella,Niece,,,,Mu,F,11,None,,1920 12B 33S7-9RXV-JG5
-67,913new,Valentine Street,Dunlap,Louis,Head,Rent,,,Mu,M,60,Cook At Restaurant,,1920 12B 33S7-9RXV-JG5
-68,x,Valentine Street,Harrell,Jeff,Head,Rent,,,Mu,M,56,Farmer At Cotton And Corn,,1920 12B 33S7-9RXV-JG5
-69,913new,Valentine Street,Harrell,Ella,Wife,,,,B,F,39,None,,1920 12B 33S7-9RXV-JG5
-70,913.5,Valentine Street,Merrill,Fred,Head,Rent,,,Mu,M,69,Laborer At Common ,,1920 12B 33S7-9RXV-JG5
-71,913.5,Valentine Street,Lee,Oliver ,Lodger,,,,B,M,75,Glassier (Retired) At Buildings,,1920 12B 33S7-9RXV-JG5
+67,913,Valentine Street,Dunlap,Louis,Head,Rent,,,Mu,M,60,Cook At Restaurant,913new,1920 12B 33S7-9RXV-JG5
+68,0,Valentine Street,Harrell,Jeff,Head,Rent,,,Mu,M,56,Farmer At Cotton And Corn,x,1920 12B 33S7-9RXV-JG5
+69,913,Valentine Street,Harrell,Ella,Wife,,,,B,F,39,None,913new,1920 12B 33S7-9RXV-JG5
+70,913,Valentine Street,Merrill,Fred,Head,Rent,,,Mu,M,69,Laborer At Common ,913.5,1920 12B 33S7-9RXV-JG5
+71,913,Valentine Street,Lee,Oliver ,Lodger,,,,B,M,75,Glassier (Retired) At Buildings,913.5,1920 12B 33S7-9RXV-JG5
 72,907,Valentine Street,Bradford,Pearl,Head,Owned ,Free,,Mu,F,37,Laundress At Private Family,,1920 12B 33S7-9RXV-JG5
 73,907,Valentine Street,Baker,Caroline ,Mother,,,,Mu,F,58,None,,1920 12B 33S7-9RXV-JG5
 74,907,Valentine Street,Baker,Jeremiah M.,Father In Law,,,,Mu,M,68,Laborer At Paper Company,,1920 12B 33S7-9RXV-JG5
@@ -1180,7 +1180,7 @@
 79,907,Valentine Street,Chapman ,Jacques,Lodger,,,,Mu,M,24,Laborer At Common,,1920 12B 33S7-9RXV-JG5
 80,907,Valentine Street,Warner,George R.,Head,Rent,,,Mu,M,21,Laborer At Camp,,1920 12B 33S7-9RXV-JG5
 81,907,Valentine Street,Warner,Eleonora M.,Wife,,,,Mu,F,16,None,,1920 12B 33S7-9RXV-JG5
-82,905,Valentine Street,Minor,Evelyn,Head,Rent,,,Mu,F,32,Cook At Café,,1920 12B 33S7-9RXV-JG5
+82,905,Valentine Street,Minor,Evelyn,Head,Rent,,,Mu,F,32,Cook At CafÃ©,,1920 12B 33S7-9RXV-JG5
 83,905,Valentine Street,Gray,Eleonore ,Lodger,,,,Mu,F,23,Maid At Private Family,,1920 12B 33S7-9RXV-JG5
 84,822,Hardcastle Street,Gonder,Columbus,Head,Rent,,,Mu,M,22,Laborer At Brick Yard,,1920 12B 33S7-9RXV-JG5
 85,822,Hardcastle Street,Gonder,Ludella,Wife,,,,Mu,F,19,None,,1920 12B 33S7-9RXV-JG5
@@ -1204,7 +1204,7 @@
 3,820,Hardcastle Street,Hart,Will,Lodger,,,,Mu,M,55,Stableman At Laundry,,1920 13A 33S7-9RXV-JTX
 4,820,Hardcastle Street,Cloud,Rosie,Head,Rent,,,B,F,20,Worker At Laundry,gender unreadable,1920 13A 33S7-9RXV-JTX
 5,820,Hardcastle Street,Palmer,Georgia M.,Daughter,,,,Mu,F,9 months,None,,1920 13A 33S7-9RXV-JTX
-6,820.5,Hardcastle Street,Hightower,W. ,Head,Rent,,,Mu,M,50,Paperhanger At Houses,,1920 13A 33S7-9RXV-JTX
+6,820,Hardcastle Street,Hightower,W. ,Head,Rent,,,Mu,M,50,Paperhanger At Houses,820.5,1920 13A 33S7-9RXV-JTX
 7,818,Hardcastle Street,Woods,Henry,Head,Rent,,,Mu,M,47,Owner At Domino Hall,,1920 13A 33S7-9RXV-JTX
 8,818,Hardcastle Street,Woods,Ida V.,Wife ,,,,Mu,F,31,None,,1920 13A 33S7-9RXV-JTX
 9,818,Hardcastle Street,Randle,Ervie,Daughter,,,,Mu,F,21,Manicurist At Barber Shop,,1920 13A 33S7-9RXV-JTX
@@ -1216,7 +1216,7 @@
 15,818,Hardcastle Street,Austin,Mary,Lodger,,,,Mu,F,42,Beauty Culture At Homes,,1920 13A 33S7-9RXV-JTX
 16,818,Hardcastle Street,Murray,Louis,Head,Rent,,,Mu,M,48,Carpenter Help At Buildings,,1920 13A 33S7-9RXV-JTX
 17,818,Hardcastle Street,Murray,Nancy,Wife,,,,Mu,F,46,None,,1920 13A 33S7-9RXV-JTX
-18,818.5,Hardcastle Street,Stafford,Joseph H.,Head,Rent,,,Mu,M,64,Florist At Nursery ,,1920 13A 33S7-9RXV-JTX
+18,818,Hardcastle Street,Stafford,Joseph H.,Head,Rent,,,Mu,M,64,Florist At Nursery ,818.5,1920 13A 33S7-9RXV-JTX
 19,852,Arthur Street,Wilks,Della,Head,Rent,,,Mu,F,32,Maid At Shoe Store,,1920 13A 33S7-9RXV-JTX
 20,852,Arthur Street,Wilks,Bernie,Daughter,,,,Mu,F,13,None,,1920 13A 33S7-9RXV-JTX
 21,852,Arthur Street,Farnsworth,Peolia,Lodger,,,,Mu,M,23,Mechanic At Ford Plant,,1920 13A 33S7-9RXV-JTX
@@ -1226,7 +1226,7 @@
 25,850,Arthur Street,Moody,Alsie,Lodger,,,,B,M,37,Laborer At Common,,1920 13A 33S7-9RXV-JTX
 26,850,Arthur Street,Lewis,Jenie,Lodger,,,,B,M,39,Laborer At Common,,1920 13A 33S7-9RXV-JTX
 27,850,Arthur Street,Wild,Sam,Lodger,,,,Mu,M,34,Chauffer At Pipe Company,,1920 13A 33S7-9RXV-JTX
-28,850,Arthur Street,Winston,Marie,Lodger,,,,Mu,F,28,Cook At Café,,1920 13A 33S7-9RXV-JTX
+28,850,Arthur Street,Winston,Marie,Lodger,,,,Mu,F,28,Cook At CafÃ©,,1920 13A 33S7-9RXV-JTX
 29,850,Arthur Street,Brantley,Grace,Lodger,,,,Mu,F,19,Cook At Private Family,,1920 13A 33S7-9RXV-JTX
 30,850,Arthur Street,Cade,John,Head,Rent,,,Mu,M,24,Laborer At Common,,1920 13A 33S7-9RXV-JTX
 31,850,Arthur Street,Cade,Maggie,Wife,,,,Mu,F,24,None,,1920 13A 33S7-9RXV-JTX
@@ -1366,7 +1366,7 @@
 65,804,Crosby Street,Land,Ella,Wife,,,,Mu,F,46,Cook At Private Families,,1920 14B 33SQ-GRXV-J8R
 66,804,Crosby Street,Land,Marvin,Son,,,,Mu,M,13,Delivery Boy At Meat Market,,1920 14B 33SQ-GRXV-J8R
 67,804,Crosby Street,Ross,Jim,Lodger,,,,Mu,M,28,Washer At Laundry,,1920 14B 33SQ-GRXV-J8R
-68,804,Crosby Street,Smith,Elizah,Mother In Law,,,,Mu,F,73,Cook At Café,,1920 14B 33SQ-GRXV-J8R
+68,804,Crosby Street,Smith,Elizah,Mother In Law,,,,Mu,F,73,Cook At CafÃ©,,1920 14B 33SQ-GRXV-J8R
 69,804,Crosby Street,Roads,Vernon,Nephew,,,,Mu,M,12,None,,1920 14B 33SQ-GRXV-J8R
 70,804,Crosby Street,Sutton,Arthur,Head,Rent,,,Mu,M,47,Engineer At Stationery (Illegible),,1920 14B 33SQ-GRXV-J8R
 71,804,Crosby Street,Sutton,Anna,Wife,,,,Mu,F,22,Cook At Private Family ,,1920 14B 33SQ-GRXV-J8R
@@ -1391,11 +1391,11 @@
 90,847,Arthur Street,Hall,Jettie D.,Head,Rent,,,Mu,M,32,Laborer At Common,,1920 14B 33SQ-GRXV-J8R
 91,847,Arthur Street,Hall,Gertie,Wife,,,,Mu,F,28,Cook At Own Restaurant,,1920 14B 33SQ-GRXV-J8R
 92,847,Arthur Street,Anderson,Albert,Head,Rent,,,Mu,M,24,Laborer At Common,,1920 14B 33SQ-GRXV-J8R
-93,847,Arthur Street,Anderson,Mami,Wife,,,,Mu,F,19,Cook At Café,,1920 14B 33SQ-GRXV-J8R
+93,847,Arthur Street,Anderson,Mami,Wife,,,,Mu,F,19,Cook At CafÃ©,,1920 14B 33SQ-GRXV-J8R
 94,843,Arthur Street,Harris,Ora,Head,Rent,,,Mu,M,28,Truck Driver At Produce Company,,1920 14B 33SQ-GRXV-J8R
 95,843,Arthur Street,Harris,Marian,Wife,,,,Mu,F,28,None,,1920 14B 33SQ-GRXV-J8R
 96,843,Arthur Street,Mcclain,Rudolph,Stepson,,,,Mu,M,6,None,,1920 14B 33SQ-GRXV-J8R
-97,843,Arthur Street,Watson,Olivia,Lodger,,,,Mu,F,24,Waitress At Café,,1920 14B 33SQ-GRXV-J8R
+97,843,Arthur Street,Watson,Olivia,Lodger,,,,Mu,F,24,Waitress At CafÃ©,,1920 14B 33SQ-GRXV-J8R
 98,843,Arthur Street,Holmes,Wash,Lodger,,,,Mu,M,40,Cement Worker At Buildings,,1920 14B 33SQ-GRXV-J8R
 99,841,Arthur Street,Hacker,A. L.,Head,Rent,,,W,M,60,Overseer At Oil Pipe Line,,1920 14B 33SQ-GRXV-J8R
 100,841,Arthur Street,Roseland,Mary,Servant,,,,Mu,F,21,Servant At Private House,,1920 14B 33SQ-GRXV-J8R
@@ -1477,17 +1477,17 @@
 76,809,Crosby Street,Munson,Hurtch,Lodger,,,,B,M,35,Waiter At Restaurant,,1920 15B 33S7-9RXV-JTF
 77,614,Hobson Street,Brazette,Louis,Head,Rent,,,Mu,M,44,Straw Boss At Gas Plant,,1920 15B 33S7-9RXV-JTF
 78,614,Hobson Street,Brazette,Laura,Wife,,,,Mu,F,38,Washwoman At Home,,1920 15B 33S7-9RXV-JTF
-79,614,Hobson Street,Smith,James H.,Head,Rent,,,Mu,M,42,Cook At Café,,1920 15B 33S7-9RXV-JTF
-80,614,Hobson Street,Smith,Bejamina,Wife,,,,Mu,F,23,Cook At Café,,1920 15B 33S7-9RXV-JTF
-81,614.5,Hobson Street,Jones,George W.,Head,Rent,,,Mu,M,40,Laborer At Railway Freight,,1920 15B 33S7-9RXV-JTF
-82,614.5,Hobson Street,Jones,Charity,Wife,,,,Mu,F,41,Washwoman At Home,,1920 15B 33S7-9RXV-JTF
-83,614.5,Hobson Street,Sutton,Sam,Lodger,,,,B,M,39,Plumber At Buildings,,1920 15B 33S7-9RXV-JTF
+79,614,Hobson Street,Smith,James H.,Head,Rent,,,Mu,M,42,Cook At CafÃ©,,1920 15B 33S7-9RXV-JTF
+80,614,Hobson Street,Smith,Bejamina,Wife,,,,Mu,F,23,Cook At CafÃ©,,1920 15B 33S7-9RXV-JTF
+81,614,Hobson Street,Jones,George W.,Head,Rent,,,Mu,M,40,Laborer At Railway Freight,614.5,1920 15B 33S7-9RXV-JTF
+82,614,Hobson Street,Jones,Charity,Wife,,,,Mu,F,41,Washwoman At Home,614.5,1920 15B 33S7-9RXV-JTF
+83,614,Hobson Street,Sutton,Sam,Lodger,,,,B,M,39,Plumber At Buildings,614.5,1920 15B 33S7-9RXV-JTF
 84,612,Hobson Street,Allen,James R.,Head,Rent,,,Mu,M,52,Barber At Shop,,1920 15B 33S7-9RXV-JTF
 85,612,Hobson Street,Allen,Lily T.,Wife,,,,Mu,F,47,Washwoman At Home,,1920 15B 33S7-9RXV-JTF
 86,612,Hobson Street,Cole,Willis,Head,Rent,,,Mu,M,25,Laborer At Strect Railway,,1920 15B 33S7-9RXV-JTF
 87,612,Hobson Street,Cole,Orine,Wife,,,,B,F,16,None,,1920 15B 33S7-9RXV-JTF
-88,612.5,Hobson Street,Williams,Joseph B.,Head,Rent,,,B,M,47,Herb Doctor At General Practice,,1920 15B 33S7-9RXV-JTF
-89,612.5,Hobson Street,Williams,Gussie E.,Wife,,,,Mu,F,37,Hair Culture At Home,,1920 15B 33S7-9RXV-JTF
+88,612,Hobson Street,Williams,Joseph B.,Head,Rent,,,B,M,47,Herb Doctor At General Practice,612.5,1920 15B 33S7-9RXV-JTF
+89,612,Hobson Street,Williams,Gussie E.,Wife,,,,Mu,F,37,Hair Culture At Home,612.5,1920 15B 33S7-9RXV-JTF
 90,608,Hobson Street,Archer,Ed,Head,Rent,,,Mu,M,40,Laborer At Oil Mill,,1920 15B 33S7-9RXV-JTF
 91,608,Hobson Street,Archer,Mary,Wife,,,,B,F,38,Washwoman At Home,,1920 15B 33S7-9RXV-JTF
 92,608,Hobson Street,Archer,Ed Jr.,Son,,,,Mu,M,12,Laborer Help At Oil Mill ,,1920 15B 33S7-9RXV-JTF
@@ -1532,7 +1532,7 @@
 31,613,Hardcastle Street,Goss,Flotehie,Son,,,,Mu,M,5 and 2 months,None,,1920 16A 33SQ-GRXV-JFL
 32,615,Hardcastle Street,Rose,Mary,Head,Rent,,,Mu,F,26,Washwoman At Home,,1920 16A 33SQ-GRXV-JFL
 33,615,Hardcastle Street,Falls,Adline,Mother,,,,B,F,61,None,,1920 16A 33SQ-GRXV-JFL
-34,615,Hardcastle Street,Reed,Pearl,Lodger,,,,Mu,F,23,Cook At Café,,1920 16A 33SQ-GRXV-JFL
+34,615,Hardcastle Street,Reed,Pearl,Lodger,,,,Mu,F,23,Cook At CafÃ©,,1920 16A 33SQ-GRXV-JFL
 35,615,Hardcastle Street,Williams,Maud,Lodger,,,,Mu,F,19,Maid At Hotel,,1920 16A 33SQ-GRXV-JFL
 36,615,Hardcastle Street,Watson,Mack,Lodger,,,,B,M,27,Truck Driver At Lumber Company,,1920 16A 33SQ-GRXV-JFL
 37,615,Hardcastle Street,Goodman,Tillman,Lodger,,,,Mu,M,39,Truck Driver At Lumber Company,,1920 16A 33SQ-GRXV-JFL
@@ -1541,7 +1541,7 @@
 40,801,Heiner Street,Johnson,Linda,Lodger,,,,Mu,F,28,Washwoman At Home,,1920 16A 33SQ-GRXV-JFL
 41,801,Heiner Street,Blake,Easter,Lodger,,,,Mu,F,50,Washwoman At Private Family,,1920 16A 33SQ-GRXV-JFL
 42,801,Heiner Street,Moore,Ike,Lodger,,,,Mu,M,40,Dishwasher At Restaurant,,1920 16A 33SQ-GRXV-JFL
-43,801,Heiner Street,Williams,Ernest,Lodger,,,,Mu,M,34,Cook At Café,,1920 16A 33SQ-GRXV-JFL
+43,801,Heiner Street,Williams,Ernest,Lodger,,,,Mu,M,34,Cook At CafÃ©,,1920 16A 33SQ-GRXV-JFL
 44,805,Heiner Street,Morris,Frank,Head,Rent,,,Mu,M,36,Driver At Grocery Company,,1920 16A 33SQ-GRXV-JFL
 45,805,Heiner Street,Morris,Jessie,Wife,,,,Mu,F,28,Waiter At Restaurant,,1920 16A 33SQ-GRXV-JFL
 46,805,Heiner Street,Cooper,Allen B.,Stepdaughter,,,,Mu,F,15,None,,1920 16A 33SQ-GRXV-JFL
@@ -1550,7 +1550,7 @@
 49,805,Heiner Street,Smith,Leola,Wife,,,,Mu,F,22,None,,1920 16A 33SQ-GRXV-JFL
 50,805,Heiner Street,Tape,Julius,Head,Rent,,,Mu,M,38,Laborer At Concrete Works,,1920 16A 33SQ-GRXV-JFL
 51,805,Heiner Street,Tape,Mrs. Julius,Wife,,,,Mu,F,28,None,,1920 16B 33S7-9RXV-JR4
-52,809,Heiner Street,Brooks,Mattie,Head,Rent,,,Mu,F,36,Cook At Café,,1920 16B 33S7-9RXV-JR4
+52,809,Heiner Street,Brooks,Mattie,Head,Rent,,,Mu,F,36,Cook At CafÃ©,,1920 16B 33S7-9RXV-JR4
 53,809,Heiner Street,Sayles,Frank,Head,Rent,,,Mu,M,26,Laborer At Concrete Company,,1920 16B 33S7-9RXV-JR4
 54,809,Heiner Street,Sayles,Ella,Wife,,,,Mu,F,27,Cook At Private Families,,1920 16B 33S7-9RXV-JR4
 55,809,Heiner Street,Gaskino,Joe,Stepson,,,,Mu,M,17,Waiter At Hotel,,1920 16B 33S7-9RXV-JR4
@@ -1571,8 +1571,8 @@
 70,813,Heiner Street,Smith,Charlie,H. Brother,,,,Mu,M,31,Porter At Railway Depot,,1920 16B 33S7-9RXV-JR4
 71,815,Heiner Street,James,James M.,Head,Rent,,,Mu,M,36,Laborer At Foundry,,1920 16B 33S7-9RXV-JR4
 72,815,Heiner Street,Walker,Bettie,Sister,,,,Mu,F,38,Washwoman At Home,,1920 16B 33S7-9RXV-JR4
-73,815.5,Heiner Street,Washington,Will W.,Head,Rent,,,Mu,M,27,Carpenter Help At Buildings,,1920 16B 33S7-9RXV-JR4
-74,815.5,Heiner Street,Washington,Matilda,Wife,,,,Mu,F,23,Cook At Restaurant,,1920 16B 33S7-9RXV-JR4
+73,815,Heiner Street,Washington,Will W.,Head,Rent,,,Mu,M,27,Carpenter Help At Buildings,815.5,1920 16B 33S7-9RXV-JR4
+74,815,Heiner Street,Washington,Matilda,Wife,,,,Mu,F,23,Cook At Restaurant,815.5,1920 16B 33S7-9RXV-JR4
 75,520,Hobson Street,Price,James,Head,Rent,,,Mu,M,45,Switchman At Railway Yard,,1920 16B 33S7-9RXV-JR4
 76,520,Hobson Street,Price,Bessie,Wife,,,,Mu,F,38,None,,1920 16B 33S7-9RXV-JR4
 77,520,Hobson Street,Price,Emma,Daughter,,,,Mu,F,11,None,,1920 16B 33S7-9RXV-JR4
@@ -1636,7 +1636,7 @@
 35,809,Fuller Street,Taylor,Ed,Head,Rent,,,Mu,M,38,Assistant Warehouse At Refining Company,,1920 17A 33S7-9RXV-VS4
 36,809,Fuller Street,Taylor,Ella,Wife,,,,Mu,F,41,Owner At Grocery,,1920 17A 33S7-9RXV-VS4
 37,809,Fuller Street,Thomas,Magie,Daughter,,,,Mu,F,15,None,,1920 17A 33S7-9RXV-VS4
-38,809,Fuller Street,Taylor,Richard,Son,,,,Mu,M,21,Cook At Café,,1920 17A 33S7-9RXV-VS4
+38,809,Fuller Street,Taylor,Richard,Son,,,,Mu,M,21,Cook At CafÃ©,,1920 17A 33S7-9RXV-VS4
 39,512,Hardcastle Street,Spears,Ed,Head,Rent,,,Mu,M,36,Porter At Hotel,,1920 17A 33S7-9RXV-VS4
 40,512,Hardcastle Street,Spears,Carine,Wife,,,,Mu,F,29,Beauty Culturist At Parlor,,1920 17A 33S7-9RXV-VS4
 41,512,Hardcastle Street,One,Almstead B,Lodger,,,,Mu,M,27,Postel Clerk At Railway,,1920 17A 33S7-9RXV-VS4
@@ -1650,7 +1650,7 @@
 49,516,Hardcastle Street,Harris,Ed,Lodger,,,,B,M,43,Laborer At Cotton Compress,,1920 17A 33S7-9RXV-VS4
 50,516,Hardcastle Street,Dickson,Miles E.,Lodger,,,,B,M,40,Chauffeur At Service Care,,1920 17A 33S7-9RXV-VS4
 51,518,Hardcastle Street,Sharp,Joe,Head,Rent,,,Mu,M,38,Garbage Man City,,1920 17B 33S7-9RXV-JYH
-52,518,Hardcastle Street,Sharp,Modestie,Wife,,,,Mu,FM,45,None,,1920 17B 33S7-9RXV-JYH
+52,518,Hardcastle Street,Sharp,Modestie,Wife,,,,Mu,F,45,None,,1920 17B 33S7-9RXV-JYH
 53,518,Hardcastle Street,Washington,George Jr.,Lodger,,,,Mu,M,28,Laborer At City,,1920 17B 33S7-9RXV-JYH
 54,518,Hardcastle Street,Washington,Arthur,Lodger,,,,Mu,F,31,Garbage Man At City,,1920 17B 33S7-9RXV-JYH
 55,711,Fuller Street,Monson,Mary,Head,Rent,,,Mu,M,39,Washwoman At Private Families,,1920 17B 33S7-9RXV-JYH
@@ -1660,7 +1660,7 @@
 59,705,Fuller Street,Morris,Roy,Lodger,,,,B,F,28,Elevator Operator At Dry Goods Company,,1920 17B 33S7-9RXV-JYH
 60,703,Fuller Street,Jones,Justine,Head,Rent,,,Mu,M,28,Cook At Private Family,,1920 17B 33S7-9RXV-JYH
 61,703,Fuller Street,Jones,George,Brother,,,,Mu,M,23,Chauffeur At Service Car,,1920 17B 33S7-9RXV-JYH
-62,703.5,Fuller Street,Fillas,Ryan,Head,Rent,,,Mu,M,37,Brakeman At Railway,,1920 17B 33S7-9RXV-JYH
+62,703,Fuller Street,Fillas,Ryan,Head,Rent,,,Mu,M,37,Brakeman At Railway,703.5,1920 17B 33S7-9RXV-JYH
 63,701,Fuller Street,Fletcher,Hanson,Head,Rent,,,Mu,F,52,Barber At Shop,,1920 17B 33S7-9RXV-JYH
 64,701,Fuller Street,Fletcher,Mattie,Wife,,,,Mu,F,41,None,,1920 17B 33S7-9RXV-JYH
 65,701,Fuller Street,Duncan,Juanitta,Stepdaughter,,,,Mu,F,20,None,,1920 17B 33S7-9RXV-JYH
@@ -1677,7 +1677,7 @@
 76,704,House Street,Onel,William C.,Lodger,,,,Mu,M,21,Cook At Hotel,,1920 17B 33S7-9RXV-JYH
 77,704,House Street,Oneal,Kelly,Lodger,,,,Mu,M,19,Chauffeur At Private Family,,1920 17B 33S7-9RXV-JYH
 78,704,House Street,Bush,Ed,Lodger,,,,Mu,M,22,None,,1920 17B 33S7-9RXV-JYH
-79,704,House Street,Patten,Tom ,Head,Rent,,,Mu,M,27,Cook At Café,,1920 17B 33S7-9RXV-JYH
+79,704,House Street,Patten,Tom ,Head,Rent,,,Mu,M,27,Cook At CafÃ©,,1920 17B 33S7-9RXV-JYH
 80,704,House Street,Patten,Fannie,Wife,,,,Mu,F,28,Maid At Rooming House,,1920 17B 33S7-9RXV-JYH
 81,704,House Street,Patten,Roosevelt,Head,Rent,,,Mu,M,19,Cement Finisher At Concrete Works,,1920 17B 33S7-9RXV-JYH
 82,704,House Street,Patten,Alice,Wife,,,,Mu,F,20,Washwoman At Home,,1920 17B 33S7-9RXV-JYH
@@ -1752,7 +1752,7 @@
 51,702,Fuller Street,Virden,Chester,Head,Rent,,,Mu,M,22,Laborer At Railway Shop,,1920 18B 33SQ-GRXV-JX3
 52,702,Fuller Street,Virden,Frizella,Wife,,,,Mu,F,22,None,,1920 18B 33SQ-GRXV-JX3
 53,704,Fuller Street,Taylor,Katie,Head,Rent,,,Mu,F,29,Hairdresser At Home,,1920 18B 33SQ-GRXV-JX3
-54,704,Fuller Street,Nayo,James,Head,Rent,,,Mu,F,29,Cook At Café,,1920 18B 33SQ-GRXV-JX3
+54,704,Fuller Street,Nayo,James,Head,Rent,,,Mu,F,29,Cook At CafÃ©,,1920 18B 33SQ-GRXV-JX3
 55,704,Fuller Street,Nayo,Ruth,Wife,,,,Mu,F,24,Maid At Private Family,,1920 18B 33SQ-GRXV-JX3
 56,708,Fuller Street,Sims,Walter J.,Head,Rent,,,Mu,M,30,Peddler At Vegetables,,1920 18B 33SQ-GRXV-JX3
 57,708,Fuller Street,Sims,Ophelia,Wife,,,,Mu,F,29,None,,1920 18B 33SQ-GRXV-JX3
@@ -1770,8 +1770,8 @@
 69,608,Hardcastle Street,Lewis,Aleck,Father,,,,Mu,M,52,Teamster At Lumber Company,,1920 18B 33SQ-GRXV-JX3
 70,608,Hardcastle Street,Sutton,Henry,Lodger,,,,B,M,35,Switchman At Railway,,1920 18B 33SQ-GRXV-JX3
 71,610,Hardcastle Street,Williams,Sallie,Head,Rent,,,B,F,50,Washwoman At Home,,1920 18B 33SQ-GRXV-JX3
-72,610,Hardcastle Street,Valley,Emerson,Nephew,,,,Mu,M,20,Pantry Man At Café,,1920 18B 33SQ-GRXV-JX3
-73,610,Hardcastle Street,Lee,Bob,Lodger,,,,Mu,M,22,Pantry Man At Café,,1920 18B 33SQ-GRXV-JX3
+72,610,Hardcastle Street,Valley,Emerson,Nephew,,,,Mu,M,20,Pantry Man At CafÃ©,,1920 18B 33SQ-GRXV-JX3
+73,610,Hardcastle Street,Lee,Bob,Lodger,,,,Mu,M,22,Pantry Man At CafÃ©,,1920 18B 33SQ-GRXV-JX3
 74,610,Hardcastle Street,Williams,Rufus,Head,Rent,,,Mu,M,30,Driver At Market,,1920 18B 33SQ-GRXV-JX3
 75,610,Hardcastle Street,Williams,Carie,Wife,,,,Mu,F,23,Cleaner At Private Families,,1920 18B 33SQ-GRXV-JX3
 76,612,Hardcastle Street,Grabenheimer,Abe,Head,Rent,,,Mu,M,40,Porter At Dry Good Company,,1920 18B 33SQ-GRXV-JX3
@@ -1823,7 +1823,7 @@
 22,600,Heiner Street,Westbrook,Annie,Stepdaughter,,,,Mu,F,8,None,,1920 19A 33SQ-GRXV-JJB
 23,600,Heiner Street,Holton,Delish,Head,Rent,,,Mu,F,24,Assorter At Paper Factory,,1920 19A 33SQ-GRXV-JJB
 24,600,Heiner Street,Moore,John,Lodger,,,,Mu,M,38,Laborer At Common,,1920 19A 33SQ-GRXV-JJB
-25,600,Heiner Street,Shaw,Alice,Sister,,,,Mu,F,21,Waiter At Café,,1920 19A 33SQ-GRXV-JJB
+25,600,Heiner Street,Shaw,Alice,Sister,,,,Mu,F,21,Waiter At CafÃ©,,1920 19A 33SQ-GRXV-JJB
 26,600,Heiner Street,Jacob,Tom,Lodger,,,,B,M,50,Laborer At Concrete Walls,,1920 19A 33SQ-GRXV-JJB
 27,600,Heiner Street,Martin,Ike,Head,Rent,,,B,M,25,Laborer At Lumber Company,,1920 19A 33SQ-GRXV-JJB
 28,600,Heiner Street,Martin,Viola,Wife,,,,Mu,F,18,None,,1920 19A 33SQ-GRXV-JJB
@@ -1839,7 +1839,7 @@
 38,606,Heiner Street,Newson,Inola,Daughter,,,,Mu,F,8,None,,1920 19A 33SQ-GRXV-JJB
 39,606,Heiner Street,Newson,Urea,Daughter,,,,Mu,F,6,None,,1920 19A 33SQ-GRXV-JJB
 40,606,Heiner Street,Newson,Elbert,Son,,,,Mu,M,4,None,,1920 19A 33SQ-GRXV-JJB
-41,606,Heiner Street,Williams,Elizah,Lodger,,,,Mu,M,38,Cook At Café,,1920 19A 33SQ-GRXV-JJB
+41,606,Heiner Street,Williams,Elizah,Lodger,,,,Mu,M,38,Cook At CafÃ©,,1920 19A 33SQ-GRXV-JJB
 42,606,Heiner Street,Ambrose,Rosa,Lodger,,,,Mu,F,26,Cook At Private Family,,1920 19A 33SQ-GRXV-JJB
 43,606,Heiner Street,Harper,Evelyn,Lodger,,,,Mu,F,22,Ironer At Laundry,,1920 19A 33SQ-GRXV-JJB
 44,608,Heiner Street,Calton,Will,Head,Rent,,,B,M,24,Porter At Barber Shop,,1920 19A 33SQ-GRXV-JJB
@@ -1947,8 +1947,8 @@
 46,714,Heiner Street,Smith,Tom,Head,Rent,,,B,M,45,Cook At Cafe,,1920 20A 33S7-9RXV-VMQ
 47,714,Heiner Street,Smith,Beatrice,Wife,,,,Mu,F,22,Cook At Private Family,,1920 20A 33S7-9RXV-VMQ
 48,714,Heiner Street,Davis,Henry,Lodger,,,,Mu,M,27,Laborer At Common,,1920 20A 33S7-9RXV-VMQ
-49,714.5,Heiner Street,Woods,William,Head,Rent,,,Mu,M,68,Laborer At Buildings,,1920 20A 33S7-9RXV-VMQ
-50,714.5,Heiner Street,Woods,Minnie,Wife,,,,Mu,F,28,Washwoman At Home,,1920 20A 33S7-9RXV-VMQ
+49,714,Heiner Street,Woods,William,Head,Rent,,,Mu,M,68,Laborer At Buildings,714.5,1920 20A 33S7-9RXV-VMQ
+50,714,Heiner Street,Woods,Minnie,Wife,,,,Mu,F,28,Washwoman At Home,714.5,1920 20A 33S7-9RXV-VMQ
 51,716,Heiner Street,Butera,Mike,Head,Owned ,Free,,W,M,41,Butcher At Own Shop,,1920 20B 33S7-9RXV-V3R
 52,716,Heiner Street,Butera,Sylvia F.,Wife,,,,W,F,36,None,,1920 20B 33S7-9RXV-V3R
 53,716,Heiner Street,Butera,Joe,Son,,,,W,M,15,Mechanic At Buildings,,1920 20B 33S7-9RXV-V3R
@@ -2057,14 +2057,14 @@
 56,811,Rosetta Street,Conwell,Sarah,Head,Rent,,,W,F,48,Manager At Theatre,,1920 21B 33S7-9RXV-JRH
 57,811,Rosetta Street,Perkins,Magie,Boarder,,,,W,F,32,Housekeeper At Private Family,,1920 21B 33S7-9RXV-JRH
 58,811,Rosetta Street,Lorence,Albert,Nephew,,,,W,M,31,Asst. Manager At Theatre,,1920 21B 33S7-9RXV-JRH
-59,811.5,Rosetta Street,Madison,Bob,Head,Rent,,,B,M,45,Laborer At Lumber Company,,1920 21B 33S7-9RXV-JRH
-60,811.5,Rosetta Street,Madison,Alice,Wife,,,,Mu,F,38,Dressmaker At Home,,1920 21B 33S7-9RXV-JRH
-61,811.5,Rosetta Street,Madison,Willie M,Daughter,,,,Mu,F,20,Pianist At Theatre,,1920 21B 33S7-9RXV-JRH
-62,811.5,Rosetta Street,Madison,Marcellus,Son,,,,Mu,M,18,Cleaner At Tailor Shop,,1920 21B 33S7-9RXV-JRH
-63,811.5,Rosetta Street,Madison,Hortense,Daughter,,,,Mu,F,16,None,,1920 21B 33S7-9RXV-JRH
-64,811.5,Rosetta Street,Madison,Turner ,Head,Rent,,,B,M,23,Laborer At Box Factory,,1920 21B 33S7-9RXV-JRH
-65,811.5,Rosetta Street,Madison,Maggie,Wife,,,,B,F,19,Daily Work At Private Family,,1920 21B 33S7-9RXV-JRH
-66,811.5,Rosetta Street,Benbo,Richard,Lodger,,,,B,M,40,Laborer At Railway Company,,1920 21B 33S7-9RXV-JRH
+59,811,Rosetta Street,Madison,Bob,Head,Rent,,,B,M,45,Laborer At Lumber Company,811.5,1920 21B 33S7-9RXV-JRH
+60,811,Rosetta Street,Madison,Alice,Wife,,,,Mu,F,38,Dressmaker At Home,811.5,1920 21B 33S7-9RXV-JRH
+61,811,Rosetta Street,Madison,Willie M,Daughter,,,,Mu,F,20,Pianist At Theatre,811.5,1920 21B 33S7-9RXV-JRH
+62,811,Rosetta Street,Madison,Marcellus,Son,,,,Mu,M,18,Cleaner At Tailor Shop,811.5,1920 21B 33S7-9RXV-JRH
+63,811,Rosetta Street,Madison,Hortense,Daughter,,,,Mu,F,16,None,811.5,1920 21B 33S7-9RXV-JRH
+64,811,Rosetta Street,Madison,Turner ,Head,Rent,,,B,M,23,Laborer At Box Factory,811.5,1920 21B 33S7-9RXV-JRH
+65,811,Rosetta Street,Madison,Maggie,Wife,,,,B,F,19,Daily Work At Private Family,811.5,1920 21B 33S7-9RXV-JRH
+66,811,Rosetta Street,Benbo,Richard,Lodger,,,,B,M,40,Laborer At Railway Company,811.5,1920 21B 33S7-9RXV-JRH
 67,711,Rosetta Street,Miller,Ella V.,Head,Rent,,,Mu,F,36,Folder At Laundry,,1920 21B 33S7-9RXV-JRH
 68,711,Rosetta Street,Miller,Comerleet,Daughter,,,,Mu,F,15,None,,1920 21B 33S7-9RXV-JRH
 69,711,Rosetta Street,Miller,Dannie,Daughter,,,,Mu,F,9,None,,1920 21B 33S7-9RXV-JRH
@@ -2243,8 +2243,8 @@
 42,1202,San Felipe Street,Rio,Louis,Head,Rent,,,W,M,28,Owner At Grocery ,,1920 23A 33SQ-GRXV-JD5
 43,1202,San Felipe Street,Rio,Mamie,Wife,,,,W,F,22,Manager At Grocery,,1920 23A 33SQ-GRXV-JD5
 44,1202,San Felipe Street,Rio,Ned,Son,,,,W,M,5 and 4 months,None,,1920 23A 33SQ-GRXV-JD5
-45,1202.5,San Felipe Street,Farmer,Pinkie,Head,Rent,,,Mu,F,30,Washwoman At Home,,1920 23A 33SQ-GRXV-JD5
-46,1202.5,San Felipe Street,Bryant,Cornelius,Lodger,,,,Mu,M,30,Laborer At Ship Channel,,1920 23A 33SQ-GRXV-JD5
+45,1202,San Felipe Street,Farmer,Pinkie,Head,Rent,,,Mu,F,30,Washwoman At Home,1202.5,1920 23A 33SQ-GRXV-JD5
+46,1202,San Felipe Street,Bryant,Cornelius,Lodger,,,,Mu,M,30,Laborer At Ship Channel,1202.5,1920 23A 33SQ-GRXV-JD5
 47,1204,San Felipe Street,Thomas,William,Head,Rent,,,Mu,M,25,Truck Driver At Lumber Co.,,1920 23A 33SQ-GRXV-JD5
 48,1204,San Felipe Street,Thomas,Beatrice,Wife,,,,Mu,F,23,Washwoman At Home,,1920 23A 33SQ-GRXV-JD5
 49,1206,San Felipe Street,Fisher,Dave,Head,Rent,,,B,M,51,Painter At Houses,,1920 23A 33SQ-GRXV-JD5
@@ -2414,21 +2414,21 @@
 13,711,Lamb Street,Miller,Robert Jr,Son,,,,Mu,M,12,Helper At Auto Shop,,1920 25A 33SQ-GRXV-JZK
 14,711,Lamb Street,Miller,Herman,Son,,,,Mu,M,8,None,,1920 25A 33SQ-GRXV-JZK
 15,711,Lamb Street,Miller,Willie,Son,,,,Mu,M,10,None,,1920 25A 33SQ-GRXV-JZK
-16,711.5,Lamb Street,Smith,Pollie,Head,Rent,,,Mu,F,48,Nurse At Nursery,,1920 25A 33SQ-GRXV-JZK
-17,711.5,Lamb Street,Smith,Willie M,Daughter,,,,Mu,M,9,None,,1920 25A 33SQ-GRXV-JZK
-18,711.5,Lamb Street,Smith,Archie,Son,,,,Mu,M,11,Helper At Blacksmith Shop,,1920 25A 33SQ-GRXV-JZK
-19,711.5,Lamb Street,Smith,Robert,Son,,,,Mu,M,15,Driver At Woodyard,,1920 25A 33SQ-GRXV-JZK
-20,711.5,Lamb Street,Eagleton,Corine,Niece,,,,Mu,F,12,None,,1920 25A 33SQ-GRXV-JZK
-21,711.5,Lamb Street,Eagleton,Ethel,Niece,,,,Mu,F,11,None,,1920 25A 33SQ-GRXV-JZK
-22,711.5,Lamb Street,Miller,Hatie,Lodger,,,,Mu,F,28,Ironer At Laundry,,1920 25A 33SQ-GRXV-JZK
-23,711.5,Lamb Street,Paul,Katie,Head,Rent,,,Mu,F,28,Cook At Nursery,,1920 25A 33SQ-GRXV-JZK
-24,711.5,Lamb Street,Paul,Max M,Son,,,,Mu,M,3 months,None,,1920 25A 33SQ-GRXV-JZK
+16,711,Lamb Street,Smith,Pollie,Head,Rent,,,Mu,F,48,Nurse At Nursery,711.5,1920 25A 33SQ-GRXV-JZK
+17,711,Lamb Street,Smith,Willie M,Daughter,,,,Mu,M,9,None,711.5,1920 25A 33SQ-GRXV-JZK
+18,711,Lamb Street,Smith,Archie,Son,,,,Mu,M,11,Helper At Blacksmith Shop,711.5,1920 25A 33SQ-GRXV-JZK
+19,711,Lamb Street,Smith,Robert,Son,,,,Mu,M,15,Driver At Woodyard,711.5,1920 25A 33SQ-GRXV-JZK
+20,711,Lamb Street,Eagleton,Corine,Niece,,,,Mu,F,12,None,711.5,1920 25A 33SQ-GRXV-JZK
+21,711,Lamb Street,Eagleton,Ethel,Niece,,,,Mu,F,11,None,711.5,1920 25A 33SQ-GRXV-JZK
+22,711,Lamb Street,Miller,Hatie,Lodger,,,,Mu,F,28,Ironer At Laundry,711.5,1920 25A 33SQ-GRXV-JZK
+23,711,Lamb Street,Paul,Katie,Head,Rent,,,Mu,F,28,Cook At Nursery,711.5,1920 25A 33SQ-GRXV-JZK
+24,711,Lamb Street,Paul,Max M,Son,,,,Mu,M,3 months,None,711.5,1920 25A 33SQ-GRXV-JZK
 25,709,Lamb Street,Green,Nathan,Head,Rent,,,Mu,M,37,Welder At Streetcar Co,,1920 25A 33SQ-GRXV-JZK
 26,709,Lamb Street,Green,Jessie,Wife,,,,Mu,F,33,Ironer At Laundry,,1920 25A 33SQ-GRXV-JZK
-27,709.5,Lamb Street,Hobley,Keary,Head,Rent,,,Mu,M,21,Truck Driver At Produce Co.,,1920 25A 33SQ-GRXV-JZK
-28,709.5,Lamb Street,Hobley,Pearl,Wife,,,,Mu,F,17,None,,1920 25A 33SQ-GRXV-JZK
-29,709.5,Lamb Street,Morgan,Lucy,Mother In Law,,,,Mu,F,52,Cook At Private Family,,1920 25A 33SQ-GRXV-JZK
-30,709.5,Lamb Street,Campbell,Alfred,Brother In Law,,,,Mu,M,16,Wreck Car Helper Streetcar Co.,,1920 25A 33SQ-GRXV-JZK
+27,709,Lamb Street,Hobley,Keary,Head,Rent,,,Mu,M,21,Truck Driver At Produce Co.,709.5,1920 25A 33SQ-GRXV-JZK
+28,709,Lamb Street,Hobley,Pearl,Wife,,,,Mu,F,17,None,709.5,1920 25A 33SQ-GRXV-JZK
+29,709,Lamb Street,Morgan,Lucy,Mother In Law,,,,Mu,F,52,Cook At Private Family,709.5,1920 25A 33SQ-GRXV-JZK
+30,709,Lamb Street,Campbell,Alfred,Brother In Law,,,,Mu,M,16,Wreck Car Helper Streetcar Co.,709.5,1920 25A 33SQ-GRXV-JZK
 31,1219,Erickson Street,Brown,George,Head,Rent,,,B,M,49,Laborer At Buildings,,1920 25A 33SQ-GRXV-JZK
 32,1219,Erickson Street,Brown,Rosie,Wife,,,,B,F,38,Washwoman At Private Families,,1920 25A 33SQ-GRXV-JZK
 33,1219,Erickson Street,Brown,Vernon,Daughter,,,,B,F,17,None,,1920 25A 33SQ-GRXV-JZK
@@ -2516,9 +2516,9 @@
 15,903,Lamb Street,White,Julius,Husband,,,,Mu,M,31,Chauffeur At Auto Line,,1920 26A 33SQ-GRXV-J45
 16,903,Lamb Street,Walker,Nathaniel,Head,Rent,,,Mu,M,21,Laborer At Furniture Warsh ,,1920 26A 33SQ-GRXV-J45
 17,903,Lamb Street,Walker,Irene,Wife,,,,Mu,F,28,None,,1920 26A 33SQ-GRXV-J45
-18,600.5,Lamb Street,Johnson,Lila,Head,Rent,,,Mu,F,42,Washwoman At Home,,1920 26A 33SQ-GRXV-J45
-19,600.5,Lamb Street,Hodge,Josephine ,Mother,,,,Mu,F,80,None,,1920 26A 33SQ-GRXV-J45
-20,600.5,Lamb Street,Devall,Ed,Lodger,,,,Mu,M,60,Grave Digger At Cemetary Co,,1920 26A 33SQ-GRXV-J45
+18,600,Lamb Street,Johnson,Lila,Head,Rent,,,Mu,F,42,Washwoman At Home,600.5,1920 26A 33SQ-GRXV-J45
+19,600,Lamb Street,Hodge,Josephine ,Mother,,,,Mu,F,80,None,600.5,1920 26A 33SQ-GRXV-J45
+20,600,Lamb Street,Devall,Ed,Lodger,,,,Mu,M,60,Grave Digger At Cemetary Co,600.5,1920 26A 33SQ-GRXV-J45
 21,1215,Curtin Street,Abercromby,Ernestine,Head,Rent,,,Mu,M,33,Laborer At Buildings,,1920 26A 33SQ-GRXV-J45
 22,1215,Curtin Street,Owens,Hester,Lodger,,,,Mu,F,22,Cook At Private Families,,1920 26A 33SQ-GRXV-J45
 23,1216,High Street,Reed,Charity,Head,Rent,,,Mu,F,40,Cook At Private Families,,1920 26A 33SQ-GRXV-J45
@@ -2540,7 +2540,7 @@
 39,606,Lamb Street,Hall,Georg,Head,Rent,,,B,M,43,Plumber Help At Plumbing Co,,1920 26A 33SQ-GRXV-J45
 40,606,Lamb Street,Hall,Estelle,Wife,,,,Mu,F,17,None,,1920 26A 33SQ-GRXV-J45
 41,606,Lamb Street,Hall,Eliza,Daughter,,,,Mu,F,2 months,None,,1920 26A 33SQ-GRXV-J45
-42,608.5,Lamb Street,Brown,Rachel,Head,Rent,,,B,F,46,Laundress At Home,,1920 26A 33SQ-GRXV-J45
+42,608,Lamb Street,Brown,Rachel,Head,Rent,,,B,F,46,Laundress At Home,608.5,1920 26A 33SQ-GRXV-J45
 43,608,Lamb Street,Moore,King,Head,Rent,,,Mu,M,36,Laborer At Rice Mill,,1920 26A 33SQ-GRXV-J45
 44,608,Lamb Street,Moore,Polly,Wife,,,,Mu,F,30,None,,1920 26A 33SQ-GRXV-J45
 45,608,Lamb Street,Moore,Sedalia,Daughter,,,,Mu,F,10,None,,1920 26A 33SQ-GRXV-J45
@@ -2552,8 +2552,8 @@
 51,612,Lamb Street,Gondar,Mary,Wife,,,,Mu,F,23,Laundress At Home,,1920 26B 33SQ-GRXV-J4L
 52,612,Lamb Street,Hoxie,Henry,Nephew,,,,Mu,M,14,Junk Seller At City Dump,,1920 26B 33SQ-GRXV-J4L
 53,614,Lamb Street,Harl,George,Head,Rent,,,Mu,M,50,Driver At Soda Factory,,1920 26B 33SQ-GRXV-J4L
-54,Foot of,Timpson Street,Cooke,Adrian H,Head,Rent,,,W,M,35,Superintendent City Detention Camp,,1920 26B 33SQ-GRXV-J4L
-55,Foot of,Timpson Street,Cooke,Edna E,Wife,,,,W,F,37,None,,1920 26B 33SQ-GRXV-J4L
+54,0,Timpson Street,Cooke,Adrian H,Head,Rent,,,W,M,35,Superintendent City Detention Camp,Foot of,1920 26B 33SQ-GRXV-J4L
+55,0,Timpson Street,Cooke,Edna E,Wife,,,,W,F,37,None,Foot of,1920 26B 33SQ-GRXV-J4L
 56,704,Lamb Street,Summers,Stafford,Head,Owned,Free,,Mu,M,30,Laborer At Common,,1920 26B 33SQ-GRXV-J4L
 57,704,Lamb Street,Summers,Edith,Wife,,,,Mu,F,31,None,,1920 26B 33SQ-GRXV-J4L
 58,704,Lamb Street,Summers,Willie B,Daughter,,,,Mu,F,1 and 10 months,None,,1920 26B 33SQ-GRXV-J4L
@@ -2664,27 +2664,27 @@
 63,1402,San Felipe Street,Richardson,Vivian,Daughter,,,,Mu,F,5 and 3 months,None,,1920 27B 33SQ-GRXV-JWC
 64,1402,San Felipe Street,Johnson,North ,Head,Rent,,,Mu,M,30,Chauffeur At Private Family,,1920 27B 33SQ-GRXV-JWC
 65,1402,San Felipe Street,Johnson,Ellen,Wife,,,,Mu,F,29,Owner At Grocery,,1920 27B 33SQ-GRXV-JWC
-66,1402.5,San Felipe Street,Banks,Mabel,Head,Rent,,,Mu,F,34,Cook At Cafe,,1920 27B 33SQ-GRXV-JWC
-67,1402.5,San Felipe Street,Hanson,Reval,Daughter,,,,Mu,F,12,None,,1920 27B 33SQ-GRXV-JWC
-68,1402.5,San Felipe Street,Dotson,Ulysses S.,Lodger,,,,Mu,M,20,Dishwasher At Restaurant,,1920 27B 33SQ-GRXV-JWC
-69,1402.5,San Felipe Street,Howard,Walter,Lodger,,,,Mu,M,21,Cook At Restaurant,,1920 27B 33SQ-GRXV-JWC
-70,1402.5,San Felipe Street,Martin,Buddy,Lodger,,,,Mu,M,36,Cook At Restaurant,,1920 27B 33SQ-GRXV-JWC
-71,1402.5,San Felipe Street,Billups,Alfred,Head,Rent,,,Mu,M,30,Driver At Wholesale Grocery,,1920 27B 33SQ-GRXV-JWC
-72,1402.5,San Felipe Street,Billups,Connie,Wife,,,,Mu,F,30,Cook At Cafe,,1920 27B 33SQ-GRXV-JWC
-73,1402.5,San Felipe Street,Golston,Willie,Aunt,,,,Mu,F,31,Maid At Hotel,,1920 27B 33SQ-GRXV-JWC
-74,1402.5,San Felipe Street,Price,Mollie,Cousin,,,,Mu,F,47,Domestic At Private Families,,1920 27B 33SQ-GRXV-JWC
+66,1402,San Felipe Street,Banks,Mabel,Head,Rent,,,Mu,F,34,Cook At Cafe,1402.5,1920 27B 33SQ-GRXV-JWC
+67,1402,San Felipe Street,Hanson,Reval,Daughter,,,,Mu,F,12,None,1402.5,1920 27B 33SQ-GRXV-JWC
+68,1402,San Felipe Street,Dotson,Ulysses S.,Lodger,,,,Mu,M,20,Dishwasher At Restaurant,1402.5,1920 27B 33SQ-GRXV-JWC
+69,1402,San Felipe Street,Howard,Walter,Lodger,,,,Mu,M,21,Cook At Restaurant,1402.5,1920 27B 33SQ-GRXV-JWC
+70,1402,San Felipe Street,Martin,Buddy,Lodger,,,,Mu,M,36,Cook At Restaurant,1402.5,1920 27B 33SQ-GRXV-JWC
+71,1402,San Felipe Street,Billups,Alfred,Head,Rent,,,Mu,M,30,Driver At Wholesale Grocery,1402.5,1920 27B 33SQ-GRXV-JWC
+72,1402,San Felipe Street,Billups,Connie,Wife,,,,Mu,F,30,Cook At Cafe,1402.5,1920 27B 33SQ-GRXV-JWC
+73,1402,San Felipe Street,Golston,Willie,Aunt,,,,Mu,F,31,Maid At Hotel,1402.5,1920 27B 33SQ-GRXV-JWC
+74,1402,San Felipe Street,Price,Mollie,Cousin,,,,Mu,F,47,Domestic At Private Families,1402.5,1920 27B 33SQ-GRXV-JWC
 75,1406,San Felipe Street,Lott,Fletcher L.,Head,Rent,,,Mu,M,33,Owner At Cafe,,1920 27B 33SQ-GRXV-JWC
 76,1406,San Felipe Street,Lott,Bessie L,Wife,,,,Mu,F,22,None,,1920 27B 33SQ-GRXV-JWC
 77,1406,San Felipe Street,Lott,Milton A,Son,,,,Mu,M,13,None,,1920 27B 33SQ-GRXV-JWC
 78,1406,San Felipe Street,Lott,Ennis,Son,,,,Mu,M,12,None,,1920 27B 33SQ-GRXV-JWC
-79,1406.5,San Felipe Street,Harris,Elizabeth,Head,Rent,,,Mu,F,50,Washwoman At Home,,1920 27B 33SQ-GRXV-JWC
-80,1406.5,San Felipe Street,Harris,Arthur ,Son,,,,Mu,M,20,Chauffeur At Private Family,,1920 27B 33SQ-GRXV-JWC
-81,1406.5,San Felipe Street,Worden,Celestine,Daughter,,,,Mu,F,30,Washwoman At Home,,1920 27B 33SQ-GRXV-JWC
-82,1406.5,San Felipe Street,Brooks,Gus,Head,Rent,,,Mu,M,30,Truck Driver At Grocery,,1920 27B 33SQ-GRXV-JWC
-83,1406.5,San Felipe Street,Brooks,Evelyn,Wife,,,,Mu,F,30,Washwoman At Home,,1920 27B 33SQ-GRXV-JWC
-84,1406.5,San Felipe Street,Washington,Walter,Lodger,,,,Mu,M,24,Waiter At Cafe,,1920 27B 33SQ-GRXV-JWC
-85,1406.5,San Felipe Street,Lott,Ulysses,Head,Rent,,,Mu,M,23,Fireman At Stat. Boiler,,1920 27B 33SQ-GRXV-JWC
-86,1406.5,San Felipe Street,Lott,Ethel M,Wife,,,,Mu,F,21,None,,1920 27B 33SQ-GRXV-JWC
+79,1406,San Felipe Street,Harris,Elizabeth,Head,Rent,,,Mu,F,50,Washwoman At Home,1406.5,1920 27B 33SQ-GRXV-JWC
+80,1406,San Felipe Street,Harris,Arthur ,Son,,,,Mu,M,20,Chauffeur At Private Family,1406.5,1920 27B 33SQ-GRXV-JWC
+81,1406,San Felipe Street,Worden,Celestine,Daughter,,,,Mu,F,30,Washwoman At Home,1406.5,1920 27B 33SQ-GRXV-JWC
+82,1406,San Felipe Street,Brooks,Gus,Head,Rent,,,Mu,M,30,Truck Driver At Grocery,1406.5,1920 27B 33SQ-GRXV-JWC
+83,1406,San Felipe Street,Brooks,Evelyn,Wife,,,,Mu,F,30,Washwoman At Home,1406.5,1920 27B 33SQ-GRXV-JWC
+84,1406,San Felipe Street,Washington,Walter,Lodger,,,,Mu,M,24,Waiter At Cafe,1406.5,1920 27B 33SQ-GRXV-JWC
+85,1406,San Felipe Street,Lott,Ulysses,Head,Rent,,,Mu,M,23,Fireman At Stat. Boiler,1406.5,1920 27B 33SQ-GRXV-JWC
+86,1406,San Felipe Street,Lott,Ethel M,Wife,,,,Mu,F,21,None,1406.5,1920 27B 33SQ-GRXV-JWC
 87,1410,San Felipe Street,Bush,James,Head ,Owned,Free,,Mu,M,50,Barber At Own Shop,,1920 27B 33SQ-GRXV-JWC
 88,1410,San Felipe Street,Bush,Ruth,Wife,,,,Mu,F,54,None,,1920 27B 33SQ-GRXV-JWC
 89,1416,San Felipe Street,Ford,Ruby ,Head,Rent,,,Mu,F,25,Cook At Cafe,,1920 27B 33SQ-GRXV-JWC
@@ -2818,10 +2818,10 @@
 17,900,Golf Link Street,Jackson,Vera,Daughter,,,,Mu,F,5 and 6 months,None,,1920 29A 33S7-9RXV-JN5
 18,900,Golf Link Street,Sanders,Clare,Mother,,,,Mu,F,49,Cook At Private Families,,1920 29A 33S7-9RXV-JN5
 19,900,Golf Link Street,Matthew,Willie,Roomer,,,,B,M,36,,,1920 29A 33S7-9RXV-JN5
-20,no.,Golf Link Park,Jones,Richard L,Head,Rent,,,Mu,M,48,Renter At Farm,,1920 29A 33S7-9RXV-JN5
-21,no.,Golf Link Park,Birch,George,Stepfather,,,,Mu,M,62,Laborer At Lumber Yard,,1920 29A 33S7-9RXV-JN5
-22,no.,Golf Link Park,Birch,Rebecca,Mother In Law,,,,Mu,F,60,None,,1920 29A 33S7-9RXV-JN5
-23,no.,Golf Link Park,Bradford,Willie,Nephew,,,,B,M,21,Labor At Farm,,1920 29A 33S7-9RXV-JN5
+20,0,Golf Link Park,Jones,Richard L,Head,Rent,,,Mu,M,48,Renter At Farm,no.,1920 29A 33S7-9RXV-JN5
+21,0,Golf Link Park,Birch,George,Stepfather,,,,Mu,M,62,Laborer At Lumber Yard,no.,1920 29A 33S7-9RXV-JN5
+22,0,Golf Link Park,Birch,Rebecca,Mother In Law,,,,Mu,F,60,None,no.,1920 29A 33S7-9RXV-JN5
+23,0,Golf Link Park,Bradford,Willie,Nephew,,,,B,M,21,Labor At Farm,no.,1920 29A 33S7-9RXV-JN5
 24,1802,San Felipe Street,Pugh,Albert,Head,Rent,,,Mu,M,32,Hauling At Private Families,,1920 29A 33S7-9RXV-JN5
 25,1802,San Felipe Street,Pugh,Vennie,Wife,,,,B,F,33,None,,1920 29A 33S7-9RXV-JN5
 26,1802,San Felipe Street,Hunter,Robert,Lodger,,,,B,M,28,Laborer At Cemetery ,,1920 29A 33S7-9RXV-JN5
@@ -2895,8 +2895,8 @@
 94,1,San Felipe E. Railroad Street,Archie,James,Head,Rent,,,B,M,39,Finisher At Cement Walks Co.,,1920 29B 33S7-9RXV-J5X
 95,1,San Felipe E. Railroad Street,Archie,Annie,Wife,,,,Mu,F,39,Laundress At Private Families,,1920 29B 33S7-9RXV-J5X
 96,1,San Felipe E. Railroad Street,Sepher,Susie A.,Sister In Law,,,,B,F,42,Laundress At Home,,1920 29B 33S7-9RXV-J5X
-97,1.A.,San Felipe E. Railroad Street,Brown,Ray,Head,Rent,,,B,M,35,Laborer At Cement Walks Co,,1920 29B 33S7-9RXV-J5X
-98,1.A.,San Felipe E. Railroad Street,Brown,Sarah,Wife,,,,B,F,30,Laundress At Home,,1920 29B 33S7-9RXV-J5X
+97,1,San Felipe E. Railroad Street,Brown,Ray,Head,Rent,,,B,M,35,Laborer At Cement Walks Co,1.A.,1920 29B 33S7-9RXV-J5X
+98,1,San Felipe E. Railroad Street,Brown,Sarah,Wife,,,,B,F,30,Laundress At Home,1.A.,1920 29B 33S7-9RXV-J5X
 99,2,San Felipe E. Railroad Street,Washington,Louis,Head,Rent,,,Mu,M,49,Laborer At Foundry,,1920 29B 33S7-9RXV-J5X
 100,2,San Felipe E. Railroad Street,Washington,Sarah,Wife,,,,Mu,F,45,None,,1920 29B 33S7-9RXV-J5X
 1,1002,Bagby Street,Healer ,D. J. ,Head,Rent,,,W,M,26,Carman At Railway ,,1920 30A 33SQ-GRXV-JHD
@@ -2919,10 +2919,10 @@
 18,906,Fuller Street,Jones,Pinckney,Lodger,,,,B,M,23,Laborer At Oil Refinery,,1920 30A 33SQ-GRXV-JHD
 19,906,Fuller Street,Howard,William J.,Lodger,,,,B,M,Un.,Agent At Real Estate ,,1920 30A 33SQ-GRXV-JHD
 20,906,Fuller Street,Mare,Henry,Lodger,,,,Mu,M,70,Driver At Express,,1920 30A 33SQ-GRXV-JHD
-21,920C,San Felipe Street,Matthews,Paul,Head,Rent,,,Mu,M,25,Porter At Hotel,,1920 30A 33SQ-GRXV-JHD
-22,920C,San Felipe Street,Porter,Jessie,Lodger,,,,Mu,F,20,Cook At Private Family ,,1920 30A 33SQ-GRXV-JHD
-23,920B,San Felipe Street,Thomas,Sophie,Head,Rent,,,Mu,F,25,Washwoman At Private Families,,1920 30A 33SQ-GRXV-JHD
-24,920B,San Felipe Street,Harris,Erwin,Lodger,,,,Mu,M,30,Driver At Grocery Store,,1920 30A 33SQ-GRXV-JHD
+21,920,San Felipe Street,Matthews,Paul,Head,Rent,,,Mu,M,25,Porter At Hotel,920C,1920 30A 33SQ-GRXV-JHD
+22,920,San Felipe Street,Porter,Jessie,Lodger,,,,Mu,F,20,Cook At Private Family ,920C,1920 30A 33SQ-GRXV-JHD
+23,920,San Felipe Street,Thomas,Sophie,Head,Rent,,,Mu,F,25,Washwoman At Private Families,920B,1920 30A 33SQ-GRXV-JHD
+24,920,San Felipe Street,Harris,Erwin,Lodger,,,,Mu,M,30,Driver At Grocery Store,920B,1920 30A 33SQ-GRXV-JHD
 25,909,Timpson Street,Hines,Hattie,Head,Rent,,,Mu,F,29,Domestic At Hotel,,1920 30A 33SQ-GRXV-JHD
 26,909,Timpson Street,Bishop,Charles,Brother In Law,,,,Mu,M,18,Elevator Man At Hotel,,1920 30A 33SQ-GRXV-JHD
 27,909,Timpson Street,Bishop,Joshua,Brother In Law,,,,Mu,M,16,Porter At Confectionary,,1920 30A 33SQ-GRXV-JHD
@@ -3008,8 +3008,8 @@
 7,611,Hobson Street,Thompson,Hays,Lodger,,,,Mu,M,27,Laborer At Roads,,1920 31A 33SQ-GRXV-JWF
 8,611,Hobson Street,Myers,Alonzo,Lodger,,,,Mu,M,28,Laborer At Public Work,,1920 31A 33SQ-GRXV-JWF
 9,611,Hobson Street,Johnson,John L.,Lodger,,,,Mu,M,40,Waiter At Hotel,,1920 31A 33SQ-GRXV-JWF
-10,907.5,Crosby Street,Reynolds,Isaiah,Head,Rent,,,Mu,M,62,Yardman At Private Families,,1920 31A 33SQ-GRXV-JWF
-11,907.5,Crosby Street,Reynolds,Lewis G.,Son,,,,Mu,M,16,None,,1920 31A 33SQ-GRXV-JWF
+10,907,Crosby Street,Reynolds,Isaiah,Head,Rent,,,Mu,M,62,Yardman At Private Families,907.5,1920 31A 33SQ-GRXV-JWF
+11,907,Crosby Street,Reynolds,Lewis G.,Son,,,,Mu,M,16,None,907.5,1920 31A 33SQ-GRXV-JWF
 12,918,San Felipe Street,Kyles,Derby,Lodger,,,,Mu,M,29,Laborer At Public Work,,1920 31A 33SQ-GRXV-JWF
 13,918,San Felipe Street,Ghuy,Clarence,Lodger,,,,Mu,M,18,Laborer At Public Work,,1920 31A 33SQ-GRXV-JWF
 14,918,San Felipe Street,Stapleton,Ewell,Lodger,,,,Mu,M,23,Teamster At Hauling Co,,1920 31A 33SQ-GRXV-JWF
@@ -3131,9 +3131,9 @@
 30,709,Shipman Street,Mack,Bessie,Daughter,,,,Mu,F,23,Cook At Hotel,,1920 32A 33SQ-GRXV-JH4
 31,709,Shipman Street,Bralley,Oscar H.,Lodger,,,,Mu,M,30,Waiter At Rr Driving Car,,1920 32A 33SQ-GRXV-JH4
 32,709,Shipman Street,Turner ,Walter F.,Lodger,,,,Mu,M,31,Contractor At Electrical Work,,1920 32A 33SQ-GRXV-JH4
-33,1112.5,San Felipe Street,Rigues,Alfred,Head,Rent,,,Mu,M,34,Baker At Bakery,,1920 32A 33SQ-GRXV-JH4
-34,1112.5,San Felipe Street,Rigues,Amelia,Wife,,,,Mu,F,34,Maid At Private Families,,1920 32A 33SQ-GRXV-JH4
-35,1112.5,San Felipe Street,Taylor,Willie,Cousin,,,,Mu,M,29,Laborer At Freight House,,1920 32A 33SQ-GRXV-JH4
+33,1112,San Felipe Street,Rigues,Alfred,Head,Rent,,,Mu,M,34,Baker At Bakery,1112.5,1920 32A 33SQ-GRXV-JH4
+34,1112,San Felipe Street,Rigues,Amelia,Wife,,,,Mu,F,34,Maid At Private Families,1112.5,1920 32A 33SQ-GRXV-JH4
+35,1112,San Felipe Street,Taylor,Willie,Cousin,,,,Mu,M,29,Laborer At Freight House,1112.5,1920 32A 33SQ-GRXV-JH4
 36,918,Golf Link Street,Diles,Johnie,Head,Rent,,,Mu,M,31,Laborer At Rr Storeroom,,1920 32A 33SQ-GRXV-JH4
 37,918,Golf Link Street,Diles,Maggie,Wife,,,,Mu,F,34,Maid At Hotel,,1920 32A 33SQ-GRXV-JH4
 38,918,Golf Link Street,Mitchell,Hager,Mother In Law,,,,Mu,F,65,Laundress At Private Families,,1920 32A 33SQ-GRXV-JH4
@@ -3276,7 +3276,7 @@
 75,1112,San Felipe Street,Montalbo,Lois,Cousin,,,,Mu,F,19,Cook At Private Family,,1920 33B 33SQ-GRXV-J75
 76,914,Lamb Street,Gray,Herbert,Lodger,,,,B,M,26,Laborer At Buildings,,1920 33B 33SQ-GRXV-J75
 77,909,Lamb Street,Reed,Alfred,Lodger,,,,Mu,M,37,Plumbers Help At Construction Co,,1920 33B 33SQ-GRXV-J75
-78,711.5,Lamb Street,Young,Alberta,Lodger,,,,Mu,F,18,Laundry Worker At Laundry,,1920 33B 33SQ-GRXV-J75
+78,711,Lamb Street,Young,Alberta,Lodger,,,,Mu,F,18,Laundry Worker At Laundry,711.5,1920 33B 33SQ-GRXV-J75
 79,1211,Chambers Street,Mcneal,Lula,Lodger,,,,B,F,22,Dish Washer At Cafe,,1920 33B 33SQ-GRXV-J75
 80,1114,Chambers Street,Willson,Nenoy,Head,Rent,,,Mu,F,54,None,,1920 33B 33SQ-GRXV-J75
 81,1114,Chambers Street,Anderson,William,Nephew,,,,Mu,M,47,Switchman At Railway Co,,1920 33B 33SQ-GRXV-J75
