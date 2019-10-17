@@ -51,7 +51,7 @@ census_data = Base.classes.Census_Data
 @app.route("/")
 def index():
     """Return the homepage."""
-    return render_template("indexm.html")
+    return render_template("myindex.html")
 
 
 @app.route("/api/locations")
@@ -81,7 +81,8 @@ def locations():
     # req_loc = address_data[address_data.Latitude == 0]
 
     # Calculate lat/long using reference data
-    calc_loc_df["lat_lon"] = calc_loc_df[["StreetAddress"]].applymap(geo.find_closest)
+    calc_loc_df["lat_lon"] = calc_loc_df[[
+        "StreetAddress"]].applymap(geo.find_closest)
     # Update lat/long with the calculated values
     calc_loc_df["Latitude"] = calc_loc_df["lat_lon"].apply(lambda x: x[0])
     calc_loc_df["Longitude"] = calc_loc_df["lat_lon"].apply(lambda x: x[1])
@@ -169,5 +170,6 @@ def locations():
 
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
 
+    # DO SOMETHING
