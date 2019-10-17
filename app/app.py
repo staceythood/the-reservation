@@ -26,12 +26,6 @@ engine = create_engine(
     f"postgresql+psycopg2://postgres:Welcome1@18.222.106.38/Reservation"
 )
 
-# app.config[
-#     "SQLALCHEMY_DATABASE_URI"
-# ] = "postgresql+psycopg2://postgres:Welcome1@18.222.106.38/Reservation"
-# engine = create_engine(f"postgresql+psycopg2://postgres:olive314@localhost/Reservation")
-# db = SQLAlchemy(app)
-
 # reflect an existing database into a new model
 Base = automap_base()
 # reflect the tables
@@ -58,27 +52,17 @@ def index():
 def locations():
     """Return location data to be used in interactive leaflet map"""
 
-    # Create our session (link) from Python to the DB
-    session = Session(engine)
-
-    # Use Pandas to perform the sql query
-    # locations = session.query(address_data).all()
-
     # Create the locations dataframe with all data, including both statuses
     loc_df = pd.read_sql_table("Address_Data", con=engine)
-    print(loc_df.head())
+
     # Create a locations dataframe with only status of c(calculated) aka those without lat/long
-    calc_loc_df = loc_df[loc_df.Latitude == 0]
+    calc_loc_df = loc_df[loc_df.Status == "C"]
+    ref_loc_df = loc_df[loc_df.Status == "S"]
+    ref_loc_df = ref_loc_df.loc[:, ["Latitude", "Longitude", "StreetAddress"]]
     # calc_loc_df.to_json(orient="index")
 
     # Call the geocoder class
-    geo = Geocoder(calc_loc_df)
-    # # Retrieve data from DB
-    # select_st = 'select a."StreetAddress", a."Latitude", a."Longitude", a."AddressId", a."Status" \
-    #             from "Address_Data" a'
-    # address_data = pd.read_sql_query(select_st, con=engine)
-    # # Retrieve rows without lat long
-    # req_loc = address_data[address_data.Latitude == 0]
+    geo = Geocoder(ref_loc_df)
 
     # Calculate lat/long using reference data
     calc_loc_df["lat_lon"] = calc_loc_df[[
@@ -103,18 +87,33 @@ def locations():
     return jsonify(final_df)
 
 
-# @app.route("/savelocation", methods=["GET", "POST"])
-# def send_to_db():
-#     if method == "POST":
-#         addressid = request.form["addressid"]
-#         lat = request.form["latitude"]
-#         lng = request.form["longitude"]
+@app.route("/savelocation", methods=["GET", "POST"])
+def send_to_db():
+    if method == "POST":
+        addressid = request.form["addressid"]
+        lat = request.form["latitude"]
+        lng = request.form["longitude"]
 
-#         address = address(addressid=addressid, lat=latitude, lng=longitude)
-#         db.session.add(address)
-#         db.session.commit()
+        address = address(addressid=addressid, lat=latitude, lng=longitude)
+        db.session.add(address)
+        db.session.commit()
 
-#     return render_template("form.html")
+        loc_chg = [
+            {
+                "AddressId": 0,
+                "StreetAddress": "805 ARTHUR ST",
+                "Latitude": -95.3770205583,
+                "Longitude": 29.7584129942,
+                "Status": "S",
+            }
+        ]
+        for i in range(len(loc_chg)):
+            updt_st = f'update "Address_Data" set "Latitude" = {loc_chg[i]["Latitude"]}, "Longitude" = {loc_chg[i]["Longitude"]}, \
+            "Status" = \'S\' where "AddressId" = {loc_chg[i]["AddressId"]}'
+            print(updt_st)
+            engine.execute(updt_st)
+
+    return render_template("form.html")
 
 
 # @app.route("/api/census_data")

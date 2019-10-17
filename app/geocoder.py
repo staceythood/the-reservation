@@ -46,17 +46,17 @@ class Geocoder:
             return (0, 0)
 
         add_geo["StreetAddress"] = (
-            add_geo["StreetAddress"]
-            .str.split(" ", n=2, expand=True)[0]
-            .astype("int32")
+            add_geo["StreetAddress"].str.split(" ", n=2, expand=True)[0].astype("int32")
         )
         add_geo.sort_values(by="StreetAddress", inplace=True)
         add_geo.reset_index(inplace=True)
+
+        # if inp_add.to_upper() in add_geo["StreetAddress"].values():
+        #     return
         add_geo_list = add_geo["StreetAddress"].to_list()
 
         # Binary search for nearest neighbors in add_geo_list
         pos = bisect_left(add_geo_list, int(in_add_split[0]))
-
         # These 2 shouldn't come into play but just in case
         # If value == first item
         if pos == 0:
@@ -75,6 +75,7 @@ class Geocoder:
         # check for sort issues and return tuple with address
         if after - int(in_add_split[0]) < int(in_add_split[0]) - before:
             add = (int(in_add_split[0]), after, before)
+
             loc = (add_geo.iloc[pos, 1:3], add_geo.iloc[pos - 1, 1:3])
             output = self.dist_bet(add, loc)
             if stdout is True:
