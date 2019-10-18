@@ -52,7 +52,7 @@
 <body>
 
     <!--====== PRELOADER PART START ======-->
-<!-- 
+
     <div class="preloader">
         <div class="loader_34">
             <div class="ytp-spinner">
@@ -68,7 +68,7 @@
                 </div>
             </div>
         </div>
-    </div> -->
+    </div>
 
     <!--====== PRELOADER ENDS START ======-->
 
@@ -98,8 +98,6 @@
                     <div class="col-lg-12">
                         <br>
                         <br>
-                        <br>
-                        <br>
                         <nav class="navbar navbar-expand-lg">
                             <h1 class="banner-title mt-10 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1s">The Reservation</h1>
                             <!-- <a class="navbar-brand" href="#">
@@ -110,7 +108,6 @@
                                 <span class="toggler-icon"></span>
                                 <span class="toggler-icon"></span>
                             </button> -->
-
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <!-- <ul id="nav" class="navbar-nav ml-auto">
                                     <li class="nav-item active">
@@ -121,12 +118,6 @@
                                     </li>
                                     <li class="nav-item">
                                         <a class="page-scroll" href="#service">Services</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="page-scroll" href="#project">Projects</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="page-scroll" href="#team">Team</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="page-scroll" href="#contact">Contact</a>
@@ -143,39 +134,43 @@
         </div> <!-- navigation bar -->
 
         <div class="header-banner align-items-center">
-            <div class="container">
-                <div class="row">
-                    <div id="map">
-                    </div>
+            <section>
+                <div class="container">
+                    <div class="row" id='mapContainer'>
+                        <div id="map"></div>
                         <script class="banner-content bg_cover align-items-center" type="text/javascript" src="../static/js/logic.js"></script>
-                </div>
-                <br>
-                <select name="street dropdown" id="street_dropdown" onchange="doSomething()">
-                    <option value="default">Select Street</option>
-                    {% for street in street_dropdown %}
-                    <option value="{{ street['StreetAddress'] }}">{{ street['StreetAddress'].title() }}</option>
-                    {% endfor %}
-                </select>
-                <div id="coords">
-                <button class="main-btn mt-25 mb-5" onchange="doSomething()">Select</button>
-                </div>
+                    </div>
+                    <br>
+                    <div class="input-group">
+                        <select name="street dropdown" id="street_dropdown" style="margin-right: 20px;;"  onsubmit="doSomething()">
+                            <option value="default">Select Street</option>
+                                {% for street in street_dropdown %}
+                            <option value="{{ street['StreetAddress'] }}">{{ street['StreetAddress'].title() }}</option>
+                                {% endfor %}
+                        </select>
+                        <button class="main-btn mt-25 mb-5" type="submit" onclick="doSomething()">Select</button>
+                    
+                        <button class="main-btn mt-25 mb-5" type="submit" style="margin-left: 10px;" onclick="">Save</button>
+                    </div>
+            <div id="coords">
+            </div>
                 <script> function selectAddress(){
                     let street_select= document.getElementById('street_dropdown').value;
                     window.location.href='/filter/' +street_select;}
                 </script>
-            </div>
+        </div>
             <br>
             <br>
             <br>
             <br>
-        <!-- ===HERE IS WHERE WE PUT LEAFLET!!!!!!!!!!!!!!===-->
+            <!--===HERE IS WHERE WE PUT LEAFLET!!!!!!!!!!!!!!===-->
         <div class="header-banner d-flex align-items-center">
             <!-- <div class="container"> -->
                 <!-- <div class="row"> -->
                     <div class="col-xl-8 col-lg-9 col-sm-10">
                         <div class="banner-content">
                             <!-- <h1 class="banner-title mt-10 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1s">The Reservation</h1> -->
-                                <!-- <div id="map">
+                            <!-- <div id="map">
                                     <script class="banner-image bg_cover" type="text/javascript" src="../static/js/app.js"></script>
                                 </div>  -->
                         </div> 
@@ -187,11 +182,12 @@
     <br>
     <br>
     <br>
+</section>
     <!--====== HEADER PART ENDS ======-->
 
     <!--====== ABOUT PART START ======-->
 
-    <section id="about" class="about-area pt-80 pb-130">
+    <section id="about" class="about-area pt-80 pb-130 mt-50">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
@@ -211,10 +207,15 @@
                     <div class="about-content mt-45">
                         <h4 class="about-welcome">About</h4>
                         <h3 class="about-title mt-10">Reasons to map out</h3>
-                        <p class="mt-25">Today's Montrose neighborhood was once known as Freedmantown, the red-light district of Houston. 
+                        <p class="mt-25">Today's Montrose neighborhood was once known as Freedmantown, the Red-Light district of Houston. 
                             The reservation was established on March 31, 1908, and became the home to "fallen women" and business and 
-                            emancipated slaves. Freedmantown surroundings conditions weren't very desirable. The area was surrounded by two cemetaries, an infectious disease hospital
+                            emancipated slaves. Freedmantown surroundings conditions weren't very desirable due to its close proximity to two cemetaries, an infectious disease hospital
                             and the flooding prone Buffalo Bayou.</p>
+                            
+                        <p class="mt-25">In this extension of the project, the gathered Census data was uploaded into a SQL database for data querying and manipulation. 
+                            The data was projected onto a map to see the residential areas of the Red-Light district of Houston. The map allows one to call individual streets
+                            a look at the Census one point at the time. </p>
+
                             <br>
                         <a class="main-btn mt-25" href="https://www.arcgis.com/apps/Cascade/index.html?appid=2262a3c6c67e4f1ebd2261ca8f82a267">learn more</a>
                     </div> <!-- about content -->
@@ -306,7 +307,7 @@
                 </div>
             </div> <!-- row -->
         </div> <!-- container -->
-    </section> -->
+    </section>
 
     <!--====== SERVICES PART ENDS ======-->
 
@@ -427,7 +428,7 @@
                                 <li><a href="#"><i class="lni-twitter-original"></i></a></li>
                                 <li><a href="#"><i class="lni-linkedin-original"></i></a></li>
                             </ul>
-                        </div> --> -->
+                        </div> --> 
                     </div> <!-- single team -->
                 </div>
                 </div>

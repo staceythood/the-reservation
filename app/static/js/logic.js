@@ -1,5 +1,11 @@
 function doSomething() {
-  endpoint = d3.select("#street_dropdown").value;
+  d3.select("#map").remove();
+  d3.select("#mapContainer")
+    .append("div")
+    .attr("id", "map");
+
+  endpoint = document.getElementById("street_dropdown").value;
+  console.log(endpoint);
   d3.json("/filter/" + endpoint, function(data) {
     console.log(data);
     // Create our initial map object
@@ -21,11 +27,11 @@ function doSomething() {
 
     //Make Icons for map with color conditions:
     var greenIcon = L.icon({
-      iconUrl: "../static/images/green.png",
+      iconUrl: "../static/images/green-tick.png",
       iconSize: [30, 30]
     });
     var redIcon = L.icon({
-      iconUrl: "../static/images/red.png",
+      iconUrl: "../static/images/red-sphere.jpg",
       iconSize: [30, 30]
     });
     function colors(d) {
@@ -45,7 +51,7 @@ function doSomething() {
         radius: 5,
         draggable: true
       }).addTo(map);
-
+      //Adds the "new text"/ location onto the ID
       function addToTextBox(lt, ln) {
         d3.select("#coords")
           .append("p")
