@@ -5,9 +5,7 @@ function doSomething() {
     .attr("id", "map");
 
   endpoint = document.getElementById("street_dropdown").value;
-  console.log(endpoint);
   d3.json("/filter/" + endpoint, function(data) {
-    console.log(data);
     // Create our initial map object
     // Set the longitude, latitude, and the starting zoom level
     var map = L.map("map", {
@@ -27,12 +25,12 @@ function doSomething() {
 
     //Make Icons for map with color conditions:
     var greenIcon = L.icon({
-      iconUrl: "../static/images/green-tick.png",
-      iconSize: [30, 30]
+      iconUrl: "../static/images/green.png",
+      iconSize: [25, 25]
     });
     var redIcon = L.icon({
-      iconUrl: "../static/images/red-sphere.jpg",
-      iconSize: [30, 30]
+      iconUrl: "../static/images/red.png",
+      iconSize: [25, 25]
     });
     function colors(d) {
       if (d.Status === "L") {
@@ -45,7 +43,6 @@ function doSomething() {
     // Create markers
     // Pass in some initial options, and then add it to the map using the addTo method
     data.forEach(d => {
-      console.log(d.Latitude);
       var marker = L.marker([d.Longitude, d.Latitude], {
         icon: colors(d),
         radius: 5,
@@ -55,9 +52,11 @@ function doSomething() {
       function addToTextBox(lt, ln) {
         d3.select("#coords")
           .append("p")
-          .attr("class", "d-none")
-          .attr("id", "ID-" + d.AddressId);
-        d3.select("#ID-" + d.AddressId).text(lt + " ," + ln);
+          .attr("class", "d-none coords")
+          .attr("add-id", d.AddressId)
+          .attr("lat", lt)
+          .attr("lon", ln);
+        // d3.select("#ID-" + d.AddressId).text(lt + " ," + ln);
       }
       marker.on("dragend", function(event) {
         //alert('drag ended');
@@ -73,4 +72,11 @@ function doSomething() {
       marker.bindPopup(String(d.Longitude) + String(d.Latitude));
     });
   });
+}
+
+function onSave() {
+  //send new coords to sql:
+  let thing = document.getElementsByClassName("coords")[0];
+  let newThing = thing.getAttribute("lat");
+  console.log(newThing);
 }
