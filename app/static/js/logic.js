@@ -53,9 +53,11 @@ function doSomething() {
         d3.select("#coords")
           .append("p")
           .attr("class", "d-none coords")
-          .attr("add-id", d.AddressId)
-          .attr("lat", lt)
-          .attr("lon", ln);
+          .attr("AddressId", d.AddressId)
+          .attr("Latitude", lt)
+          .attr("Longitude", ln)
+          .attr("StreetAddress", d.StreetAddress);
+
         // d3.select("#ID-" + d.AddressId).text(lt + " ," + ln);
       }
       marker.on("dragend", function(event) {
@@ -75,10 +77,41 @@ function doSomething() {
 }
 
 function onSave() {
-  //send new coords to sql:
-  let thing = document.getElementsByClassName("coords").forEach(function(coord) {
-    return coord.getAttribute("lat");
+  d3.json("/", {
+    method: "POST",
+    body: JSON.stringify({
+      title: "Hello",
+      body: "_d3-fetch_ is it",
+      userId: 1,
+      friends: [2, 3, 4]
+    }),
+    headers: {
+      "Content-type": "application/json; charset=UTF-8"
+    }
+  }).then(json => {
+    svg
+      .append("text")
+      .text(JSON.stringify(json))
+      .attr("y", 200)
+      .attr("x", 120)
+      .attr("font-size", 16)
+      .attr("font-family", "monospace");
   });
+  //send new coords to sql:
+  let saved = document.getElementsByClassName("coords");
+
+  let i;
+  let coords = [];
+  for (i = 0; i < saved.length; i++) {
+    coords.push({
+      AddressId: saved[i].getAttribute("AddressId"),
+      StreetAddress: saved[i].getAttribute("StreetAddress"),
+      Latitude: saved[i].getAttribute("Latitude"),
+      Longitude: saved[i].getAttribute("Longitude"),
+      Status: "L"
+    });
+    coords[saved[i].getAttribute("add-id")] = [saved[i].getAttribute("lat"), saved[i].getAttribute("lon")];
+  }
   // let newThing = thing.getAttribute("lat");
-  console.log(thing);
+  console.log(coords);
 }
