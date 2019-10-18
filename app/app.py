@@ -53,12 +53,12 @@ geo = Geocoder(ref_loc_df)
 def index():
     """Render the dropdown with all streets for selection by performing a sql query on the database and taking just the street name"""
 
-    select_st = 'select distinct right("StreetAddress", (length("StreetAddress") - position(\' \' in "StreetAddress"))) \
+    select_st = 'select distinct right("StreetAddress", (length("StreetAddress") - position(\' \' in "StreetAddress"))) "StreetAddress"\
         from "Address_Data" a'
     street_df = pd.read_sql_query(select_st, con=engine)
 
     street_dropdown = street_df.to_dict(orient="records")
-
+    print(street_dropdown)
 
     '''Return the homepage.'''
     return render_template("indexm.html", street_dropdown=street_dropdown)
