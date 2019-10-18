@@ -21,8 +21,8 @@
 ===========================*/
 
 div#map {
-  height: 300px;
-  width: 400px;
+  height: 800px;
+  width: 100%;
 }
 
 @import url("https://fonts.googleapis.com/css?family=Barlow:300,400,500,600,700|Hind:400,500,600,700|Quattrocento:400,700");

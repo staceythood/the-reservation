@@ -6,38 +6,38 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Document</title>
     <!--Bootstrap CSS-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
     <!--Responsive Bootstrap-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> -->
 
-    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <!-- <script src="https://d3js.org/d3.v5.min.js"></script> -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" />
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.3/d3.min.js"></script>
     <script src="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.js"></script>
     <!--API KEY-->
     <script type="text/javascript" src="../static/js/config.js"></script>
+    <link rel="stylesheet" href="../static/css/style.css" />
 
     <!--bootstrap Js stuff-->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
       integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
       integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-
-
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
   </head>
   <body>
+    <div id="map"></div>
     <section id="Title">
       <div class="header-banner d-flex align items-center">
         <div class="container">
           <div class="row">
             <div class="col-xl-8 col-lg-9 col-sm-10">
               <div class="banner-content">
-                <br>
-                <br>
-                <br>
+                <br />
+                <br />
+                <br />
                 <h1 class="banner-title">The Reservation</h1>
                 <select>
                   <option value="1">Drop down 2</option>
@@ -53,54 +53,61 @@
     <section id="leaflet">
       <div class="container">
         <!-- <div class="display-3"> -->
-          <div class="row">
-            <div class="col-xl-8 col-lg-9 col-sm-10">
-              <!-- <div class="banner-content"> -->
-                <br>
-                <br>
-                <br>
-                <div id="map"></div>
-                <script type="text/javascript" src="../static/js/logic.js"></script>
-              <!-- </div> -->
-            </div>
+        <div class="row">
+          <div class="col-xl-8 col-lg-9 col-sm-10">
+            <!-- <div class="banner-content"> -->
+            <br />
+            <br />
+            <br />
+            <!-- <div id="map"></div> -->
+            <script type="text/javascript" src="../static/js/logic.js"></script>
+            <!-- </div> -->
           </div>
+        </div>
         <!-- </div> -->
       </div>
     </section>
 
-    
     <div class="container-fluid">
       <div class="row">
-
-        
         <section id="About">
           <div class="col-lg-5">
             <div class="about-content mt-45">
               <h4 class="about-welcome">About</h4>
               <h3 class="about-title mt-10">Reasons to map out</h3>
-              <p class="mt-25 justify-content-end">Today's Montrose neighborhood was once known as Freedmantown, the red-light district of Houston.
-                The reservation was established on March 31, 1908, and became the home to "fallen women" and business and
-                emancipated slaves. Freedmantown surroundings conditions weren't very desirable. The area was surrounded by two
-                cemetaries, an infectious disease hospital
-                and the flooding prone Buffalo Bayou.</p>
-                <br>
-                <br>
-                <button type="button" class="btn btn-primary mt-25" href="https://www.arcgis.com/apps/Cascade/index.html?appid=2262a3c6c67e4f1ebd2261ca8f82a267">Learn more</button>
-              </div>
+              <p class="mt-25 justify-content-end">
+                Today's Montrose neighborhood was once known as Freedmantown, the red-light district of Houston. The
+                reservation was established on March 31, 1908, and became the home to "fallen women" and business and
+                emancipated slaves. Freedmantown surroundings conditions weren't very desirable. The area was surrounded
+                by two cemetaries, an infectious disease hospital and the flooding prone Buffalo Bayou.
+              </p>
+              <br />
+              <br />
+              <button
+                type="button"
+                class="btn btn-primary mt-25"
+                href="https://www.arcgis.com/apps/Cascade/index.html?appid=2262a3c6c67e4f1ebd2261ca8f82a267"
+              >
+                Learn more
+              </button>
             </div>
-          </section>
-          
-          <section id="About Pics">
-            <div class="container about-area pt-80 pb-130">
-              <div class="col-lg-5">
-                <div class="about-image mt-50 clearfix">
-                  <div class="single-image float-left"><img src="../static/images/1944view.PNG" alt="About"></div>
-                  <div class="single-image image-tow float-right"><img src="../static/images/stitched (2).png" alt="About"></div>
-                </div>
-              </div>
-            </section> 
-            
+          </div>
+        </section>
+
+        <!-- <section id="About Pics"> -->
+        <div class="container about-area pt-80 pb-130">
+          <div class="col-lg-5">
+            <div class="about-image mt-50 clearfix">
+            <div class="single-image float-left">
+              <img src="../static/images/1944view.PNG" alt="About" style="size:100px;" />
+            </div>
+            <div class="single-image image-tow float-right">
+              <img src="../static/images/stitched (2).png" alt="About" style="size:100px;" />
+            </div>
           </div>
         </div>
+        <!-- </section>  -->
+      </div>
+    </div>
   </body>
 </html>

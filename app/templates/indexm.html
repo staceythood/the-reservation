@@ -19,18 +19,19 @@
 
     <!--====== Bootstrap css ======-->
     <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" />
 
     <!--====== Fontawesome css ======-->
-    <!-- <link rel="stylesheet" href="../static/css/font-awesome.min.css"> -->
+    <link rel="stylesheet" href="../static/css/font-awesome.min.css">
 
     <!--====== Line Icons css ======-->
-    <!-- <link rel="stylesheet" href="../static/css/LineIcons.css"> -->
+    <link rel="stylesheet" href="../static/css/LineIcons.css">
 
     <!-- ====== Animate css ====== -->
-    <!-- <link rel="stylesheet" href="../static/css/animate.css"> -->
+    <link rel="stylesheet" href="../static/css/animate.css">
 
     <!--====== Aos css ======-->
-    <!-- <link rel="stylesheet" href="../static/css/aos.css"> -->
+    <link rel="stylesheet" href="../static/css/aos.css">
 
     <!--====== Slick css ======-->
     <link rel="stylesheet" href="../static/css/slick.css">
@@ -44,7 +45,7 @@
     <script src="https://d3js.org/d3.v5.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.3/d3.min.js"></script>
     <script src="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.js"></script>
-    <script type="text/javascript" src="static/js/config.js"></script>
+    <script type="text/javascript" src="../static/js/config.js"></script>
 
 </head>
 
@@ -100,6 +101,7 @@
                         <br>
                         <br>
                         <nav class="navbar navbar-expand-lg">
+                            <h1 class="banner-title mt-10 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1s">The Reservation</h1>
                             <!-- <a class="navbar-brand" href="#">
                                 <img src="../static/images/logo.png" alt="Logo">
                             </a> -->
@@ -143,29 +145,38 @@
         <div class="header-banner align-items-center">
             <div class="container">
                 <div class="row">
-                    <div id="screw you javascript">
+                    <div id="map">
                     </div>
-                    <canvas id="map" width="500px" height="500px">
-                    </canvas>
-                            <script class="banner-content bg_cover" type="text/javascript" src="../static/js/logic.js"style="500px"></script>
-
+                        <script class="banner-content bg_cover align-items-center" type="text/javascript" src="../static/js/logic.js"></script>
+                </div>
+                <br>
+                <select name="street dropdown" id="street_dropdown">
+                    {% for street in street_dropdown %}
+                    <option value="{{street['StreetAddress']}}">{{ street['StreetAddress'] }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+            <br>
+            <br>
         <!-- ===HERE IS WHERE WE PUT LEAFLET!!!!!!!!!!!!!!===-->
         <div class="header-banner d-flex align-items-center">
-            <div class="container">
-                <div class="row">
+            <!-- <div class="container"> -->
+                <!-- <div class="row"> -->
                     <div class="col-xl-8 col-lg-9 col-sm-10">
                         <div class="banner-content">
-                            <h1 class="banner-title mt-10 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1s">The Reservation</h1>
+                            <!-- <h1 class="banner-title mt-10 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1s">The Reservation</h1> -->
                                 <!-- <div id="map">
                                     <script class="banner-image bg_cover" type="text/javascript" src="../static/js/app.js"></script>
                                 </div>  -->
                         </div> 
                     </div>
-                </div> <!-- row -->
-            </div> <!-- container -->
-        </div><!-- banner-->
+                </div> 
+            </div> 
+        </div>  
     </header>
-
+    <br>
+    <br>
+    <br>
     <!--====== HEADER PART ENDS ======-->
 
     <!--====== ABOUT PART START ======-->

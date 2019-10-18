@@ -45,7 +45,7 @@ census_data = Base.classes.Census_Data
 @app.route("/")
 def index():
     """Return the homepage."""
-    return render_template("myindex.html")
+    return render_template("indexm.html")
 
 
 @app.route("/api/locations")
