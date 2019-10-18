@@ -153,7 +153,7 @@
                 <select name="street dropdown" id="street_dropdown" onchange="doSomething()">
                     <option value="default">Select Street</option>
                     {% for street in street_dropdown %}
-                    <option value="{{ street['right'] }}">{{ street['right'].title() }}</option>
+                    <option value="{{ street['StreetAddress'] }}">{{ street['StreetAddress'].title() }}</option>
                     {% endfor %}
                 </select>
                 <div id="coords">
