@@ -51,40 +51,39 @@ geo = Geocoder(ref_loc_df)
 # Route to render index.html template using data from db
 @app.route("/")
 def index():
-    """Render the dropdown with all streets for selection by performing a sql query on the database and taking just the street name"""
+    """Returns all street names to populate street name dropdown in HTML for selection"""
 
+    # select only StreetAddress and get rid of the number and return only unique values
     select_st = 'select distinct right("StreetAddress", (length("StreetAddress") - position(\' \' in "StreetAddress"))) "StreetAddress"\
         from "Address_Data" a'
     street_df = pd.read_sql_query(select_st, con=engine)
 
+    # Convert the dataframe into a dictionary
     street_dropdown = street_df.to_dict(orient="records")
-    print(street_dropdown)
 
-    '''Return the homepage.'''
+    '''Return the homepage'''
     return render_template("indexm.html", street_dropdown=street_dropdown)
 
 
 @app.route("/api/locations")
 def locations():
-    """Return location data to be used in interactive leaflet map"""
+    """Return all location data to be used in interactive leaflet map"""
 
-    # Create the locations dataframe with all data, including both statuses
+    # Create the locations dataframe with all data (all statuses -- S, C, L -- are included)
     loc_df = pd.read_sql_table("Address_Data", con=engine)
 
     # Create a locations dataframe with only status of c(calculated) aka those without lat/long
     calc_loc_df = loc_df[loc_df.Status == "C"]
 
-    # calc_loc_df.to_json(orient="index")
-
     # Calculate lat/long using reference data
     calc_loc_df["lat_lon"] = calc_loc_df[[
         "StreetAddress"]].applymap(geo.find_closest)
-    # Update lat/long with the calculated values
+    # Update columns lat/long with the calculated values
     calc_loc_df["Latitude"] = calc_loc_df["lat_lon"].apply(lambda x: x[0])
     calc_loc_df["Longitude"] = calc_loc_df["lat_lon"].apply(lambda x: x[1])
     # Drop the additional column
     calc_loc_df = calc_loc_df.drop(columns=["lat_lon"])
-    # Include indices for the "merge"
+    # Include indices for "merge"
     loc_df = loc_df.reset_index()
     calc_loc_df = calc_loc_df.reset_index()
     loc_df = pd.concat([loc_df, calc_loc_df], sort=False).drop_duplicates(
@@ -93,6 +92,7 @@ def locations():
     # clean the final df
     loc_df = loc_df.drop(columns=["index"]).reset_index(drop=True)
 
+    # Convert the dataframe into a dictionary
     final_df = loc_df.to_dict(orient="records")
 
     # Return a JSON list of all locations including those with both statuses
@@ -101,17 +101,20 @@ def locations():
 
 @app.route("/filter/<street>", methods=["GET", "POST"])
 def filter_street(street):
-    """Return the locations on the map for a given street selected."""
+    """Return all locations for a given street."""
 
     if request.method == "POST":
         street = request.form["street"]
 
+    # Create the locations dataframe with all data
     loc_df = pd.read_sql_table("Address_Data", con=engine)
 
+    # Filter locations, only those on the required street 
     bool_idx = loc_df["StreetAddress"].str.contains(
         street, flags=re.IGNORECASE, regex=True)
     ref_loc_df = loc_df[bool_idx]
 
+    # Determine which ones require lat/long calculation
     calc_loc_df = ref_loc_df[ref_loc_df.Status == "C"]
 
     # Calculate lat/long using reference data
@@ -131,6 +134,7 @@ def filter_street(street):
     # clean the final df
     ref_loc_df = ref_loc_df.drop(columns=["index"]).reset_index(drop=True)
 
+    # Convert the dataframe into a dictionary
     final_df = ref_loc_df.to_dict(orient="records")
 
     return jsonify(final_df)
