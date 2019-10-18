@@ -103,8 +103,8 @@ def filter_street(street):
     
     """Return the locations on the map for a given street selected."""
     
-    # if request.method == "POST":
-    #     street = request.form["street"]
+    if request.method == "POST":
+        street = request.form["street"]
     
     loc_df = pd.read_sql_table("Address_Data", con=engine)
 
