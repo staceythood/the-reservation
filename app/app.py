@@ -41,7 +41,7 @@ loc_df = pd.read_sql_table("Address_Data", con=engine)
 # Create a locations dataframe with reference/seeded/locked locations
 ref_loc_df = loc_df[loc_df.Status == "S"]
 ref_loc_df = ref_loc_df.loc[:, ["Latitude", "Longitude", "StreetAddress"]]
- # Call the geocoder class
+# Call the geocoder class
 geo = Geocoder(ref_loc_df)
 
 #################################################
@@ -58,7 +58,7 @@ def index():
     street_df = pd.read_sql_query(select_st, con=engine)
 
     street_dropdown = street_df.to_dict(orient="records")
-    
+    print(street_dropdown)
 
     '''Return the homepage.'''
     return render_template("indexm.html", street_dropdown=street_dropdown)
@@ -67,13 +67,13 @@ def index():
 @app.route("/api/locations")
 def locations():
     """Return location data to be used in interactive leaflet map"""
-    
+
     # Create the locations dataframe with all data, including both statuses
     loc_df = pd.read_sql_table("Address_Data", con=engine)
 
     # Create a locations dataframe with only status of c(calculated) aka those without lat/long
     calc_loc_df = loc_df[loc_df.Status == "C"]
-    
+
     # calc_loc_df.to_json(orient="index")
 
     # Calculate lat/long using reference data
@@ -101,47 +101,46 @@ def locations():
 
 @app.route("/filter/<street>", methods=["GET", "POST"])
 def filter_street(street):
-    
     """Return the locations on the map for a given street selected."""
-    
+
     # if request.method == "POST":
     #     street = request.form["street"]
-    
+
     loc_df = pd.read_sql_table("Address_Data", con=engine)
 
     ref_loc_df = loc_df["StreetAddress"].str.contains(
-            street, flags=re.IGNORECASE, regex=True)
+        street, flags=re.IGNORECASE, regex=True)
 
     calc_loc_df = ref_loc_df[ref_loc_df.Status == "C"]
-        
-    ref_loc_df = ref_loc_df.loc[:, ["Latitude", "Longitude", "StreetAddress"]]
-        # calc_loc_df.to_json(orient="index")
 
-        # Calculate lat/long using reference data
-    calc_loc_df["lat_lon"] = calc_loc_df[["StreetAddress"]].applymap(geo.find_closest)
-        # Update lat/long with the calculated values
+    ref_loc_df = ref_loc_df.loc[:, ["Latitude", "Longitude", "StreetAddress"]]
+    # calc_loc_df.to_json(orient="index")
+
+    # Calculate lat/long using reference data
+    calc_loc_df["lat_lon"] = calc_loc_df[[
+        "StreetAddress"]].applymap(geo.find_closest)
+    # Update lat/long with the calculated values
     calc_loc_df["Latitude"] = calc_loc_df["lat_lon"].apply(lambda x: x[0])
     calc_loc_df["Longitude"] = calc_loc_df["lat_lon"].apply(lambda x: x[1])
-        # Drop the additional column
+    # Drop the additional column
     calc_loc_df = calc_loc_df.drop(columns=["lat_lon"])
-        # Include indices for the "merge"
+    # Include indices for the "merge"
     loc_df = loc_df.reset_index()
     calc_loc_df = calc_loc_df.reset_index()
     loc_df = pd.concat([loc_df, calc_loc_df], sort=False).drop_duplicates(
-            ["index"], keep="last"
+        ["index"], keep="last"
     )
-        # clean the final df
+    # clean the final df
     loc_df = loc_df.drop(columns=["index"]).reset_index(drop=True)
 
     final_df = loc_df.to_dict(orient="records")
-            
+
     return jsonify(final_df)
-    
 
 
 @app.route("/savelocation", methods=["GET", "POST"])
 def send_to_db():
-    
+
     loc_chg = [
         {
             "AddressId": 0,

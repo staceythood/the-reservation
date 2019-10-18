@@ -150,12 +150,22 @@
                         <script class="banner-content bg_cover align-items-center" type="text/javascript" src="../static/js/logic.js"></script>
                 </div>
                 <br>
-                <select name="street dropdown" id="street_dropdown">
+                <select name="street dropdown" id="street_dropdown" onchange="doSomething()">
+                    <option value="default">Select Street</option>
                     {% for street in street_dropdown %}
-                    <option value="{{street['StreetAddress']}}">{{ street['StreetAddress'] }}</option>
+                    <option value="{{ street['right'] }}">{{ street['right'].title() }}</option>
                     {% endfor %}
                 </select>
+                <div id="coords">
+                <button class="main-btn mt-25 mb-5" onchange="doSomething()">Select</button>
+                </div>
+                <script> function selectAddress(){
+                    let street_select= document.getElementById('street_dropdown').value;
+                    window.location.href='/filter/' +street_select;}
+                </script>
             </div>
+            <br>
+            <br>
             <br>
             <br>
         <!-- ===HERE IS WHERE WE PUT LEAFLET!!!!!!!!!!!!!!===-->
@@ -186,7 +196,7 @@
             <div class="row">
                 <div class="col-lg-6">
                     <div class="about-image mt-50 clearfix">
-                        <div class="single-image float-left">
+                        <div class="single-image float-left mt-50" >
                             <img src="static/images/1944view.PNG" alt="About">
                         </div> <!-- single image -->
                         <!-- <div data-aos="fade-right" class="about-btn">
