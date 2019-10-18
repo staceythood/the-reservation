@@ -46,32 +46,6 @@ ref_loc_df = ref_loc_df.loc[:, ["Latitude", "Longitude", "StreetAddress"]]
 geo = Geocoder(ref_loc_df)
 
 #################################################
-# lat/long calculation for a data frame
-#################################################
-def lat_long_calc(loc_df, calc_loc_df):
-    """Receives two DataFrames --original info and the one requiring calculation, returns a dictionary with all rows w/lat.long"""
-
-    calc_loc_df["lat_lon"] = calc_loc_df[[
-        "StreetAddress"]].applymap(geo.find_closest)
-    # Update columns lat/long with the calculated values
-    calc_loc_df["Latitude"] = calc_loc_df["lat_lon"].apply(lambda x: x[0])
-    calc_loc_df["Longitude"] = calc_loc_df["lat_lon"].apply(lambda x: x[1])
-    # Drop the additional column
-    calc_loc_df = calc_loc_df.drop(columns=["lat_lon"])
-    # Include indices for "merge"
-    loc_df = loc_df.reset_index()
-    calc_loc_df = calc_loc_df.reset_index()
-    loc_df = pd.concat([loc_df, calc_loc_df], sort=False).drop_duplicates(
-        ["index"], keep="last"
-    )
-    # clean the final df
-    loc_df = loc_df.drop(columns=["index"]).reset_index(drop=True)
-
-    # Convert the dataframe into a dictionary and return it
-    return loc_df.to_dict(orient="records")
-
-
-#################################################
 # Flask Routes
 #################################################
 
@@ -103,7 +77,24 @@ def locations():
     calc_loc_df = loc_df[loc_df.Status == "C"]
 
     # Calculate lat/long using reference data
-    final_df = lat_long_calc(loc_df, calc_loc_df)
+    calc_loc_df["lat_lon"] = calc_loc_df[[
+        "StreetAddress"]].applymap(geo.find_closest)
+    # Update columns lat/long with the calculated values
+    calc_loc_df["Latitude"] = calc_loc_df["lat_lon"].apply(lambda x: x[0])
+    calc_loc_df["Longitude"] = calc_loc_df["lat_lon"].apply(lambda x: x[1])
+    # Drop the additional column
+    calc_loc_df = calc_loc_df.drop(columns=["lat_lon"])
+    # Include indices for "merge"
+    loc_df = loc_df.reset_index()
+    calc_loc_df = calc_loc_df.reset_index()
+    loc_df = pd.concat([loc_df, calc_loc_df], sort=False).drop_duplicates(
+        ["index"], keep="last"
+    )
+    # clean the final df
+    loc_df = loc_df.drop(columns=["index"]).reset_index(drop=True)
+
+    # Convert the dataframe into a dictionary
+    final_df = loc_df.to_dict(orient="records")
 
     # Return a JSON list of all locations including those with both statuses
     return jsonify(final_df)
@@ -128,7 +119,24 @@ def filter_street(street):
     calc_loc_df = ref_loc_df[ref_loc_df.Status == "C"]
 
     # Calculate lat/long using reference data
-    final_df = lat_long_calc(ref_loc_df, calc_loc_df)
+    calc_loc_df["lat_lon"] = calc_loc_df[[
+        "StreetAddress"]].applymap(geo.find_closest)
+    # Update lat/long with the calculated values
+    calc_loc_df["Latitude"] = calc_loc_df["lat_lon"].apply(lambda x: x[0])
+    calc_loc_df["Longitude"] = calc_loc_df["lat_lon"].apply(lambda x: x[1])
+    # Drop the additional column
+    calc_loc_df = calc_loc_df.drop(columns=["lat_lon"])
+    # Include indices for the "merge"
+    ref_loc_df = ref_loc_df.reset_index()
+    calc_loc_df = calc_loc_df.reset_index()
+    ref_loc_df = pd.concat([ref_loc_df, calc_loc_df], sort=False).drop_duplicates(
+        ["index"], keep="last"
+    )
+    # clean the final df
+    ref_loc_df = ref_loc_df.drop(columns=["index"]).reset_index(drop=True)
+
+    # Convert the dataframe into a dictionary
+    final_df = ref_loc_df.to_dict(orient="records")
 
     return jsonify(final_df)
 
