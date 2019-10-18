@@ -10,35 +10,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!--====== Title ======-->
-    <title>Interior - Interior Design and Architecture Web Template</title>
+    
 
+
+    <!-- comment -->
     <!--====== Favicon Icon ======-->
-    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/png">
+    <!-- <link rel="shortcut icon" href="../static/images/favicon.png" type="image/png"> -->
 
     <!--====== Bootstrap css ======-->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" />
 
     <!--====== Fontawesome css ======-->
-    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="../static/css/font-awesome.min.css">
 
     <!--====== Line Icons css ======-->
-    <link rel="stylesheet" href="assets/css/LineIcons.css">
+    <link rel="stylesheet" href="../static/css/LineIcons.css">
 
-    <!--====== Animate css ======-->
-    <link rel="stylesheet" href="assets/css/animate.css">
+    <!-- ====== Animate css ====== -->
+    <link rel="stylesheet" href="../static/css/animate.css">
 
     <!--====== Aos css ======-->
-    <link rel="stylesheet" href="assets/css/aos.css">
+    <link rel="stylesheet" href="../static/css/aos.css">
 
     <!--====== Slick css ======-->
-    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="../static/css/slick.css">
 
     <!--====== Default css ======-->
-    <link rel="stylesheet" href="assets/css/default.css">
+    <link rel="stylesheet" href="../static/css/default.css">
 
     <!--====== Style css ======-->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="../static/css/style.css">
 
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.3/d3.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.js"></script>
+    <script type="text/javascript" src="../static/js/config.js"></script>
 
 </head>
 
@@ -70,19 +77,19 @@
     <header id="home" class="header-area pt-100">
 
         <div class="shape header-shape-one">
-            <!-- <img src="assets/images/banner/shape/shape-1.png" alt="shape"> -->
+            <!-- <img src="../static/images/banner/shape/shape-1.png" alt="shape"> -->
         </div> 
 
         <div class="shape header-shape-tow animation-one">
-            <!-- <img src="assets/images/banner/shape/shape-2.png" alt="shape"> -->
+            <!-- <img src="../static/images/banner/shape/shape-2.png" alt="shape"> -->
         </div> 
 
         <!-- <div class="shape header-shape-three animation-one">
-            <img src="assets/images/banner/shape/shape-3.png" alt="shape">
+            <img src="../static/images/banner/shape/shape-3.png" alt="shape">
         </div> header shape three -->
 
         <div class="shape header-shape-fore">
-            <!-- <img src="assets/images/banner/shape/shape-4.png" alt="shape"> -->
+            <!-- <img src="../static/images/banner/shape/shape-4.png" alt="shape"> -->
         </div> <!-- header shape three -->
 
         <div class="navigation-bar">
@@ -91,18 +98,16 @@
                     <div class="col-lg-12">
                         <br>
                         <br>
-                        <br>
-                        <br>
                         <nav class="navbar navbar-expand-lg">
+                            <h1 class="banner-title mt-10 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1s">The Reservation</h1>
                             <!-- <a class="navbar-brand" href="#">
-                                <img src="assets/images/logo.png" alt="Logo">
+                                <img src="../static/images/logo.png" alt="Logo">
                             </a> -->
-                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="toggler-icon"></span>
                                 <span class="toggler-icon"></span>
                                 <span class="toggler-icon"></span>
-                            </button>
-
+                            </button> -->
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                                 <!-- <ul id="nav" class="navbar-nav ml-auto">
                                     <li class="nav-item active">
@@ -115,60 +120,86 @@
                                         <a class="page-scroll" href="#service">Services</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="page-scroll" href="#project">Projects</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="page-scroll" href="#team">Team</a>
-                                    </li>
-                                    <li class="nav-item">
                                         <a class="page-scroll" href="#contact">Contact</a>
                                     </li>
                                 </ul> navbar nav -->
                             </div>
-                            <div class="navbar-btn ml-20 d-none d-sm-block">
+                            <!-- <div class="navbar-btn ml-20 d-none d-sm-block"> -->
                                 <!-- <a class="main-btn" href="#"><i class="lni-phone"></i> +98 222 4444</a> -->
-                            </div>
+                            <!-- </div> -->
                         </nav> 
                     </div>
                 </div> <!-- row -->
             </div> <!-- container -->
         </div> <!-- navigation bar -->
 
-
-        <!--===HERE IS WHERE WE PUT LEAFLET!!!!!!!!!!!!!!===-->
+        <div class="header-banner align-items-center">
+            <section>
+                <div class="container">
+                    <div class="row" id='mapContainer'>
+                        <div id="map"></div>
+                        <script class="banner-content bg_cover align-items-center" type="text/javascript" src="../static/js/logic.js"></script>
+                    </div>
+                    <br>
+                    <div class="input-group">
+                        <select name="street dropdown" id="street_dropdown" style="margin-right: 20px;;"  onsubmit="doSomething()">
+                            <option value="default">Select Street</option>
+                                {% for street in street_dropdown %}
+                            <option value="{{ street['StreetAddress'] }}">{{ street['StreetAddress'].title() }}</option>
+                                {% endfor %}
+                        </select>
+                        <button class="main-btn mt-25 mb-5" type="button" onclick="doSomething()">Select</button>
+                    
+                        <button class="main-btn mt-25 mb-5" type="button" style="margin-left: 10px;" onclick="onSave()">Save</button>
+                    </div>
+            <div id="coords">
+            </div>
+                <script> function selectAddress(){
+                    let street_select= document.getElementById('street_dropdown').value;
+                    window.location.href='/filter/' +street_select;}
+                </script>
+        </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <!--===HERE IS WHERE WE PUT LEAFLET!!!!!!!!!!!!!!===-->
         <div class="header-banner d-flex align-items-center">
-            <div class="container">
-                <div class="row">
+            <!-- <div class="container"> -->
+                <!-- <div class="row"> -->
                     <div class="col-xl-8 col-lg-9 col-sm-10">
                         <div class="banner-content">
-                            <h1 class="banner-title mt-10 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="2s">The Reservation</h1>
-                        </div> <!-- banner content -->
+                            <!-- <h1 class="banner-title mt-10 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1s">The Reservation</h1> -->
+                            <!-- <div id="map">
+                                    <script class="banner-image bg_cover" type="text/javascript" src="../static/js/app.js"></script>
+                                </div>  -->
+                        </div> 
                     </div>
-                </div> <!-- row -->
-            </div> <!-- container -->
-            <div class="banner-image bg_cover" style="background-image: url(assets/images/banner/banner-image.png)"></div>
-            <script class="banner-image bg_cover" src="app.js"></script> <!--add link here for leaflet banner-->
-        </div> <!-- header banner -->
-
+                </div> 
+            </div> 
+        </div>  
     </header>
-
+    <br>
+    <br>
+    <br>
+</section>
     <!--====== HEADER PART ENDS ======-->
 
     <!--====== ABOUT PART START ======-->
 
-    <section id="about" class="about-area pt-80 pb-130">
+    <section id="about" class="about-area pt-80 pb-130 mt-50">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
                     <div class="about-image mt-50 clearfix">
-                        <div class="single-image float-left">
-                            <img src="C:\Users\mmsqu\OneDrive\Documents\GitHub\the-reservation\app\1944view.PNG" alt="About">
+                        <div class="single-image float-left mt-50" >
+                            <img src="static/images/1944view.PNG" alt="About">
                         </div> <!-- single image -->
                         <!-- <div data-aos="fade-right" class="about-btn">
                             <a class="main-btn" href="#"><span>27</span> Years Experience</a>
                         </div> -->
                         <div class="single-image image-tow float-right">
-                            <img src="C:\Users\mmsqu\OneDrive\Documents\GitHub\the-reservation\app\stitched (2).png" alt="About">
+                            <img src="static/images/stitched (2).png" alt="About">
                         </div> <!-- single image -->
                     </div> <!-- about image -->
                 </div>
@@ -176,10 +207,15 @@
                     <div class="about-content mt-45">
                         <h4 class="about-welcome">About</h4>
                         <h3 class="about-title mt-10">Reasons to map out</h3>
-                        <p class="mt-25">Today's Montrose neighborhood was once known as Freedmantown, the red-light district of Houston. 
+                        <p class="mt-25">Today's Montrose neighborhood was once known as Freedmantown, the Red-Light district of Houston. 
                             The reservation was established on March 31, 1908, and became the home to "fallen women" and business and 
-                            emancipated slaves. Freedmantown surroundings conditions weren't very desirable. The area was surrounded by two cemetaries, an infectious disease hospital
+                            emancipated slaves. Freedmantown surroundings conditions weren't very desirable due to its close proximity to two cemetaries, an infectious disease hospital
                             and the flooding prone Buffalo Bayou.</p>
+                            
+                        <p class="mt-25">In this extension of the project, the gathered Census data was uploaded into a SQL database for data querying and manipulation. 
+                            The data was projected onto a map to see the residential areas of the Red-Light district of Houston. The map allows one to call individual streets
+                            a look at the Census one point at the time. </p>
+
                             <br>
                         <a class="main-btn mt-25" href="https://www.arcgis.com/apps/Cascade/index.html?appid=2262a3c6c67e4f1ebd2261ca8f82a267">learn more</a>
                     </div> <!-- about content -->
@@ -191,7 +227,7 @@
     <!--====== ABOUT PART ENDS ======-->
 
     <!--====== SERVICES PART START ======-->
-
+<!-- 
     <section id="service" class="services-area pt-125 pb-130 gray-bg">
         <div class="container">
             <div class="row justify-content-center">
@@ -199,10 +235,10 @@
                     <div class="section-title text-center pb-20">
                         <h5 class="sub-title mb-15">Our Services</h5>
                         <h2 class="title">What We Do?</h2>
-                    </div> <!-- section title -->
+                    </div>  section title -->
                 </div>
             </div> <!-- row -->
-            <div class="row justify-content-center">
+            <!-- <div class="row justify-content-center">
                 <div class="col-lg-4 col-md-6 col-sm-8">
                     <div class="single-services text-center mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.4s">
                         <div class="services-icon">
@@ -212,9 +248,9 @@
                             <h4 class="services-title">Interior Design</h4>
                             <p class="mt-20">Mauris aliquam, turpis sed mattis placerat, justo risus pellentesque quam, id finibus risus arcu eget neque.</p>
                         </div>
-                    </div> <!-- single services -->
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-8">
+                    </div> single services
+                </div> -->
+                <!-- <div class="col-lg-4 col-md-6 col-sm-8">
                     <div class="single-services text-center mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.8s">
                         <div class="services-icon">
                             <i class="lni-blackboard"></i>
@@ -223,9 +259,9 @@
                             <h4 class="services-title">Design Consultancy</h4>
                             <p class="mt-20">Mauris aliquam, turpis sed mattis placerat, justo risus pellentesque quam, id finibus risus arcu eget neque.</p>
                         </div>
-                    </div> <!-- single services -->
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-8">
+                    </div> single services -->
+                </div> -->
+                <!-- <div class="col-lg-4 col-md-6 col-sm-8">
                     <div class="single-services text-center mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1.2s">
                         <div class="services-icon">
                             <i class="lni-home"></i>
@@ -233,10 +269,10 @@
                         <div class="services-content mt-15">
                             <h4 class="services-title">Residential Design</h4>
                             <p class="mt-20">Mauris aliquam, turpis sed mattis placerat, justo risus pellentesque quam, id finibus risus arcu eget neque.</p>
-                        </div>
-                    </div> <!-- single services -->
+                        </div> -->
+                    </div> 
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-8">
+                <!-- <div class="col-lg-4 col-md-6 col-sm-8">
                     <div class="single-services text-center mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.4s">
                         <div class="services-icon">
                             <i class="lni-briefcase"></i>
@@ -244,10 +280,10 @@
                         <div class="services-content mt-15">
                             <h4 class="services-title">Commercial Design</h4>
                             <p class="mt-20">Mauris aliquam, turpis sed mattis placerat, justo risus pellentesque quam, id finibus risus arcu eget neque.</p>
-                        </div>
+                        </div> -->
                     </div> <!-- single services -->
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-8">
+                <!-- <div class="col-lg-4 col-md-6 col-sm-8">
                     <div class="single-services text-center mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.8s">
                         <div class="services-icon">
                             <i class="lni-handshake"></i>
@@ -255,10 +291,10 @@
                         <div class="services-content mt-15">
                             <h4 class="services-title">Hospitality Design</h4>
                             <p class="mt-20">Mauris aliquam, turpis sed mattis placerat, justo risus pellentesque quam, id finibus risus arcu eget neque.</p>
-                        </div>
+                        </div> -->
                     </div> <!-- single services -->
                 </div>
-                <div class="col-lg-4 col-md-6 col-sm-8">
+                <!-- <div class="col-lg-4 col-md-6 col-sm-8">
                     <div class="single-services text-center mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1.2s">
                         <div class="services-icon">
                             <i class="lni-grow"></i>
@@ -266,7 +302,7 @@
                         <div class="services-content mt-15">
                             <h4 class="services-title">Co-working Space Design</h4>
                             <p class="mt-20">Mauris aliquam, turpis sed mattis placerat, justo risus pellentesque quam, id finibus risus arcu eget neque.</p>
-                        </div>
+                        </div> -->
                     </div> <!-- single services -->
                 </div>
             </div> <!-- row -->
@@ -277,23 +313,23 @@
 
     <!--====== PROJECT PART START ======-->
 
-    <section id="project" class="project-area pt-125 pb-130">
+    <!-- <section id="project" class="project-area pt-125 pb-130">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="section-title text-center pb-50">
                         <h5 class="sub-title mb-15">Featured Works</h5>
                         <h2 class="title">Projects You May Love</h2>
-                    </div> <!-- section title -->
+                    </div> section title -->
                 </div>
             </div> <!-- row -->
         </div>
-        <div class="container-fluid">
+        <!-- <div class="container-fluid">
             <div class="row project-active">
                 <div class="col-lg-4">
                     <div class="single-project">
                         <div class="project-image">
-                            <img src="assets/images/project/p-1.jpg" alt="Project">
+                            <img src="../static/images/project/p-1.jpg" alt="Project">
                         </div>
                         <div class="project-content">
                             <a class="project-title" href="#">Home Interior Design</a>
@@ -303,7 +339,17 @@
                 <div class="col-lg-4">
                     <div class="single-project">
                         <div class="project-image">
-                            <img src="assets/images/project/p-2.jpg" alt="Project">
+                            <img src="../static/images/project/p-2.jpg" alt="Project">
+                        </div>
+                        <div class="project-content">
+                            <a class="project-title" href="#">Home Interior Design</a>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- <div class="col-lg-4">
+                    <div class="single-project">
+                        <div class="project-image">
+                            <img src="../static/images/project/p-3.jpg" alt="Project">
                         </div>
                         <div class="project-content">
                             <a class="project-title" href="#">Home Interior Design</a>
@@ -313,7 +359,7 @@
                 <div class="col-lg-4">
                     <div class="single-project">
                         <div class="project-image">
-                            <img src="assets/images/project/p-3.jpg" alt="Project">
+                            <img src="../static/images/project/p-4.jpg" alt="Project">
                         </div>
                         <div class="project-content">
                             <a class="project-title" href="#">Home Interior Design</a>
@@ -323,7 +369,17 @@
                 <div class="col-lg-4">
                     <div class="single-project">
                         <div class="project-image">
-                            <img src="assets/images/project/p-4.jpg" alt="Project">
+                            <img src="../static/images/project/p-5.jpg" alt="Project">
+                        </div>
+                        <div class="project-content">
+                            <a class="project-title" href="#">Home Interior Design</a>
+                        </div>
+                    </div>
+                </div> -->
+                <!-- <div class="col-lg-4">
+                    <div class="single-project">
+                        <div class="project-image">
+                            <img src="../static/images/project/p-2.jpg" alt="Project">
                         </div>
                         <div class="project-content">
                             <a class="project-title" href="#">Home Interior Design</a>
@@ -333,27 +389,7 @@
                 <div class="col-lg-4">
                     <div class="single-project">
                         <div class="project-image">
-                            <img src="assets/images/project/p-5.jpg" alt="Project">
-                        </div>
-                        <div class="project-content">
-                            <a class="project-title" href="#">Home Interior Design</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="single-project">
-                        <div class="project-image">
-                            <img src="assets/images/project/p-2.jpg" alt="Project">
-                        </div>
-                        <div class="project-content">
-                            <a class="project-title" href="#">Home Interior Design</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="single-project">
-                        <div class="project-image">
-                            <img src="assets/images/project/p-4.jpg" alt="Project">
+                            <img src="../static/images/project/p-4.jpg" alt="Project">
                         </div>
                         <div class="project-content">
                             <a class="project-title" href="#">Home Interior Design</a>
@@ -362,27 +398,27 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
     <!--====== PROJECT PART ENDS ======-->
 
     <!--====== TEAM PART START ======-->
 
-    <section id="team" class="team-area pt-125 pb-130 gray-bg">
+    <!-- <section id="team" class="team-area pt-125 pb-130 gray-bg">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-6">
                     <div class="section-title text-center pb-20">
                         <h5 class="sub-title mb-15">Meet The Team</h5>
                         <h2 class="title">Our Expert Designers</h2>
-                    </div> <!-- section title -->
+                    </div> section title -->
                 </div>
             </div> <!-- row -->
-            <div class="row">
+            <!-- <div class="row">
                 <div class="col-lg-3 col-md-6 col-sm-6">
                     <div class="single-team text-center mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.4s">
                         <div class="team-image">
-                            <img src="assets/images/team/team-1.jpg" alt="Team">
+                            <img src="../static/images/team/team-1.jpg" alt="Team">
                         </div>
                         <div class="team-content">
                             <h4 class="team-name"><a href="#">Rob Hope</a></h4>
@@ -392,40 +428,9 @@
                                 <li><a href="#"><i class="lni-twitter-original"></i></a></li>
                                 <li><a href="#"><i class="lni-linkedin-original"></i></a></li>
                             </ul>
-                        </div>
+                        </div> --> 
                     </div> <!-- single team -->
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-team text-center mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="0.8s">
-                        <div class="team-image">
-                            <img src="assets/images/team/team-2.jpg" alt="Team">
-                        </div>
-                        <div class="team-content">
-                            <h4 class="team-name"><a href="#">Patric Green</a></h4>
-                            <span class="sub-title">Chief Designer</span>
-                            <ul class="social mt-25">
-                                <li><a href="#"><i class="lni-facebook-filled"></i></a></li>
-                                <li><a href="#"><i class="lni-twitter-original"></i></a></li>
-                                <li><a href="#"><i class="lni-linkedin-original"></i></a></li>
-                            </ul>
-                        </div>
-                    </div> <!-- single team -->
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="single-team text-center mt-30 wow fadeInUp" data-wow-duration="1.5s" data-wow-delay="1.2s">
-                        <div class="team-image">
-                            <img src="assets/images/team/team-3.jpg" alt="Team">
-                        </div>
-                        <div class="team-content">
-                            <h4 class="team-name"><a href="#">Daryl Dixon</a></h4>
-                            <span class="sub-title">Consultant</span>
-                            <ul class="social mt-25">
-                                <li><a href="#"><i class="lni-facebook-filled"></i></a></li>
-                                <li><a href="#"><i class="lni-twitter-original"></i></a></li>
-                                <li><a href="#"><i class="lni-linkedin-original"></i></a></li>
-                            </ul>
-                        </div>
-                    </div> <!-- single team -->
                 </div>
                 </div>
             </div> <!-- row -->
@@ -438,22 +443,22 @@
 
     <!-- <section id="testimonial" class="testimonial-area pt-130 pb-130"> -->
         <!-- <div class="shape shape-one">
-            <img src="assets/images/testimonial/shape.png" alt="testimonial">
+            <img src="../static/images/testimonial/shape.png" alt="testimonial">
         </div>
         <div class="shape shape-tow">
-            <img src="assets/images/testimonial/shape.png" alt="testimonial">
+            <img src="../static/images/testimonial/shape.png" alt="testimonial">
         </div>
         <div class="shape shape-three">
-            <img src="assets/images/testimonial/shape.png" alt="testimonial">
+            <img src="../static/images/testimonial/shape.png" alt="testimonial">
         </div> -->
         <!-- <div class="container">
-            <div class="testimonial-bg bg_cover pt-80 pb-80" style="background-image: url(assets/images/testimonial/testimonial-bg.jpg)">
+            <div class="testimonial-bg bg_cover pt-80 pb-80" style="background-image: url(../static/images/testimonial/testimonial-bg.jpg)">
                 <div class="row">
                     <div class="col-xl-4 offset-xl-7 col-lg-5 offset-lg-6 col-md-8 offset-md-2 col-sm-10 offset-sm-1">
                         <div class="testimonial-active">
                             <div class="single-testimonial text-center"> -->
                                 <!-- <div class="testimonial-image">
-                                    <img src="assets/images/testimonial/t-1.jpg" alt="Testimonial">
+                                    <img src="../static/images/testimonial/t-1.jpg" alt="Testimonial">
                                     <div class="quota">
                                         <i class="lni-quotation"></i>
                                     </div>
@@ -466,7 +471,7 @@
                             <!-- </div> single-testimonial -->
                             <!-- <div class="single-testimonial text-center">
                                 <div class="testimonial-image">
-                                    <img src="assets/images/testimonial/t-2.jpg" alt="Testimonial">
+                                    <img src="../static/images/testimonial/t-2.jpg" alt="Testimonial">
                                     <div class="quota">
                                         <i class="lni-quotation"></i>
                                     </div> -->
@@ -479,7 +484,7 @@
                             </div> <!-- single-testimonial -->
                             <!-- <div class="single-testimonial text-center">
                                 <div class="testimonial-image">
-                                    <img src="assets/images/testimonial/t-3.jpg" alt="Testimonial">
+                                    <img src="../static/images/testimonial/t-3.jpg" alt="Testimonial">
                                     <div class="quota">
                                         <i class="lni-quotation"></i>
                                     </div>
@@ -514,7 +519,7 @@
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="contact-form">
-                        <form id="contact-form" action="assets/contact.php" method="post" data-toggle="validator">
+                        <form id="contact-form" action="../static/contact.php" method="post" data-toggle="validator">
                             <div class="row">
                                 <!-- <div class="col-md-6">
                                     <div class="single-form form-group">
@@ -570,48 +575,48 @@
                 <iframe id="gmap_canvas" src="https://maps.google.com/maps?q=university%20of%20san%20francisco&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
             </div>
         </div>
-        <div class="map-bg bg_cover d-none d-lg-block" style="background-image: url(assets/images/map/map-bg.jpg)"></div>
+        <div class="map-bg bg_cover d-none d-lg-block" style="background-image: url(../static/images/map/map-bg.jpg)"></div>
     </section> -->
 
     <!--====== MAP PART ENDS ======-->
 
     <!--====== FOOTER PART START ======-->
 
-    <footer id="footer" class="footer-area">
+    <!-- <footer id="footer" class="footer-area">
         <div class="footer-widget pt-80 pb-130">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-3 col-md-4 col-sm-8">
-                        <div class="footer-logo mt-50">
+                        <div class="footer-logo mt-50"> -->
                             <!-- <a href="#">
-                                <img src="assets/images/logo.png" alt="Logo">
+                                <img src="../static/images/logo.png" alt="Logo">
                             </a> -->
-                            <ul class="footer-info">
+                            <!-- <ul class="footer-info">
                                 <li>
                                     <div class="single-info">
                                         <div class="info-icon">
                                             <i class="lni-phone-handset"></i>
-                                        </div>
+                                        </div> -->
                                         <!-- <div class="info-content">
                                             <p>+1880 123 456 789</p>
                                         </div> -->
                                     </div> <!-- single info -->
-                                </li>
+                                <!-- </li>
                                 <li>
                                     <div class="single-info">
                                         <div class="info-icon">
                                             <i class="lni-envelope"></i>
-                                        </div>
+                                        </div> -->
                                         <!-- <div class="info-content">
                                             <p>contact@yourmail.com</p>
                                         </div> -->
                                     </div> <!-- single info -->
                                 </li>
-                                <li>
+                                <!-- <li>
                                     <div class="single-info">
                                         <div class="info-icon">
                                             <i class="lni-map"></i>
-                                        </div>
+                                        </div> -->
                                         <!-- <div class="info-content">
                                             <p>1234 Avenue New York, US</p>
                                         </div> -->
@@ -650,19 +655,6 @@
                             </ul> -->
                         </div>
                     </div>
-                    <div class="col-lg-3 col-md-5 col-sm-8">
-                        <div class="footer-newsleter mt-45">
-                            <!-- <div class="f-title">
-                                <h4 class="title">Newsleter</h4>
-                            </div> -->
-                            <!-- <form action="#">
-                                <div class="newsleter mt-20">
-                                    <input type="email" placeholder="info@contact.com">
-                                    <button><i class="lni-angle-double-right"></i></button>
-                                </div> 
-                            </form> -->
-                        </div>
-                    </div>
                 </div> <!-- row -->
             </div> <!-- container -->
         </div> <!-- footer widget -->
@@ -683,7 +675,7 @@
 
     <!--====== BACK TO TOP PART START ======-->
 
-    <a href="#" class="back-to-top"><i class="lni-chevron-up"></i></a>
+    <!-- <a href="#" class="back-to-top"><i class="lni-chevron-up"></i></a> -->
 
     <!--====== BACK TO TOP PART ENDS ======-->
 
@@ -713,28 +705,31 @@
 
 
     <!--====== jquery js ======-->
-    <script src="assets/js/vendor/modernizr-3.6.0.min.js"></script>
-    <script src="assets/js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="../static/js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="../static/js/vendor/jquery-1.12.4.min.js"></script>
 
     <!--====== Bootstrap js ======-->
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="../static/js/bootstrap.min.js"></script>
 
     <!--====== WOW js ======-->
-    <script src="assets/js/wow.min.js"></script>
+    <script src="../static/js/wow.min.js"></script>
 
     <!--====== Slick js ======-->
-    <script src="assets/js/slick.min.js"></script>
+    <script src="../static/js/slick.min.js"></script>
 
     <!--====== Scrolling Nav js ======-->
-    <script src="assets/js/scrolling-nav.js"></script>
-    <script src="assets/js/jquery.easing.min.js"></script>
+    <script src="../static/js/scrolling-nav.js"></script>
+    <script src="../static/js/jquery.easing.min.js"></script>
 
     <!--====== Aos js ======-->
-    <script src="assets/js/aos.js"></script>
+    <script src="../static/js/aos.js"></script>
 
 
     <!--====== Main js ======-->
-    <script src="assets/js/main.js"></script>
+    <script src="../static/js/main.js"></script>
+
+    <!--=== Json file ===-->
+    <!-- <script src="addresses.json"></script> -->
 
 </body>
 
