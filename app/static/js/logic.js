@@ -76,7 +76,9 @@ function doSomething() {
 
 function onSave() {
   //send new coords to sql:
-  let thing = document.getElementsByClassName("coords")[0];
-  let newThing = thing.getAttribute("lat");
-  console.log(newThing);
+  let thing = document.getElementsByClassName("coords").forEach(function(coord) {
+    return coord.getAttribute("lat");
+  });
+  // let newThing = thing.getAttribute("lat");
+  console.log(thing);
 }
