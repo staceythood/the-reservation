@@ -8,8 +8,9 @@ from sqlalchemy.ext.automap import automap_base
 from sqlalchemy.orm import Session
 from sqlalchemy import create_engine
 
-from flask import Flask, jsonify, render_template
+from flask import Flask, jsonify, render_template, request
 from flask_sqlalchemy import SQLAlchemy
+import re
 from geocoder import Geocoder
 
 
@@ -35,7 +36,13 @@ Base.prepare(engine, reflect=True)
 address_data = Base.classes.Address_Data
 census_data = Base.classes.Census_Data
 
-# import models
+# Create the locations dataframe with all data, including both statuses
+loc_df = pd.read_sql_table("Address_Data", con=engine)
+# Create a locations dataframe with reference/seeded/locked locations
+ref_loc_df = loc_df[loc_df.Status == "S"]
+ref_loc_df = ref_loc_df.loc[:, ["Latitude", "Longitude", "StreetAddress"]]
+ # Call the geocoder class
+geo = Geocoder(ref_loc_df)
 
 #################################################
 # Flask Routes
@@ -44,25 +51,30 @@ census_data = Base.classes.Census_Data
 # Route to render index.html template using data from db
 @app.route("/")
 def index():
-    """Return the homepage."""
-    return render_template("indexm.html")
+    """Render the dropdown with all streets for selection by performing a sql query on the database and taking just the street name"""
+
+    select_st = 'select distinct right("StreetAddress", (length("StreetAddress") - position(\' \' in "StreetAddress"))) "StreetAddress"\
+        from "Address_Data" a'
+    street_df = pd.read_sql_query(select_st, con=engine)
+
+    street_dropdown = street_df.to_dict(orient="records")
+    print(street_dropdown)
+
+    '''Return the homepage.'''
+    return render_template("indexm.html", street_dropdown=street_dropdown)
 
 
 @app.route("/api/locations")
 def locations():
     """Return location data to be used in interactive leaflet map"""
-
+    
     # Create the locations dataframe with all data, including both statuses
     loc_df = pd.read_sql_table("Address_Data", con=engine)
 
     # Create a locations dataframe with only status of c(calculated) aka those without lat/long
     calc_loc_df = loc_df[loc_df.Status == "C"]
-    ref_loc_df = loc_df[loc_df.Status == "S"]
-    ref_loc_df = ref_loc_df.loc[:, ["Latitude", "Longitude", "StreetAddress"]]
+    
     # calc_loc_df.to_json(orient="index")
-
-    # Call the geocoder class
-    geo = Geocoder(ref_loc_df)
 
     # Calculate lat/long using reference data
     calc_loc_df["lat_lon"] = calc_loc_df[["StreetAddress"]].applymap(geo.find_closest)
@@ -86,33 +98,67 @@ def locations():
     return jsonify(final_df)
 
 
+@app.route("/filter/<street>", methods=["GET", "POST"])
+def filter_street(street):
+    
+    """Return the locations on the map for a given street selected."""
+    
+    if request.method == "POST":
+        street = request.form["street"]
+    
+    loc_df = pd.read_sql_table("Address_Data", con=engine)
+
+    bool_idx = loc_df["StreetAddress"].str.contains(
+            street, flags=re.IGNORECASE, regex=True)
+    ref_loc_df = loc_df[bool_idx]
+  
+    calc_loc_df = ref_loc_df[ref_loc_df.Status == "C"]
+
+
+        # Calculate lat/long using reference data
+    calc_loc_df["lat_lon"] = calc_loc_df[["StreetAddress"]].applymap(geo.find_closest)
+        # Update lat/long with the calculated values
+    calc_loc_df["Latitude"] = calc_loc_df["lat_lon"].apply(lambda x: x[0])
+    calc_loc_df["Longitude"] = calc_loc_df["lat_lon"].apply(lambda x: x[1])
+        # Drop the additional column
+    calc_loc_df = calc_loc_df.drop(columns=["lat_lon"])
+        # Include indices for the "merge"
+    ref_loc_df = ref_loc_df.reset_index()
+    calc_loc_df = calc_loc_df.reset_index()
+    ref_loc_df = pd.concat([ref_loc_df, calc_loc_df], sort=False).drop_duplicates(
+            ["index"], keep="last"
+    )
+        # clean the final df
+    ref_loc_df = ref_loc_df.drop(columns=["index"]).reset_index(drop=True)
+
+    final_df = ref_loc_df.to_dict(orient="records")
+            
+    return jsonify(final_df)
+    
+
+
 @app.route("/savelocation", methods=["GET", "POST"])
 def send_to_db():
-    if method == "POST":
-        addressid = request.form["addressid"]
-        lat = request.form["latitude"]
-        lng = request.form["longitude"]
+    
+    loc_chg = [
+        {
+            "AddressId": 0,
+            "StreetAddress": "805 ARTHUR ST",
+            "Latitude": -95.3770205583,
+            "Longitude": 29.7584129942,
+            "Status": "S",
+        }
+    ]
+    for i in range(len(loc_chg)):
+        updt_st = f'update "Address_Data" set "Latitude" = {loc_chg[i]["Latitude"]}, "Longitude" = {loc_chg[i]["Longitude"]}, \
+            "Status" = \'L\' where "AddressId" = {loc_chg[i]["AddressId"]}'
+        print(updt_st)
+        engine.execute(updt_st)
 
-        address = address(addressid=addressid, lat=latitude, lng=longitude)
-        db.session.add(address)
-        db.session.commit()
+    return "Yes"
 
-        loc_chg = [
-            {
-                "AddressId": 0,
-                "StreetAddress": "805 ARTHUR ST",
-                "Latitude": -95.3770205583,
-                "Longitude": 29.7584129942,
-                "Status": "S",
-            }
-        ]
-        for i in range(len(loc_chg)):
-            updt_st = f'update "Address_Data" set "Latitude" = {loc_chg[i]["Latitude"]}, "Longitude" = {loc_chg[i]["Longitude"]}, \
-            "Status" = \'S\' where "AddressId" = {loc_chg[i]["AddressId"]}'
-            print(updt_st)
-            engine.execute(updt_st)
 
-    return render_template("form.html")
+# return render_template("form.html")
 
 
 # @app.route("/api/census_data")
@@ -168,5 +214,5 @@ def send_to_db():
 
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug=True)
 
