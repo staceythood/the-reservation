@@ -58,7 +58,7 @@ def index():
     street_df = pd.read_sql_query(select_st, con=engine)
 
     street_dropdown = street_df.to_dict(orient="records")
-    
+
 
     '''Return the homepage.'''
     return render_template("indexm.html", street_dropdown=street_dropdown)
@@ -108,13 +108,12 @@ def filter_street(street):
     
     loc_df = pd.read_sql_table("Address_Data", con=engine)
 
-    ref_loc_df = loc_df["StreetAddress"].str.contains(
+    bool_idx = loc_df["StreetAddress"].str.contains(
             street, flags=re.IGNORECASE, regex=True)
-
+    ref_loc_df = loc_df[bool_idx]
+  
     calc_loc_df = ref_loc_df[ref_loc_df.Status == "C"]
-        
-    ref_loc_df = ref_loc_df.loc[:, ["Latitude", "Longitude", "StreetAddress"]]
-        # calc_loc_df.to_json(orient="index")
+
 
         # Calculate lat/long using reference data
     calc_loc_df["lat_lon"] = calc_loc_df[["StreetAddress"]].applymap(geo.find_closest)
@@ -124,15 +123,15 @@ def filter_street(street):
         # Drop the additional column
     calc_loc_df = calc_loc_df.drop(columns=["lat_lon"])
         # Include indices for the "merge"
-    loc_df = loc_df.reset_index()
+    ref_loc_df = ref_loc_df.reset_index()
     calc_loc_df = calc_loc_df.reset_index()
-    loc_df = pd.concat([loc_df, calc_loc_df], sort=False).drop_duplicates(
+    ref_loc_df = pd.concat([ref_loc_df, calc_loc_df], sort=False).drop_duplicates(
             ["index"], keep="last"
     )
         # clean the final df
-    loc_df = loc_df.drop(columns=["index"]).reset_index(drop=True)
+    ref_loc_df = ref_loc_df.drop(columns=["index"]).reset_index(drop=True)
 
-    final_df = loc_df.to_dict(orient="records")
+    final_df = ref_loc_df.to_dict(orient="records")
             
     return jsonify(final_df)
     
