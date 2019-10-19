@@ -12,16 +12,19 @@ function doSomething() {
       center: [29.758205, -95.3773107],
       zoom: 16
     });
-
+    console.log(data);
     // Add a tile layer (the background map image) to our map
     // We use the addTo method to add objects to our map
-    L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}", {
-      attribution:
-        'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-      maxZoom: 18,
-      id: "mapbox.streets",
-      accessToken: API_KEY
-    }).addTo(map);
+    L.tileLayer(
+      "https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={accessToken}",
+      {
+        attribution:
+          'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, <a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+        maxZoom: 18,
+        id: "mapbox.streets",
+        accessToken: API_KEY
+      }
+    ).addTo(map);
 
     // Here we create a legend control object.
     var legend = L.control({
@@ -37,7 +40,8 @@ function doSomething() {
 
       // Loop through our intervals and generate a label with a colored square for each interval.
       for (var i = 0; i < grades.length; i++) {
-        div.innerHTML += "<i style='background: " + colors[i] + "'></i> " + grades[i] + "<br>";
+        div.innerHTML +=
+          "<i style='background: " + colors[i] + "'></i> " + grades[i] + "<br>";
       }
       return div;
     };
@@ -60,6 +64,7 @@ function doSomething() {
     });
     function colors(d) {
       if (d.Status == "L") {
+        console.log(d.Status);
         return greenIcon;
       } else if (d.Status == "S") {
         return blueIcon;

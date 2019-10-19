@@ -25,7 +25,8 @@ app = Flask(__name__)
 # Database Setup
 #################################################
 engine = create_engine(
-    f"postgresql+psycopg2://postgres:{postgres_pswd}@18.222.106.38/Reservation"
+    f"postgresql://postgres:{postgres_pswd}@18.222.106.38:5432/Reservation"
+    # f"postgresql+psycopg2://postgres:{postgres_pswd}@18.222.106.38/Reservation"
 )
 
 # reflect an existing database into a new model
@@ -131,7 +132,8 @@ def filter_street(street):
 
     # Calculate lat/long using reference data
     final_df = lat_long_calc(ref_loc_df, calc_loc_df)
-
+    
+    print(f"End: {final_df}")
     return jsonify(final_df)
 
 
@@ -141,8 +143,9 @@ def send_to_db():
         request.get_json(force=True)
         loc_chg = request.json['savedCoords']
 
+        # need to fix how data is sent Lat/long are reversed
         for i in range(len(loc_chg)):
-            updt_st = f'update "Address_Data" set "Latitude" = {loc_chg[i]["Latitude"]}, "Longitude" = {loc_chg[i]["Longitude"]}, \
+            updt_st = f'update "Address_Data" set "Latitude" = {loc_chg[i]["Longitude"]}, "Longitude" = {loc_chg[i]["Latitude"]}, \
                 "Status" = \'L\' where "AddressId" = {loc_chg[i]["AddressId"]}'
             engine.execute(updt_st)
 
@@ -204,6 +207,6 @@ def send_to_db():
 
 
 if __name__ == "__main__":
-    app.run(debug=True)
+    app.run(host="0.0.0.0", port=80)
 
     # DO SOMETHING
