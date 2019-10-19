@@ -82,7 +82,7 @@ def index():
 
     # select only StreetAddress and get rid of the number and return only unique values
     select_st = 'select distinct right("StreetAddress", (length("StreetAddress") - position(\' \' in "StreetAddress"))) "StreetAddress"\
-        from "Address_Data" a'
+        from "Address_Data" a order by "StreetAddress"'
     street_df = pd.read_sql_query(select_st, con=engine)
 
     # Convert the dataframe into a dictionary
