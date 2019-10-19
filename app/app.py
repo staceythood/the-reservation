@@ -25,8 +25,8 @@ app = Flask(__name__)
 # Database Setup
 #################################################
 engine = create_engine(
-    f"postgresql://postgres:{postgres_pswd}@18.222.106.38:5432/Reservation"
-    # f"postgresql+psycopg2://postgres:{postgres_pswd}@18.222.106.38/Reservation"
+    # f"postgresql://postgres:{postgres_pswd}@18.222.106.38:5432/Reservation"
+    f"postgresql+psycopg2://postgres:{postgres_pswd}@18.222.106.38/Reservation"
 )
 
 # reflect an existing database into a new model
@@ -132,7 +132,7 @@ def filter_street(street):
 
     # Calculate lat/long using reference data
     final_df = lat_long_calc(ref_loc_df, calc_loc_df)
-    
+
     print(f"End: {final_df}")
     return jsonify(final_df)
 
@@ -207,6 +207,6 @@ def send_to_db():
 
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=80)
+    app.run()
 
     # DO SOMETHING
