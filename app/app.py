@@ -135,24 +135,16 @@ def filter_street(street):
 
 @app.route("/savelocation", methods=["GET", "POST"])
 def send_to_db():
+    if request.method == "POST":
+        request.get_json(force=True)
+        loc_chg = request.json['savedCoords']
 
-    loc_chg = [
-        {
-            "AddressId": 0,
-            "StreetAddress": "805 ARTHUR ST",
-            "Latitude": -95.3770205583,
-            "Longitude": 29.7584129942,
-            "Status": "S",
-        }
-    ]
-    for i in range(len(loc_chg)):
-        updt_st = f'update "Address_Data" set "Latitude" = {loc_chg[i]["Latitude"]}, "Longitude" = {loc_chg[i]["Longitude"]}, \
-            "Status" = \'L\' where "AddressId" = {loc_chg[i]["AddressId"]}'
-        print(updt_st)
-        engine.execute(updt_st)
+        for i in range(len(loc_chg)):
+            updt_st = f'update "Address_Data" set "Latitude" = {loc_chg[i]["Latitude"]}, "Longitude" = {loc_chg[i]["Longitude"]}, \
+                "Status" = \'L\' where "AddressId" = {loc_chg[i]["AddressId"]}'
+            engine.execute(updt_st)
 
-    return "Yes"
-
+        return Response("sent "+str(request.json['savedCoords']), mimetype="application/json")
 
 # return render_template("form.html")
 
