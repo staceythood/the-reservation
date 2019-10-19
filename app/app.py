@@ -9,7 +9,7 @@ from sqlalchemy.orm import Session
 from sqlalchemy import create_engine
 from config import postgres_pswd
 
-from flask import Flask, jsonify, render_template, request
+from flask import Flask, jsonify, render_template, request, Response
 from flask_sqlalchemy import SQLAlchemy
 import re
 from geocoder import Geocoder
@@ -48,6 +48,8 @@ geo = Geocoder(ref_loc_df)
 #################################################
 # lat/long calculation for a data frame
 #################################################
+
+
 def lat_long_calc(loc_df, calc_loc_df):
     """Receives two DataFrames --original info and the one requiring calculation, returns a dictionary with all rows w/lat.long"""
 
@@ -119,7 +121,7 @@ def filter_street(street):
     # Create the locations dataframe with all data
     loc_df = pd.read_sql_table("Address_Data", con=engine)
 
-    # Filter locations, only those on the required street 
+    # Filter locations, only those on the required street
     bool_idx = loc_df["StreetAddress"].str.contains(
         street, flags=re.IGNORECASE, regex=True)
     ref_loc_df = loc_df[bool_idx]
