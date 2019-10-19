@@ -23,18 +23,46 @@ function doSomething() {
       accessToken: API_KEY
     }).addTo(map);
 
+    // Here we create a legend control object.
+    var legend = L.control({
+      position: "bottomright"
+    });
+
+    // Then we add all the details for our legend
+    legend.onAdd = function() {
+      var div = L.DomUtil.create("div", "info legend");
+
+      var grades = ["Seeded", "Calculated", "Locked"];
+      var colors = ["#2A7FFF", "#FF0000", "#44AA00"];
+
+      // Loop through our intervals and generate a label with a colored square for each interval.
+      for (var i = 0; i < grades.length; i++) {
+        div.innerHTML += "<i style='background: " + colors[i] + "'></i> " + grades[i] + "<br>";
+      }
+      return div;
+    };
+
+    // We add our legend to the map.
+    legend.addTo(map);
+
     //Make Icons for map with color conditions:
     var greenIcon = L.icon({
       iconUrl: "../static/images/green.png",
-      iconSize: [25, 25]
+      iconSize: [20, 20]
     });
     var redIcon = L.icon({
       iconUrl: "../static/images/red.png",
-      iconSize: [25, 25]
+      iconSize: [20, 20]
+    });
+    var blueIcon = L.icon({
+      iconUrl: "../static/images/blue.png",
+      iconSize: [20, 20]
     });
     function colors(d) {
-      if (d.Status === "L") {
+      if (d.Status == "L") {
         return greenIcon;
+      } else if (d.Status == "S") {
+        return blueIcon;
       } else {
         return redIcon;
       }
@@ -57,8 +85,6 @@ function doSomething() {
           .attr("Latitude", lt)
           .attr("Longitude", ln)
           .attr("StreetAddress", d.StreetAddress);
-
-        // d3.select("#ID-" + d.AddressId).text(lt + " ," + ln);
       }
       marker.on("dragend", function(event) {
         //alert('drag ended');
@@ -67,8 +93,6 @@ function doSomething() {
         var lat = location.lat;
         var lon = location.lng;
         addToTextBox(lat, lon);
-        //alert(lat);
-        //retrieved the position
       });
       // Binding a pop-up to our marker
       marker.bindPopup(String(d.Longitude) + String(d.Latitude));
@@ -77,31 +101,11 @@ function doSomething() {
 }
 
 function onSave() {
-  d3.json("/", {
-    method: "POST",
-    body: JSON.stringify({
-      title: "Hello",
-      body: "_d3-fetch_ is it",
-      userId: 1,
-      friends: [2, 3, 4]
-    }),
-    headers: {
-      "Content-type": "application/json; charset=UTF-8"
-    }
-  }).then(json => {
-    svg
-      .append("text")
-      .text(JSON.stringify(json))
-      .attr("y", 200)
-      .attr("x", 120)
-      .attr("font-size", 16)
-      .attr("font-family", "monospace");
-  });
   //send new coords to sql:
   let saved = document.getElementsByClassName("coords");
 
   let i;
-  let coords = [];
+  var coords = [];
   for (i = 0; i < saved.length; i++) {
     coords.push({
       AddressId: saved[i].getAttribute("AddressId"),
@@ -110,8 +114,18 @@ function onSave() {
       Longitude: saved[i].getAttribute("Longitude"),
       Status: "L"
     });
-    coords[saved[i].getAttribute("add-id")] = [saved[i].getAttribute("lat"), saved[i].getAttribute("lon")];
   }
-  // let newThing = thing.getAttribute("lat");
+
   console.log(coords);
+  var xhr = new XMLHttpRequest();
+  xhr.open("POST", "/savelocation", false);
+  xhr.setRequestHeader("Content-Type", "application/json");
+  xhr.onreadystatechange = function() {
+    if (this.readyState === XMLHttpRequest.DONE && this.status === 200) {
+      console.log(this.responseText);
+    } else {
+      alert("Location Save Failed");
+    }
+  };
+  xhr.send(JSON.stringify({ savedCoords: coords }));
 }
