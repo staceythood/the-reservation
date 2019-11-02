@@ -151,62 +151,8 @@ def send_to_db():
 
         return Response("sent "+str(request.json['savedCoords']), mimetype="application/json")
 
-# return render_template("form.html")
-
-
-# @app.route("/api/census_data")
-# def census_data():
-
-#     census_data = db.session.query(census_data).statement
-#     cen_df = pd.read_sql_query(census_data, db.session.bind)
-#     combined_df = loc_df.set_index("addressid").join(cen_df.set_index("addressid"))
-
-#     return jsonify(combined_df)
-
-
-# def filter(filter_array):
-#     """Return the data for the selected filters."""
-#     filters = ""
-#     for i in len(filter_array):
-#        filters = filters" and " + filter_array[i].column + "= " + filter_array[i].value
-#     selection =
-#         combined_df.addressid,
-#         combined_df.streetAddress,
-#         combined_df.latitude,
-#         combined_df.longitude,
-#         combined_df.status,
-#         combined_df.year,
-#         combined_df.lastname,
-#         combined_df.givenname,
-#         combined_df.relation,
-#         combined_df.race,
-#         combined_df.gender,
-#         combined_df.age,
-#         combined_df.occupation,
-#         combined_df.ownrent,
-#         combined_df.propstat,
-#         combined_df.housetype,
-#         combined_df.notes,
-#         combined_df.srcilename,
-#         combined_df.lineitem,
-
-
-#     census_data = pd.read_sql_query(select_st, con=engine)
-#     return(census_data.jsonify())
-# #    for i in len(filter_array):
-# #        filter_st = filter_st" and " + filter_array[i].column + "= " + filter_array[i].value
-# # # Retrieve data from DB
-# # select_st = 'select c."Year",c."LastName", c."GivenName", c."Relation", c."Race", c."Gender", \
-# #                    c."Occupation", a."StreetAddress", a."Latitude", a."Longitude", a."AddressId" \
-# #               from "Census_Data" c, "Address_Data" a \
-# #            where c."AddressId" = a."AddressId"' + filter_st
-# #
-
-
-#     results = db.session.query(*sel).filter(combined_df.addressid == addressid).all()
-
 
 if __name__ == "__main__":
     app.run()
 
-    # DO SOMETHING
+
